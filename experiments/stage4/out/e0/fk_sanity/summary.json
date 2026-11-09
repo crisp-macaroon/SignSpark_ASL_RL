@@ -1,0 +1,27 @@
+{
+ "clips": [
+  "-d5dN54tH2E_0-1-rgb_front",
+  "-d5dN54tH2E_10-1-rgb_front",
+  "-d5dN54tH2E_11-1-rgb_front",
+  "-d5dN54tH2E_12-1-rgb_front",
+  "-d5dN54tH2E_13-1-rgb_front"
+ ],
+ "flexion_side_from_right_hand": "-y (palm-down in T-pose)",
+ "right_hand_frac_neg_y_per_clip": [
+  1.0,
+  1.0,
+  1.0,
+  1.0,
+  1.0
+ ],
+ "verdicts": {
+  "C0": true,
+  "C1": true,
+  "C2": true,
+  "C3": true,
+  "C4": true
+ },
+ "all_pass": true,
+ "model": "SMPL-X neutral (npz), betas 0, flat_hand_mean, no PCA",
+ "label": "reference (pseudo-GT) poses; no generated output involved"
+}

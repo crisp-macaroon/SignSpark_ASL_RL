@@ -1,0 +1,23 @@
+{
+ "frozen": "2026-11-03, by user decision (Stage 4 closure). Never retuned. Never mixed between spaces.",
+ "source": "experiments/stage4/r0/out/r0_results.json",
+ "source_sha256": "427dd3631db8f8d6376d849bbd5bae2e5900f70fb00d27027c30128029541d1e",
+ "data": "How2Sign TRAIN references, 29,630 clips, upstream loader (flip_left_hand=True, seq_len 304); 95% clip-bootstrap CI, 2,000 resamples, seed 0",
+ "metric_versions": {"R": "e2e/metrics.py v1 (registered)", "J": "jspace.py v1 (§6.0, E0.4 FK setup)"},
+ "R_space": {
+  "tau_ah_L": {"value": 0.6103, "ci95": [0.6083, 0.6122]},
+  "tau_ah_R": {"value": 0.4514, "ci95": [0.4491, 0.4537]},
+  "tau_lr": {"value": 0.3225, "ci95": [0.3198, 0.3253]},
+  "t_dom": {"value": -0.3924, "ci95": [-0.3968, -0.3878]}
+ },
+ "J_space": {
+  "tau_ah_L": {"value": 0.4220, "ci95": [0.4198, 0.4244]},
+  "tau_ah_R": {"value": 0.2490, "ci95": [0.2466, 0.2516]},
+  "tau_lr": {"value": 0.3196, "ci95": [0.3170, 0.3223]},
+  "t_dom": {"value": -0.4149, "ci95": [-0.4195, -0.4100]}
+ },
+ "verification_2026-11-03": "S-5 PASS: R targets valid under R v1.1 unchanged (0 invalid streams of 118,520; v1.1 bitwise = v1 on all 29,630 train clips; research/stage4/NUMERICAL_SAFEGUARDS_REPORT.md). J targets under J v1.1: not verified (FK pass not authorised).",
+ "verification_2026-11-04": "J v1.1 PASS: J targets valid under J v1.1 unchanged (0 invalid J streams of 118,520; 0 definedness changes; v1.1 bitwise = v1 on all 29,630 train clips, R0 order; research/stage4/J_VERIFY_LEAKAGE_REPORT.md). Target values above not modified. Caveat: J hand signals contain SMPL-X skinning leakage (~1-2% of hand motion; +0.001 on mean J arm-hand coordination; non-material on train references).",
+ "rules": ["a target is compared only with a statistic of the same space and metric version",
+           "R targets were computed with R metric v1; their equivalence under the proposed validity layer v1.1 on the train references is NOT yet verified (Stage 5 readiness report, safeguard S-5)"]
+}

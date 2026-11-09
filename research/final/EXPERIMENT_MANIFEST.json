@@ -1,0 +1,1691 @@
+{
+ "generated": "2026-11-08 09:50:26",
+ "label": "released-checkpoint results, not a paper reproduction",
+ "signspark_checkpoints": {
+  "models/SignSparK/body/ema_0.9999_200000.pt": {
+   "expected": "bf95bb02802b1c46f40afb4424f8f521be6c8641ad8acfe406a666b463e3a380",
+   "actual": "bf95bb02802b1c46f40afb4424f8f521be6c8641ad8acfe406a666b463e3a380",
+   "match": true
+  },
+  "models/SignSparK/hand/ema_0.9999_200000.pt": {
+   "expected": "5bb8e407ba2c106a22c3b0c16fd1b0fc0f412a58d235143325fdb67efe5916c2",
+   "actual": "5bb8e407ba2c106a22c3b0c16fd1b0fc0f412a58d235143325fdb67efe5916c2",
+   "match": true
+  }
+ },
+ "stage4_stage5_immutability": {
+  "files_checked": 548,
+  "changed_or_missing": [],
+  "pass": true
+ },
+ "jobs": [
+  {
+   "name": "record_env",
+   "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\record_env.py --out C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\env --lmdb",
+   "start": "2026-11-07 14:36:12",
+   "exit": 0,
+   "seconds": 71.8
+  },
+  {
+   "name": "train_s7001",
+   "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\train_500ep.py --config C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\configs\\config_500ep_s7001.json --out C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7001\\train",
+   "start": "2026-11-07 14:37:23",
+   "exit": 0,
+   "seconds": 292.0
+  },
+  {
+   "name": "eval_s7001",
+   "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\evaluate.py --config C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\configs\\config_500ep_s7001.json --ckpt-init C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7001\\train\\checkpoints\\update_000.pt --ckpt-final C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7001\\train\\checkpoints\\update_125.pt --out C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7001\\eval --save-dumps",
+   "start": "2026-11-07 14:42:15",
+   "exit": 0,
+   "seconds": 1702.7
+  },
+  {
+   "name": "train_s7002",
+   "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\train_500ep.py --config C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\configs\\config_500ep_s7002.json --out C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7002\\train",
+   "start": "2026-11-07 15:10:38",
+   "exit": 0,
+   "seconds": 309.9
+  },
+  {
+   "name": "eval_s7002",
+   "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\evaluate.py --config C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\configs\\config_500ep_s7002.json --ckpt-init C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7002\\train\\checkpoints\\update_000.pt --ckpt-final C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7002\\train\\checkpoints\\update_125.pt --out C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7002\\eval --save-dumps",
+   "start": "2026-11-07 15:15:48",
+   "exit": 0,
+   "seconds": 1564.2
+  },
+  {
+   "name": "train_s7003",
+   "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\train_500ep.py --config C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\configs\\config_500ep_s7003.json --out C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7003\\train",
+   "start": "2026-11-07 15:41:52",
+   "exit": 0,
+   "seconds": 281.0
+  },
+  {
+   "name": "eval_s7003",
+   "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\evaluate.py --config C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\configs\\config_500ep_s7003.json --ckpt-init C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7003\\train\\checkpoints\\update_000.pt --ckpt-final C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7003\\train\\checkpoints\\update_125.pt --out C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7003\\eval --save-dumps",
+   "start": "2026-11-07 15:46:33",
+   "exit": 0,
+   "seconds": 1559.6
+  },
+  {
+   "name": "train_s7004",
+   "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\train_500ep.py --config C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\configs\\config_500ep_s7004.json --out C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7004\\train",
+   "start": "2026-11-07 16:12:33",
+   "exit": 0,
+   "seconds": 281.7
+  },
+  {
+   "name": "eval_s7004",
+   "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\evaluate.py --config C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\configs\\config_500ep_s7004.json --ckpt-init C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7004\\train\\checkpoints\\update_000.pt --ckpt-final C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7004\\train\\checkpoints\\update_125.pt --out C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7004\\eval --save-dumps",
+   "start": "2026-11-07 16:17:14",
+   "exit": 0,
+   "seconds": 1559.5
+  },
+  {
+   "name": "fg1_test_prep",
+   "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage6_gate\\fg1_run.py --phase prep --test",
+   "start": "2026-11-07 16:43:19",
+   "exit": 0,
+   "seconds": 49.5
+  },
+  {
+   "name": "fg1_test_V2",
+   "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage6_gate\\fg1_run.py --phase V2 --test",
+   "start": "2026-11-07 16:44:09",
+   "exit": 0,
+   "seconds": 56.8
+  },
+  {
+   "name": "fg1_test_V1",
+   "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage6_gate\\fg1_run.py --phase V1 --test",
+   "start": "2026-11-07 16:45:05",
+   "exit": 0,
+   "seconds": 53.4
+  },
+  {
+   "name": "fg1_test_V3",
+   "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage6_gate\\fg1_run.py --phase V3 --test",
+   "start": "2026-11-07 16:45:59",
+   "exit": 0,
+   "seconds": 57.4
+  },
+  {
+   "name": "fg1_prep",
+   "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage6_gate\\fg1_run.py --phase prep",
+   "start": "2026-11-07 16:46:56",
+   "exit": 0,
+   "seconds": 176.0
+  },
+  {
+   "name": "fg1_V2",
+   "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage6_gate\\fg1_run.py --phase V2",
+   "start": "2026-11-07 16:49:52",
+   "exit": 0,
+   "seconds": 3188.8
+  },
+  {
+   "name": "fg1_V1",
+   "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage6_gate\\fg1_run.py --phase V1",
+   "start": "2026-11-07 17:43:01",
+   "exit": 0,
+   "seconds": 3205.9
+  },
+  {
+   "name": "fg1_V3",
+   "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage6_gate\\fg1_run.py --phase V3",
+   "start": "2026-11-07 18:36:27",
+   "exit": 0,
+   "seconds": 6209.7
+  },
+  {
+   "name": "optg_s7000",
+   "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\evaluate_train.py --config C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\config_500ep.json --train-dir C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\out\\train --out C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7000\\optg",
+   "start": "2026-11-07 20:19:57",
+   "exit": 0,
+   "seconds": 259.0
+  },
+  {
+   "name": "optg_s7001",
+   "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\evaluate_train.py --config C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\configs\\config_500ep_s7001.json --train-dir C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7001\\train --out C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7001\\optg",
+   "start": "2026-11-07 20:24:16",
+   "exit": 0,
+   "seconds": 257.8
+  },
+  {
+   "name": "optg_s7002",
+   "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\evaluate_train.py --config C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\configs\\config_500ep_s7002.json --train-dir C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7002\\train --out C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7002\\optg",
+   "start": "2026-11-07 20:28:34",
+   "exit": 0,
+   "seconds": 258.5
+  },
+  {
+   "name": "optg_s7003",
+   "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\evaluate_train.py --config C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\configs\\config_500ep_s7003.json --train-dir C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7003\\train --out C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7003\\optg",
+   "start": "2026-11-07 20:32:52",
+   "exit": 0,
+   "seconds": 258.7
+  },
+  {
+   "name": "optg_s7004",
+   "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\evaluate_train.py --config C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\configs\\config_500ep_s7004.json --train-dir C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7004\\train --out C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7004\\optg",
+   "start": "2026-11-07 20:37:11",
+   "exit": 0,
+   "seconds": 257.5
+  },
+  {
+   "name": "optc_s7000_u025",
+   "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\evaluate.py --config C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\config_500ep.json --ckpt-init C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\out\\train\\checkpoints\\update_000.pt --ckpt-final C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\out\\train\\checkpoints\\update_025.pt --out C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7000\\optc\\u025 --no-j",
+   "start": "2026-11-07 20:41:28",
+   "exit": 0,
+   "seconds": 487.5
+  },
+  {
+   "name": "optc_s7000_u050",
+   "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\evaluate.py --config C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\config_500ep.json --ckpt-init C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\out\\train\\checkpoints\\update_000.pt --ckpt-final C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\out\\train\\checkpoints\\update_050.pt --out C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7000\\optc\\u050 --no-j",
+   "start": "2026-11-07 20:49:36",
+   "exit": 0,
+   "seconds": 486.9
+  },
+  {
+   "name": "optc_s7000_u075",
+   "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\evaluate.py --config C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\config_500ep.json --ckpt-init C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\out\\train\\checkpoints\\update_000.pt --ckpt-final C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\out\\train\\checkpoints\\update_075.pt --out C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7000\\optc\\u075 --no-j",
+   "start": "2026-11-07 20:57:43",
+   "exit": 0,
+   "seconds": 487.0
+  },
+  {
+   "name": "optc_s7000_u100",
+   "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\evaluate.py --config C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\config_500ep.json --ckpt-init C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\out\\train\\checkpoints\\update_000.pt --ckpt-final C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\out\\train\\checkpoints\\update_100.pt --out C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7000\\optc\\u100 --no-j",
+   "start": "2026-11-07 21:05:50",
+   "exit": 0,
+   "seconds": 487.5
+  },
+  {
+   "name": "optc_s7001_u025",
+   "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\evaluate.py --config C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\configs\\config_500ep_s7001.json --ckpt-init C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7001\\train\\checkpoints\\update_000.pt --ckpt-final C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7001\\train\\checkpoints\\update_025.pt --out C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7001\\optc\\u025 --no-j",
+   "start": "2026-11-07 21:13:57",
+   "exit": 0,
+   "seconds": 487.3
+  },
+  {
+   "name": "optc_s7001_u050",
+   "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\evaluate.py --config C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\configs\\config_500ep_s7001.json --ckpt-init C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7001\\train\\checkpoints\\update_000.pt --ckpt-final C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7001\\train\\checkpoints\\update_050.pt --out C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7001\\optc\\u050 --no-j",
+   "start": "2026-11-07 21:22:05",
+   "exit": 0,
+   "seconds": 487.7
+  },
+  {
+   "name": "optc_s7001_u075",
+   "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\evaluate.py --config C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\configs\\config_500ep_s7001.json --ckpt-init C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7001\\train\\checkpoints\\update_000.pt --ckpt-final C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7001\\train\\checkpoints\\update_075.pt --out C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7001\\optc\\u075 --no-j",
+   "start": "2026-11-07 21:30:12",
+   "exit": 0,
+   "seconds": 487.7
+  },
+  {
+   "name": "optc_s7001_u100",
+   "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\evaluate.py --config C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\configs\\config_500ep_s7001.json --ckpt-init C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7001\\train\\checkpoints\\update_000.pt --ckpt-final C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7001\\train\\checkpoints\\update_100.pt --out C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7001\\optc\\u100 --no-j",
+   "start": "2026-11-07 21:38:20",
+   "exit": 0,
+   "seconds": 487.9
+  },
+  {
+   "name": "optc_s7002_u025",
+   "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\evaluate.py --config C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\configs\\config_500ep_s7002.json --ckpt-init C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7002\\train\\checkpoints\\update_000.pt --ckpt-final C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7002\\train\\checkpoints\\update_025.pt --out C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7002\\optc\\u025 --no-j",
+   "start": "2026-11-07 21:46:28",
+   "exit": 0,
+   "seconds": 488.2
+  },
+  {
+   "name": "optc_s7002_u050",
+   "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\evaluate.py --config C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\configs\\config_500ep_s7002.json --ckpt-init C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7002\\train\\checkpoints\\update_000.pt --ckpt-final C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7002\\train\\checkpoints\\update_050.pt --out C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7002\\optc\\u050 --no-j",
+   "start": "2026-11-07 21:54:36",
+   "exit": 0,
+   "seconds": 488.1
+  },
+  {
+   "name": "optc_s7002_u075",
+   "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\evaluate.py --config C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\configs\\config_500ep_s7002.json --ckpt-init C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7002\\train\\checkpoints\\update_000.pt --ckpt-final C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7002\\train\\checkpoints\\update_075.pt --out C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7002\\optc\\u075 --no-j",
+   "start": "2026-11-07 22:02:44",
+   "exit": 0,
+   "seconds": 487.6
+  },
+  {
+   "name": "optc_s7002_u100",
+   "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\evaluate.py --config C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\configs\\config_500ep_s7002.json --ckpt-init C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7002\\train\\checkpoints\\update_000.pt --ckpt-final C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7002\\train\\checkpoints\\update_100.pt --out C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7002\\optc\\u100 --no-j",
+   "start": "2026-11-07 22:10:52",
+   "exit": 0,
+   "seconds": 487.0
+  },
+  {
+   "name": "optc_s7003_u025",
+   "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\evaluate.py --config C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\configs\\config_500ep_s7003.json --ckpt-init C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7003\\train\\checkpoints\\update_000.pt --ckpt-final C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7003\\train\\checkpoints\\update_025.pt --out C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7003\\optc\\u025 --no-j",
+   "start": "2026-11-07 22:18:59",
+   "exit": 0,
+   "seconds": 487.5
+  },
+  {
+   "name": "optc_s7003_u050",
+   "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\evaluate.py --config C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\configs\\config_500ep_s7003.json --ckpt-init C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7003\\train\\checkpoints\\update_000.pt --ckpt-final C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7003\\train\\checkpoints\\update_050.pt --out C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7003\\optc\\u050 --no-j",
+   "start": "2026-11-07 22:27:06",
+   "exit": 0,
+   "seconds": 489.3
+  },
+  {
+   "name": "optc_s7003_u075",
+   "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\evaluate.py --config C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\configs\\config_500ep_s7003.json --ckpt-init C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7003\\train\\checkpoints\\update_000.pt --ckpt-final C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7003\\train\\checkpoints\\update_075.pt --out C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7003\\optc\\u075 --no-j",
+   "start": "2026-11-07 22:35:16",
+   "exit": 0,
+   "seconds": 490.9
+  },
+  {
+   "name": "optc_s7003_u100",
+   "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\evaluate.py --config C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\configs\\config_500ep_s7003.json --ckpt-init C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7003\\train\\checkpoints\\update_000.pt --ckpt-final C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7003\\train\\checkpoints\\update_100.pt --out C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7003\\optc\\u100 --no-j",
+   "start": "2026-11-07 22:43:26",
+   "exit": 0,
+   "seconds": 490.9
+  },
+  {
+   "name": "optc_s7004_u025",
+   "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\evaluate.py --config C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\configs\\config_500ep_s7004.json --ckpt-init C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7004\\train\\checkpoints\\update_000.pt --ckpt-final C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7004\\train\\checkpoints\\update_025.pt --out C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7004\\optc\\u025 --no-j",
+   "start": "2026-11-07 22:51:37",
+   "exit": 0,
+   "seconds": 491.0
+  },
+  {
+   "name": "optc_s7004_u050",
+   "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\evaluate.py --config C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\configs\\config_500ep_s7004.json --ckpt-init C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7004\\train\\checkpoints\\update_000.pt --ckpt-final C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7004\\train\\checkpoints\\update_050.pt --out C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7004\\optc\\u050 --no-j",
+   "start": "2026-11-07 22:59:48",
+   "exit": 0,
+   "seconds": 490.3
+  },
+  {
+   "name": "optc_s7004_u075",
+   "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\evaluate.py --config C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\configs\\config_500ep_s7004.json --ckpt-init C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7004\\train\\checkpoints\\update_000.pt --ckpt-final C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7004\\train\\checkpoints\\update_075.pt --out C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7004\\optc\\u075 --no-j",
+   "start": "2026-11-07 23:07:59",
+   "exit": 0,
+   "seconds": 489.0
+  },
+  {
+   "name": "optc_s7004_u100",
+   "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\evaluate.py --config C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\configs\\config_500ep_s7004.json --ckpt-init C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7004\\train\\checkpoints\\update_000.pt --ckpt-final C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7004\\train\\checkpoints\\update_100.pt --out C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7004\\optc\\u100 --no-j",
+   "start": "2026-11-07 23:16:08",
+   "exit": 0,
+   "seconds": 487.4
+  }
+ ],
+ "new_files": {
+  "experiments/stage5_multiseed/configs/config_500ep_s7001.json": {
+   "sha256": "7c439233bd3abee1862ffd6098f3b94f96bd34ea03f21c7bb4abef24e14cc192",
+   "bytes": 2382
+  },
+  "experiments/stage5_multiseed/configs/config_500ep_s7002.json": {
+   "sha256": "e892b8f0274ce7b8b8f04b4e2f9916f0a380ab25503e7dacb7e6b33df3b48e13",
+   "bytes": 2382
+  },
+  "experiments/stage5_multiseed/configs/config_500ep_s7003.json": {
+   "sha256": "ece5e5490b6779c62f6479dc04e9d7370dc8667e4ca7204d3328f860c5d94b01",
+   "bytes": 2382
+  },
+  "experiments/stage5_multiseed/configs/config_500ep_s7004.json": {
+   "sha256": "162f69c3c84534b5d6a705c23f9344f94cf927ef64b3bcf4cf99348e28e759bd",
+   "bytes": 2382
+  },
+  "experiments/stage5_multiseed/evaluate_train.py": {
+   "sha256": "114d69377b662640f51b4e4867536f67c5d41fa7502ca949dba48dae3e397593",
+   "bytes": 5241
+  },
+  "experiments/stage5_multiseed/out/env/environment.json": {
+   "sha256": "5ac2b285784e47a60284f18672d6106057629acd5518731e2d245ccfe504a948",
+   "bytes": 3022
+  },
+  "experiments/stage5_multiseed/out/env/pip_freeze.txt": {
+   "sha256": "a8b16201f10852d0ec177815bd079aff5d72a5b4928e227bd83fafea7642e9e5",
+   "bytes": 1327
+  },
+  "experiments/stage5_multiseed/out/logs/eval_s7001.err": {
+   "sha256": "9150656eb2c81b8553c6594dcdbc41150be76fd5ba7286470dd8940ea1176fc1",
+   "bytes": 1179
+  },
+  "experiments/stage5_multiseed/out/logs/eval_s7001.out": {
+   "sha256": "60558f7abd770ccb1f8c3fd41f3b6de4bf9025a70e434c6c8ad74d8357b00d2a",
+   "bytes": 1728
+  },
+  "experiments/stage5_multiseed/out/logs/eval_s7002.err": {
+   "sha256": "9150656eb2c81b8553c6594dcdbc41150be76fd5ba7286470dd8940ea1176fc1",
+   "bytes": 1179
+  },
+  "experiments/stage5_multiseed/out/logs/eval_s7002.out": {
+   "sha256": "98f2466adb8f1789bf9d64ae3e827e1916e262902b70de4559f2cd74e3f8ec59",
+   "bytes": 1728
+  },
+  "experiments/stage5_multiseed/out/logs/eval_s7003.err": {
+   "sha256": "9150656eb2c81b8553c6594dcdbc41150be76fd5ba7286470dd8940ea1176fc1",
+   "bytes": 1179
+  },
+  "experiments/stage5_multiseed/out/logs/eval_s7003.out": {
+   "sha256": "c7781e73ca50adfa281a0274d8308cd3d2fe86e317e6efaf4c557f2c9a6a1b07",
+   "bytes": 1728
+  },
+  "experiments/stage5_multiseed/out/logs/eval_s7004.err": {
+   "sha256": "9150656eb2c81b8553c6594dcdbc41150be76fd5ba7286470dd8940ea1176fc1",
+   "bytes": 1179
+  },
+  "experiments/stage5_multiseed/out/logs/eval_s7004.out": {
+   "sha256": "e8c6f0a70bf88adf6c9cc84342f971e983165d5edf403365f3695f147942b1d4",
+   "bytes": 1728
+  },
+  "experiments/stage5_multiseed/out/logs/record_env.err": {
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "bytes": 0
+  },
+  "experiments/stage5_multiseed/out/logs/record_env.out": {
+   "sha256": "5fccc67e0307269f67a27be3403d2aff07ed36d7a1826ed311b6f68488598e1e",
+   "bytes": 3024
+  },
+  "experiments/stage5_multiseed/out/logs/train_s7001.err": {
+   "sha256": "248550cc01da2663f44b8773d133c88d079d4069ef481fabbcc19a48a02a7a07",
+   "bytes": 1575
+  },
+  "experiments/stage5_multiseed/out/logs/train_s7001.out": {
+   "sha256": "2124ed1550b721a60b3c5dc1b7665307b6ca0eab7d62d2c9a8eb77c592d7a866",
+   "bytes": 18762
+  },
+  "experiments/stage5_multiseed/out/logs/train_s7002.err": {
+   "sha256": "248550cc01da2663f44b8773d133c88d079d4069ef481fabbcc19a48a02a7a07",
+   "bytes": 1575
+  },
+  "experiments/stage5_multiseed/out/logs/train_s7002.out": {
+   "sha256": "093d6e37ea854264ae53abf569239ec12ea6ca7ebfd68e7f3a620877cb9a2110",
+   "bytes": 18759
+  },
+  "experiments/stage5_multiseed/out/logs/train_s7003.err": {
+   "sha256": "248550cc01da2663f44b8773d133c88d079d4069ef481fabbcc19a48a02a7a07",
+   "bytes": 1575
+  },
+  "experiments/stage5_multiseed/out/logs/train_s7003.out": {
+   "sha256": "6d500185d2844990f063b10f57e5542c641cf7d7e38cc375ca5b3c118f7ff416",
+   "bytes": 18761
+  },
+  "experiments/stage5_multiseed/out/logs/train_s7004.err": {
+   "sha256": "248550cc01da2663f44b8773d133c88d079d4069ef481fabbcc19a48a02a7a07",
+   "bytes": 1575
+  },
+  "experiments/stage5_multiseed/out/logs/train_s7004.out": {
+   "sha256": "5d389ca8a6834283cb7116f12354adea587e786cccc0d9926502b21e01d96c51",
+   "bytes": 18768
+  },
+  "experiments/stage5_multiseed/out/pooled_results.json": {
+   "sha256": "a2aa389492b63bdde60f133c402b2a31e076b7ce1c04333e126aa863d1eb536f",
+   "bytes": 111594
+  },
+  "experiments/stage5_multiseed/out/preflight.json": {
+   "sha256": "e8013b4590d12d0bc42c93937e4ead8997d43171f4f53da3c1995a22ad6ce1b6",
+   "bytes": 3274
+  },
+  "experiments/stage5_multiseed/out/reference_snapshot.json": {
+   "sha256": "790a70a5d06e09e55ec1da3e9d703323d9bdd56ba045b177721e20b5aa351130",
+   "bytes": 66533
+  },
+  "experiments/stage5_multiseed/out/runner.log": {
+   "sha256": "200438072042b03a4668d8c927103cd2fd106d7616ac725b9da4979d445c12d4",
+   "bytes": 5346
+  },
+  "experiments/stage5_multiseed/out/runner_status.json": {
+   "sha256": "9c5913981be5fa3f87bb5a95cdf6fd09817710e348dd0f366e2310a816b66b77",
+   "bytes": 5535
+  },
+  "experiments/stage5_multiseed/out/s7000/optc/u025/eval_results.json": {
+   "sha256": "39a484c2cfa3e6f2edb7c17c53b00131055fd0c534dd90ab297630bf979b7493",
+   "bytes": 97066
+  },
+  "experiments/stage5_multiseed/out/s7000/optc/u025/eval_samples.json": {
+   "sha256": "29dc38a5cb0c002306c5a06e38b866a0ec833747577461e3afb40c21725ff018",
+   "bytes": 3342159
+  },
+  "experiments/stage5_multiseed/out/s7000/optc/u050/eval_results.json": {
+   "sha256": "867f5d67ab12661ee522f5ec7ea1afcdeeb8da135bd65fd18acc391a54d15375",
+   "bytes": 96762
+  },
+  "experiments/stage5_multiseed/out/s7000/optc/u050/eval_samples.json": {
+   "sha256": "5c53b2057580b47b1a538fba93087c88f85e50f0a50d7b9ac607c5047bfa22e4",
+   "bytes": 3342022
+  },
+  "experiments/stage5_multiseed/out/s7000/optc/u075/eval_results.json": {
+   "sha256": "c8afea1656c90dc3dc6155c5c58698f7aef7d18931bdfe3b561a75aae40ed2db",
+   "bytes": 96768
+  },
+  "experiments/stage5_multiseed/out/s7000/optc/u075/eval_samples.json": {
+   "sha256": "3739069183f9d66b1d10af70f0de137156dd15d2ccfb255f963672582952117d",
+   "bytes": 3341979
+  },
+  "experiments/stage5_multiseed/out/s7000/optc/u100/eval_results.json": {
+   "sha256": "e59c3993b635a161e39ccde30ddf4b88444d25e3abda96fe4b91d5d764a9f538",
+   "bytes": 96686
+  },
+  "experiments/stage5_multiseed/out/s7000/optc/u100/eval_samples.json": {
+   "sha256": "cb596b932f7197530e34c120d7d5cc1183afffa24bc6cc1c14edf1547bb45504",
+   "bytes": 3341832
+  },
+  "experiments/stage5_multiseed/out/s7000/optg/train_eval_results.json": {
+   "sha256": "d9f7dd62b809b583559bce7cf4fae329b16ccf8b5e6cef5a4fa434356850b597",
+   "bytes": 56912
+  },
+  "experiments/stage5_multiseed/out/s7000/optg/train_eval_samples.json": {
+   "sha256": "115cdbd1724ea97ae9e9789126c7e8e8645a1c6e0aa055115bfe9e5e482114a5",
+   "bytes": 1666180
+  },
+  "experiments/stage5_multiseed/out/s7001/eval/eval_dumps.npz": {
+   "sha256": "827188e0bac186a732304d19f307605d6354a408fe4ae5431f8c8c54432f9f01",
+   "bytes": 522978524
+  },
+  "experiments/stage5_multiseed/out/s7001/eval/eval_results.json": {
+   "sha256": "4bce094936d0ae8860e8c9dabfcaaa2adb02606242c3a0144e7bbe08a3c5e8a1",
+   "bytes": 185207
+  },
+  "experiments/stage5_multiseed/out/s7001/eval/eval_samples.json": {
+   "sha256": "f96cec06c026a78054a0e93f441bc5f9d424905593008c86c0476ea407d4e87b",
+   "bytes": 4193797
+  },
+  "experiments/stage5_multiseed/out/s7001/optc/u025/eval_results.json": {
+   "sha256": "784c937ef8df550da4da8a75922200290b29e1cf87b6a329363ea77d7cfdbeaa",
+   "bytes": 97275
+  },
+  "experiments/stage5_multiseed/out/s7001/optc/u025/eval_samples.json": {
+   "sha256": "1af76f98a09747b09c3b230b48dd724b49fd651d28423a46045aef11cbe0f514",
+   "bytes": 3342085
+  },
+  "experiments/stage5_multiseed/out/s7001/optc/u050/eval_results.json": {
+   "sha256": "1b3082bf71f4ee8730f051b90376108117e4a156c7e11ee03809e3a2332c32df",
+   "bytes": 97394
+  },
+  "experiments/stage5_multiseed/out/s7001/optc/u050/eval_samples.json": {
+   "sha256": "9459e7ad2ef7b0210f74a35c311fbd655e1f907a27fedae69379041200626373",
+   "bytes": 3341971
+  },
+  "experiments/stage5_multiseed/out/s7001/optc/u075/eval_results.json": {
+   "sha256": "ff7533063c323287336eb4533a45c60a522a345ae1ce5c42f54b1aea024283aa",
+   "bytes": 97330
+  },
+  "experiments/stage5_multiseed/out/s7001/optc/u075/eval_samples.json": {
+   "sha256": "a20c8dc7eeba12ccb39bab5280d509d705173d81a3911fb5afd32fed2a9ff9a8",
+   "bytes": 3341970
+  },
+  "experiments/stage5_multiseed/out/s7001/optc/u100/eval_results.json": {
+   "sha256": "c3c2441ac04f4b14acbfb73422671fdb319e072cf8bb5179fc1419b09973d92f",
+   "bytes": 97354
+  },
+  "experiments/stage5_multiseed/out/s7001/optc/u100/eval_samples.json": {
+   "sha256": "3d1c0e5fdeafe6483cd6f40774c973750991148c91067624744aee0288aea3ad",
+   "bytes": 3341885
+  },
+  "experiments/stage5_multiseed/out/s7001/optg/train_eval_results.json": {
+   "sha256": "72b08e1730e44ea1cb3dc822d16bd89603862d32c294035e2dee93f2a608c346",
+   "bytes": 57102
+  },
+  "experiments/stage5_multiseed/out/s7001/optg/train_eval_samples.json": {
+   "sha256": "03c9e34f5819b68e3c2eb335d5ac04d0ec6e612768d86da1d8581f664c1bfc98",
+   "bytes": 1666429
+  },
+  "experiments/stage5_multiseed/out/s7001/train/checkpoints/update_000.pt": {
+   "sha256": "945dbf3090ebe48c0353dab3e0e3b08024d5a3f6ee37e3fada1df90efaf689c4",
+   "bytes": 4475
+  },
+  "experiments/stage5_multiseed/out/s7001/train/checkpoints/update_025.pt": {
+   "sha256": "ee6174797ccb947cc8fa48abf9e1059c14f88099125b714c253b078f0a779b21",
+   "bytes": 10869
+  },
+  "experiments/stage5_multiseed/out/s7001/train/checkpoints/update_050.pt": {
+   "sha256": "125c6466292f7d543acddae6be973e1bdada6bf7b599d3303b8cc3a593b62b9e",
+   "bytes": 10869
+  },
+  "experiments/stage5_multiseed/out/s7001/train/checkpoints/update_075.pt": {
+   "sha256": "b635adeed25595713f46a77fdc0353b56b296e40c2f967214bac2153dfadf5e2",
+   "bytes": 10869
+  },
+  "experiments/stage5_multiseed/out/s7001/train/checkpoints/update_100.pt": {
+   "sha256": "e57aa76ea1810d18b7316aeb2f9701ba0e22efd1bcdc99f1f706a3b606d5e2e3",
+   "bytes": 10869
+  },
+  "experiments/stage5_multiseed/out/s7001/train/checkpoints/update_125.pt": {
+   "sha256": "b94b1e62efbf5832dd2a376f414f206e62d92431454efce8003d239ed8f6d5e3",
+   "bytes": 10869
+  },
+  "experiments/stage5_multiseed/out/s7001/train/episodes.csv": {
+   "sha256": "388f8a472fb376bb492d73635b9be3b9a8c15c72d333dfe116a9812af2e971e8",
+   "bytes": 693730
+  },
+  "experiments/stage5_multiseed/out/s7001/train/episodes.json": {
+   "sha256": "6037ebe91dd21595fc9577430e36216042cc5ab4918075d3a3ceeb9b3234f1d9",
+   "bytes": 1654620
+  },
+  "experiments/stage5_multiseed/out/s7001/train/groups.json": {
+   "sha256": "7b01fac7ba56ed3e0be04ff8a78e3c7c57c6aadddaf57747f7774efc86702431",
+   "bytes": 119977
+  },
+  "experiments/stage5_multiseed/out/s7001/train/run.json": {
+   "sha256": "4b08db4098fef50216f31a87eff3f6f64c79ac49fd49c4bd78434f19c8494642",
+   "bytes": 4867
+  },
+  "experiments/stage5_multiseed/out/s7001/train/train_log.txt": {
+   "sha256": "1ea0167dcdf37bf9fa0509997bd1cc1c5db12d1fbc6c4d91837f82b64b74fe12",
+   "bytes": 17326
+  },
+  "experiments/stage5_multiseed/out/s7002/eval/eval_dumps.npz": {
+   "sha256": "ba8bb12a6c7399d4ee73df2a247f6fa10fcde9b70fc9505bfefa9539bed45e6e",
+   "bytes": 522978524
+  },
+  "experiments/stage5_multiseed/out/s7002/eval/eval_results.json": {
+   "sha256": "d8460df4d01207bb7c396504ba944b3a75b34f719c6225d29f10674011ef2060",
+   "bytes": 184543
+  },
+  "experiments/stage5_multiseed/out/s7002/eval/eval_samples.json": {
+   "sha256": "d74a1949f2266b1a196cbb0feed64a95a09af8468818c724472c9150edffcaaa",
+   "bytes": 4193813
+  },
+  "experiments/stage5_multiseed/out/s7002/optc/u025/eval_results.json": {
+   "sha256": "96dbce8e3c1db8e05367bc94491e2a5d452862a88d3ed2e45ca08b3c330fc9df",
+   "bytes": 97477
+  },
+  "experiments/stage5_multiseed/out/s7002/optc/u025/eval_samples.json": {
+   "sha256": "923725719c321759803695eba9735cc10dad7df1fb43292a595bb81a3bf881a9",
+   "bytes": 3341791
+  },
+  "experiments/stage5_multiseed/out/s7002/optc/u050/eval_results.json": {
+   "sha256": "8ad073e138e08a30a1df75c564c3397738409c95f0fe0361f6973199c0492243",
+   "bytes": 97587
+  },
+  "experiments/stage5_multiseed/out/s7002/optc/u050/eval_samples.json": {
+   "sha256": "1464e5a9cdad89c48c992e49bf5987f8226e7f2509a1c5052904f13170ce6b5b",
+   "bytes": 3341802
+  },
+  "experiments/stage5_multiseed/out/s7002/optc/u075/eval_results.json": {
+   "sha256": "0a8a82bc26236dc262f3accc1e0cb5da287dc75e0a739e3cb3e307b5bc58db59",
+   "bytes": 97419
+  },
+  "experiments/stage5_multiseed/out/s7002/optc/u075/eval_samples.json": {
+   "sha256": "2943dc75109f1e139694226dde5add6f85fd6af3cfdd3df443f0292f0bfc234e",
+   "bytes": 3341855
+  },
+  "experiments/stage5_multiseed/out/s7002/optc/u100/eval_results.json": {
+   "sha256": "14f77962997a0ac2d0660faeed923ee4883f0dd652c421d1e9ffba638c23f94a",
+   "bytes": 97095
+  },
+  "experiments/stage5_multiseed/out/s7002/optc/u100/eval_samples.json": {
+   "sha256": "849308bede7d983d9794c82afee7403b21c7c98b50f170f49ab3856e4a383a5b",
+   "bytes": 3341951
+  },
+  "experiments/stage5_multiseed/out/s7002/optg/train_eval_results.json": {
+   "sha256": "13ca46b0feb1ef1767f4284548ecfb6087d3cf6b5e86645ea2e69ac4b8914c8d",
+   "bytes": 57012
+  },
+  "experiments/stage5_multiseed/out/s7002/optg/train_eval_samples.json": {
+   "sha256": "d405e972a5d4f64c3c6e67ea1f7e68f2928e5820ea9510d79902e1a27c7bd105",
+   "bytes": 1666094
+  },
+  "experiments/stage5_multiseed/out/s7002/train/checkpoints/update_000.pt": {
+   "sha256": "0e436b6734a6770d43de8f2ca26962e3330a3bd912aedb8d2165d3b691b6599e",
+   "bytes": 4475
+  },
+  "experiments/stage5_multiseed/out/s7002/train/checkpoints/update_025.pt": {
+   "sha256": "3ca4f308a98034025c35cf97493539387c66efa65f5512ee71e2d413da69551a",
+   "bytes": 10869
+  },
+  "experiments/stage5_multiseed/out/s7002/train/checkpoints/update_050.pt": {
+   "sha256": "861efa1a440fbdfb14aac20d0118e996589b9aeb830e2d1fafea2de7b0bad9be",
+   "bytes": 10869
+  },
+  "experiments/stage5_multiseed/out/s7002/train/checkpoints/update_075.pt": {
+   "sha256": "04df57e02bed004e18fbac903c4300bbe557f6a3b157ab029a47e2a2117da22c",
+   "bytes": 10869
+  },
+  "experiments/stage5_multiseed/out/s7002/train/checkpoints/update_100.pt": {
+   "sha256": "c5c83b031c002d6715d2f4dad3c26f313c3c5c654b1618c234d3eedce405e7c1",
+   "bytes": 10869
+  },
+  "experiments/stage5_multiseed/out/s7002/train/checkpoints/update_125.pt": {
+   "sha256": "789b4b71cc1dd0573e79eb103169ccab9e35626a712711b9917c6db3d6a21642",
+   "bytes": 10869
+  },
+  "experiments/stage5_multiseed/out/s7002/train/episodes.csv": {
+   "sha256": "93bfd84cb395ec71aad56378aeb3ca34ebe82d7b5593f8a6aefb2f24e446dd05",
+   "bytes": 693361
+  },
+  "experiments/stage5_multiseed/out/s7002/train/episodes.json": {
+   "sha256": "815d60a7e2a96d2837c4d856799f776a9006f7e05b9a97adca77f1bb6e818962",
+   "bytes": 1654251
+  },
+  "experiments/stage5_multiseed/out/s7002/train/groups.json": {
+   "sha256": "3a961ecd348dc8130fa4886354a696272d6bf2460b1051111b614fe639187166",
+   "bytes": 119911
+  },
+  "experiments/stage5_multiseed/out/s7002/train/run.json": {
+   "sha256": "85a2c79b302071aff075355672999ce77f3dcd47dcafc84bf175ee96711c5389",
+   "bytes": 4864
+  },
+  "experiments/stage5_multiseed/out/s7002/train/train_log.txt": {
+   "sha256": "d1e1e880518909995e7d3b44971f7a92cd52a7c1e3c9939e1ee1854fc713bbee",
+   "bytes": 17323
+  },
+  "experiments/stage5_multiseed/out/s7003/eval/eval_dumps.npz": {
+   "sha256": "e6d8b664effdb0fe64d258b6c6b03ebce866a385ab30ef3b433f6fd34851072c",
+   "bytes": 522978524
+  },
+  "experiments/stage5_multiseed/out/s7003/eval/eval_results.json": {
+   "sha256": "87284341aaa2a0e0f27e7e93f8e457711aa9f5f4a3e78e5c336d678aab6d7d97",
+   "bytes": 183911
+  },
+  "experiments/stage5_multiseed/out/s7003/eval/eval_samples.json": {
+   "sha256": "7c2ca1e2fd4db5fc431f2eeda1d144a654947d16152542311fc609d8a8503fd2",
+   "bytes": 4193796
+  },
+  "experiments/stage5_multiseed/out/s7003/optc/u025/eval_results.json": {
+   "sha256": "987b5bc5ae050c99a8749f4f3fd8802fe87d79b18de5a95c8cec971081791519",
+   "bytes": 97314
+  },
+  "experiments/stage5_multiseed/out/s7003/optc/u025/eval_samples.json": {
+   "sha256": "aa5542b2e8042d9a287c92a22ce1ffeee178c15990add0b7375b40ad1fbc90db",
+   "bytes": 3342324
+  },
+  "experiments/stage5_multiseed/out/s7003/optc/u050/eval_results.json": {
+   "sha256": "1b1e2f8afaa9e2ad9094c86f0f56b03d7d14a842132fb0a9c12cf65ecc3c3211",
+   "bytes": 96918
+  },
+  "experiments/stage5_multiseed/out/s7003/optc/u050/eval_samples.json": {
+   "sha256": "ba2ae994395ea380801a4c6d4709f88a9736fc59f2b68813edac4a1589f86a09",
+   "bytes": 3342037
+  },
+  "experiments/stage5_multiseed/out/s7003/optc/u075/eval_results.json": {
+   "sha256": "32588beff591a8dfaf05144743c3abf99b7c419c44a095ce57a03a8ff7fbe7cb",
+   "bytes": 96833
+  },
+  "experiments/stage5_multiseed/out/s7003/optc/u075/eval_samples.json": {
+   "sha256": "664b495cac12347290e64cb3851e3d7ca6ddda41c081237320c0fbaf3f2f306e",
+   "bytes": 3341990
+  },
+  "experiments/stage5_multiseed/out/s7003/optc/u100/eval_results.json": {
+   "sha256": "e5cb9af970995fedac86d4ac29ba5c18842f50fe130f219ec4c12ee224c9305b",
+   "bytes": 96846
+  },
+  "experiments/stage5_multiseed/out/s7003/optc/u100/eval_samples.json": {
+   "sha256": "f8cd11563775d5e5945e85db1b8a3ac3a0b61a69a8cca5b151f60ae87adda1ac",
+   "bytes": 3342085
+  },
+  "experiments/stage5_multiseed/out/s7003/optg/train_eval_results.json": {
+   "sha256": "47f3736800226b2e23d19059c7909fd73a995c5f5f3142eae2eee3ef26ccc0c1",
+   "bytes": 56862
+  },
+  "experiments/stage5_multiseed/out/s7003/optg/train_eval_samples.json": {
+   "sha256": "94fdecffe21b7dec4931e666f1186d6423a718c616df7b61990d023484f2df67",
+   "bytes": 1666448
+  },
+  "experiments/stage5_multiseed/out/s7003/train/checkpoints/update_000.pt": {
+   "sha256": "2f22e9bce815b226aba774038198d175fe1359374d4bb29c2aee78953ef4178b",
+   "bytes": 4475
+  },
+  "experiments/stage5_multiseed/out/s7003/train/checkpoints/update_025.pt": {
+   "sha256": "6c3dde538cd47076862637db1df7c42a72d99b4243e406a40ec4653c9242694a",
+   "bytes": 10869
+  },
+  "experiments/stage5_multiseed/out/s7003/train/checkpoints/update_050.pt": {
+   "sha256": "f6f1422aede393f896d0f93b29e0417ce250690f5996cc53e2dc1f96a909ae05",
+   "bytes": 10869
+  },
+  "experiments/stage5_multiseed/out/s7003/train/checkpoints/update_075.pt": {
+   "sha256": "85ecbe9cd4da16040d06e972ce3bd78af346be9b35afa562d596d2a2d622cc9d",
+   "bytes": 10869
+  },
+  "experiments/stage5_multiseed/out/s7003/train/checkpoints/update_100.pt": {
+   "sha256": "35809660314217c3ce6c41dee45cb1fc04535a868b0bd31bf3302725cfca79b6",
+   "bytes": 10869
+  },
+  "experiments/stage5_multiseed/out/s7003/train/checkpoints/update_125.pt": {
+   "sha256": "cdc5ee2e26fc7e311f26c658dd900ccdd6c38656a9ef679852214d31cd033f57",
+   "bytes": 10869
+  },
+  "experiments/stage5_multiseed/out/s7003/train/episodes.csv": {
+   "sha256": "034383827accc01406f8578b4faa038880aca153c4518e208f373acbcfb7bfe5",
+   "bytes": 693833
+  },
+  "experiments/stage5_multiseed/out/s7003/train/episodes.json": {
+   "sha256": "c897f2c4acc05878a093dce02a12f49ff0964a8ea75c26b46ed20e0b45e28b97",
+   "bytes": 1654723
+  },
+  "experiments/stage5_multiseed/out/s7003/train/groups.json": {
+   "sha256": "dc787f453af23f478a8ce198df0701573ffcbed2452fceb8c58d1c20c4949e92",
+   "bytes": 119943
+  },
+  "experiments/stage5_multiseed/out/s7003/train/run.json": {
+   "sha256": "ebebda69eb0750f4c5199abd6aaee97f74d767f950e888575125250675059109",
+   "bytes": 4861
+  },
+  "experiments/stage5_multiseed/out/s7003/train/train_log.txt": {
+   "sha256": "6328c45f98652d6ef9b412759142d905ab4dd7c31d363c8da6727f5c5a2f1267",
+   "bytes": 17325
+  },
+  "experiments/stage5_multiseed/out/s7004/eval/eval_dumps.npz": {
+   "sha256": "5f88c6fb19aa27f5f12f2337208ed0d79957043995a026d4cded0541581ee1ee",
+   "bytes": 522978524
+  },
+  "experiments/stage5_multiseed/out/s7004/eval/eval_results.json": {
+   "sha256": "96b43255a1768e26144b9615380498889e44829662a34f85a844a3015fa12d50",
+   "bytes": 183541
+  },
+  "experiments/stage5_multiseed/out/s7004/eval/eval_samples.json": {
+   "sha256": "329859a47948840a3e0878eb6b609352fcf2986c4a80876c99d151a4d9993ef8",
+   "bytes": 4193132
+  },
+  "experiments/stage5_multiseed/out/s7004/optc/u025/eval_results.json": {
+   "sha256": "c303b713d0a5e7f1d73e87c0864022ce53e414838fb7a4c5adb2d6beb5833b3f",
+   "bytes": 96925
+  },
+  "experiments/stage5_multiseed/out/s7004/optc/u025/eval_samples.json": {
+   "sha256": "f2192bee8747d6bf16a8fd1dc5199ce733ee895944b7df155aa4c895a826df37",
+   "bytes": 3341844
+  },
+  "experiments/stage5_multiseed/out/s7004/optc/u050/eval_results.json": {
+   "sha256": "a4a767a6af43e4480890d050df814e2004cd88d91ca2b19f3131839b45ec3562",
+   "bytes": 96723
+  },
+  "experiments/stage5_multiseed/out/s7004/optc/u050/eval_samples.json": {
+   "sha256": "e69da313161bf748bbf96b1029740b30876d9c041026ab4c7875211ef0f0bcc2",
+   "bytes": 3341412
+  },
+  "experiments/stage5_multiseed/out/s7004/optc/u075/eval_results.json": {
+   "sha256": "434c9579b840b4de0650bd4fbf69e75257e9b8bdd393af48c9fdc3e0a489f2a0",
+   "bytes": 96580
+  },
+  "experiments/stage5_multiseed/out/s7004/optc/u075/eval_samples.json": {
+   "sha256": "648d5e0d77fda30b3a411fec5c18936abd0f5e0099c81a4f4f0def0682560422",
+   "bytes": 3341315
+  },
+  "experiments/stage5_multiseed/out/s7004/optc/u100/eval_results.json": {
+   "sha256": "668e16b311b584ae104de369840440ffb2d3e0e7c64d007a223996a72770d126",
+   "bytes": 96490
+  },
+  "experiments/stage5_multiseed/out/s7004/optc/u100/eval_samples.json": {
+   "sha256": "c895919d9ea13599e7277733038159dfb799b94c6a78610e282442b6196c3f45",
+   "bytes": 3341066
+  },
+  "experiments/stage5_multiseed/out/s7004/optg/train_eval_results.json": {
+   "sha256": "6dd6aaaa50c450fb55745e55c196c2f85f1a396f803b1e3e5c273b51d3566b93",
+   "bytes": 56632
+  },
+  "experiments/stage5_multiseed/out/s7004/optg/train_eval_samples.json": {
+   "sha256": "839d6b98fc49bd83ef7a8f6b32fa3e49284b8d0995e5d19608af25bbf2fd6c98",
+   "bytes": 1666233
+  },
+  "experiments/stage5_multiseed/out/s7004/train/checkpoints/update_000.pt": {
+   "sha256": "3a03be1fceac90afd2d9190f4a867d752545211ecbf98256bc28d1b7f190d632",
+   "bytes": 4475
+  },
+  "experiments/stage5_multiseed/out/s7004/train/checkpoints/update_025.pt": {
+   "sha256": "a149bacb27ec9fc42769d9001e6b9caa6bd6411da49868c23dd634c416d464d8",
+   "bytes": 10869
+  },
+  "experiments/stage5_multiseed/out/s7004/train/checkpoints/update_050.pt": {
+   "sha256": "5f18631af9f7ed2341a13c6ff6e91e3c2d894cdda9fa9b0075fe6c1619aef796",
+   "bytes": 10869
+  },
+  "experiments/stage5_multiseed/out/s7004/train/checkpoints/update_075.pt": {
+   "sha256": "f8a182752b361f135f3a2c32426fb47fca9c5c69e6ca5f0c8915eefe4d328dbb",
+   "bytes": 10869
+  },
+  "experiments/stage5_multiseed/out/s7004/train/checkpoints/update_100.pt": {
+   "sha256": "d165e874637a1a7c53f670aa58182248c15ee78b21d59a4db324d15260830786",
+   "bytes": 10869
+  },
+  "experiments/stage5_multiseed/out/s7004/train/checkpoints/update_125.pt": {
+   "sha256": "8c6b98a526c269c5834e961d4b51e7ccd4527fbdd445b0103d3856047da6798c",
+   "bytes": 10869
+  },
+  "experiments/stage5_multiseed/out/s7004/train/episodes.csv": {
+   "sha256": "516f7b755c97613b8f7cb171ca59e63a520c956661db9fb8471149bdc0d3be81",
+   "bytes": 693127
+  },
+  "experiments/stage5_multiseed/out/s7004/train/episodes.json": {
+   "sha256": "3ddc68bc4e5341f6c14d52369757722dac4efd1f5ae0af27e0df456c09ec8713",
+   "bytes": 1654017
+  },
+  "experiments/stage5_multiseed/out/s7004/train/groups.json": {
+   "sha256": "7c5bedb30b87751f640c23a7af1794c3f29454444f60c1a5294cb800d6dc17ee",
+   "bytes": 119796
+  },
+  "experiments/stage5_multiseed/out/s7004/train/run.json": {
+   "sha256": "e5d04668d5842463dd71c210e959790345278ba1d596fecb7bf1e7d459381455",
+   "bytes": 4859
+  },
+  "experiments/stage5_multiseed/out/s7004/train/train_log.txt": {
+   "sha256": "0bcee17aa75416dfaac902a15caccda1e27de2e57f5e09b9dff91ffc187e41f1",
+   "bytes": 17332
+  },
+  "experiments/stage5_multiseed/out/train_clips.json": {
+   "sha256": "59985cc6a149c15baeecc48fc2a1142d27dd97e49985af96bf63f7e0f8b0f69b",
+   "bytes": 4201
+  },
+  "experiments/stage5_multiseed/pooled_analysis.py": {
+   "sha256": "06048f8df4e999bbbdbc730d6afc230106fea12da25e8958d73d1e101aa04b64",
+   "bytes": 13319
+  },
+  "experiments/stage5_multiseed/preflight.py": {
+   "sha256": "2d52a9fd725e908329127b4d9353a508b5a8f74f086b58df808e7d256e0493c1",
+   "bytes": 8671
+  },
+  "experiments/stage5_multiseed/run_multiseed.py": {
+   "sha256": "44cd04403aceaa8d88a8a21a19d69f84a9b45f195bac60de79417b000feaeea1",
+   "bytes": 2683
+  },
+  "experiments/stage5_multiseed/tests/out/test_stage6.json": {
+   "sha256": "f21780cb7b5b6ca64c27c8a23d6d9039a7967fc2f33ec72aac802513ce8dbaec",
+   "bytes": 1686
+  },
+  "experiments/stage5_multiseed/tests/test_stage6.py": {
+   "sha256": "71b25733816bfc40f57a65b1865062bccdb0434085d56b59745613885dfa3770",
+   "bytes": 5343
+  },
+  "experiments/stage6_gate/fg1_analyse.py": {
+   "sha256": "0c974f6a9c369e6e824def7bb1f2e5bbc155b8677a49a4abae3fec7bfccfb66e",
+   "bytes": 10172
+  },
+  "experiments/stage6_gate/fg1_run.py": {
+   "sha256": "036e9a3784c8ee07312801703cc4e0ff2ddd638da4c704a88d7b9abded9d9dbc",
+   "bytes": 15360
+  },
+  "experiments/stage6_gate/fg1_select.py": {
+   "sha256": "cd473cbeda6192674b7148e1b16ec8cb3c0dc0fe8e36ce8bca3ff0e4e2ab46b7",
+   "bytes": 2001
+  },
+  "experiments/stage6_gate/out/fg1_results.json": {
+   "sha256": "a5002e65bf789d8e34d15653416df331739963e44c13a32ef3d9676ded34a3f2",
+   "bytes": 38959
+  },
+  "experiments/stage6_gate/out/gate_clips.json": {
+   "sha256": "94213e4a4f12d5cac988fb9080efc21c4b25a80eaac675c1ba2a2f3d47da7e8e",
+   "bytes": 1438
+  },
+  "experiments/stage6_gate/out/logs/fg1_prep.err": {
+   "sha256": "9150656eb2c81b8553c6594dcdbc41150be76fd5ba7286470dd8940ea1176fc1",
+   "bytes": 1179
+  },
+  "experiments/stage6_gate/out/logs/fg1_prep.out": {
+   "sha256": "f0c7eed1b56be82e9620b25d7fc1726d9486815fa1c2b71ebd3dd8f65e694b69",
+   "bytes": 1504
+  },
+  "experiments/stage6_gate/out/logs/fg1_test_prep.err": {
+   "sha256": "9150656eb2c81b8553c6594dcdbc41150be76fd5ba7286470dd8940ea1176fc1",
+   "bytes": 1179
+  },
+  "experiments/stage6_gate/out/logs/fg1_test_prep.out": {
+   "sha256": "a11d514412e71db1b8165b6e4c01896f87b8fcc79281e83b2f3bba761df99300",
+   "bytes": 1503
+  },
+  "experiments/stage6_gate/out/logs/fg1_test_V1.err": {
+   "sha256": "67603d57571dc7ad41dc852ddb34f473516b06258933fa139cc729b421b36504",
+   "bytes": 1610
+  },
+  "experiments/stage6_gate/out/logs/fg1_test_V1.out": {
+   "sha256": "f0a582cc861bacede694ca5f9575579a98baa9d823f2b31b4326da4e173dd098",
+   "bytes": 1662
+  },
+  "experiments/stage6_gate/out/logs/fg1_test_V2.err": {
+   "sha256": "ca8dcadc0909a7af315257a7d3a7e12476c1a3d97f0712481c7ed68ca9991883",
+   "bytes": 1584
+  },
+  "experiments/stage6_gate/out/logs/fg1_test_V2.out": {
+   "sha256": "0fbd8859f877d325605aabcc0a3f9f80faef691ff336a8ac4ea246c9dc7b0b2e",
+   "bytes": 1662
+  },
+  "experiments/stage6_gate/out/logs/fg1_test_V3.err": {
+   "sha256": "ca8dcadc0909a7af315257a7d3a7e12476c1a3d97f0712481c7ed68ca9991883",
+   "bytes": 1584
+  },
+  "experiments/stage6_gate/out/logs/fg1_test_V3.out": {
+   "sha256": "513917ba82344a80604cedf52ac6e50d1888d8cec18c272714517e89da979395",
+   "bytes": 1662
+  },
+  "experiments/stage6_gate/out/logs/fg1_V1.err": {
+   "sha256": "67603d57571dc7ad41dc852ddb34f473516b06258933fa139cc729b421b36504",
+   "bytes": 1610
+  },
+  "experiments/stage6_gate/out/logs/fg1_V1.out": {
+   "sha256": "5b91e6c364aa80e3f141a49cb7afb3fd7e2de57f71c1f0a9093fc3f4e2207364",
+   "bytes": 4596
+  },
+  "experiments/stage6_gate/out/logs/fg1_V2.err": {
+   "sha256": "ca8dcadc0909a7af315257a7d3a7e12476c1a3d97f0712481c7ed68ca9991883",
+   "bytes": 1584
+  },
+  "experiments/stage6_gate/out/logs/fg1_V2.out": {
+   "sha256": "689c4d94ee9a795ebb5510634c461e97d8f9265792b245c2e5d35a3c365c3588",
+   "bytes": 4596
+  },
+  "experiments/stage6_gate/out/logs/fg1_V3.err": {
+   "sha256": "ca8dcadc0909a7af315257a7d3a7e12476c1a3d97f0712481c7ed68ca9991883",
+   "bytes": 1584
+  },
+  "experiments/stage6_gate/out/logs/fg1_V3.out": {
+   "sha256": "cc490d9b9843fcf4ac5952464c0b1d28177d2f03fdde004e3dd1bfce4958f8d0",
+   "bytes": 4596
+  },
+  "experiments/stage6_gate/out/logs/optc_s7000_u025.err": {
+   "sha256": "9150656eb2c81b8553c6594dcdbc41150be76fd5ba7286470dd8940ea1176fc1",
+   "bytes": 1179
+  },
+  "experiments/stage6_gate/out/logs/optc_s7000_u025.out": {
+   "sha256": "b6476087e6bab5e13de0875841b233d29bb2c4419de7d7aaed2d17f8042fed56",
+   "bytes": 1727
+  },
+  "experiments/stage6_gate/out/logs/optc_s7000_u050.err": {
+   "sha256": "9150656eb2c81b8553c6594dcdbc41150be76fd5ba7286470dd8940ea1176fc1",
+   "bytes": 1179
+  },
+  "experiments/stage6_gate/out/logs/optc_s7000_u050.out": {
+   "sha256": "7c18e0887858dc5c3ae92b71a37b92ac5c0ebf3b982eac27752b8edae19e568a",
+   "bytes": 1727
+  },
+  "experiments/stage6_gate/out/logs/optc_s7000_u075.err": {
+   "sha256": "9150656eb2c81b8553c6594dcdbc41150be76fd5ba7286470dd8940ea1176fc1",
+   "bytes": 1179
+  },
+  "experiments/stage6_gate/out/logs/optc_s7000_u075.out": {
+   "sha256": "d4e146b7f1f71011a9bf561f37d716da34cbcb024714757fcff478dbeec62808",
+   "bytes": 1727
+  },
+  "experiments/stage6_gate/out/logs/optc_s7000_u100.err": {
+   "sha256": "9150656eb2c81b8553c6594dcdbc41150be76fd5ba7286470dd8940ea1176fc1",
+   "bytes": 1179
+  },
+  "experiments/stage6_gate/out/logs/optc_s7000_u100.out": {
+   "sha256": "8b526a66ec787b014a44df7561974bc0cd0a4a83fe34959918d1df82e991762e",
+   "bytes": 1727
+  },
+  "experiments/stage6_gate/out/logs/optc_s7001_u025.err": {
+   "sha256": "9150656eb2c81b8553c6594dcdbc41150be76fd5ba7286470dd8940ea1176fc1",
+   "bytes": 1179
+  },
+  "experiments/stage6_gate/out/logs/optc_s7001_u025.out": {
+   "sha256": "428ca61f44558ff0b2ffedba46b8b021d13cb104b347a6f504d0c9c7b85bccd8",
+   "bytes": 1727
+  },
+  "experiments/stage6_gate/out/logs/optc_s7001_u050.err": {
+   "sha256": "9150656eb2c81b8553c6594dcdbc41150be76fd5ba7286470dd8940ea1176fc1",
+   "bytes": 1179
+  },
+  "experiments/stage6_gate/out/logs/optc_s7001_u050.out": {
+   "sha256": "6e6e861b86d9d466ba405482130024ee72e24b603dbc27d0ca924668c580dbf0",
+   "bytes": 1727
+  },
+  "experiments/stage6_gate/out/logs/optc_s7001_u075.err": {
+   "sha256": "9150656eb2c81b8553c6594dcdbc41150be76fd5ba7286470dd8940ea1176fc1",
+   "bytes": 1179
+  },
+  "experiments/stage6_gate/out/logs/optc_s7001_u075.out": {
+   "sha256": "8691df4e53d13e6d2e7a0740111a25ce5b113c5f9503021d266a9cfd87b52143",
+   "bytes": 1727
+  },
+  "experiments/stage6_gate/out/logs/optc_s7001_u100.err": {
+   "sha256": "9150656eb2c81b8553c6594dcdbc41150be76fd5ba7286470dd8940ea1176fc1",
+   "bytes": 1179
+  },
+  "experiments/stage6_gate/out/logs/optc_s7001_u100.out": {
+   "sha256": "0f606ca71b16353cc8ef99fcb56d2ab78c3c2edb311bbd427a6dc3bbbf0da37a",
+   "bytes": 1727
+  },
+  "experiments/stage6_gate/out/logs/optc_s7002_u025.err": {
+   "sha256": "9150656eb2c81b8553c6594dcdbc41150be76fd5ba7286470dd8940ea1176fc1",
+   "bytes": 1179
+  },
+  "experiments/stage6_gate/out/logs/optc_s7002_u025.out": {
+   "sha256": "45ab9c8581f86906868499a7fedb3f33e2694328043499704aa800d84fb021c8",
+   "bytes": 1727
+  },
+  "experiments/stage6_gate/out/logs/optc_s7002_u050.err": {
+   "sha256": "9150656eb2c81b8553c6594dcdbc41150be76fd5ba7286470dd8940ea1176fc1",
+   "bytes": 1179
+  },
+  "experiments/stage6_gate/out/logs/optc_s7002_u050.out": {
+   "sha256": "d3eeeb289ae291d3878e2460b6ad09434a5e53cacf11e7b0291ea391a3b78e0c",
+   "bytes": 1727
+  },
+  "experiments/stage6_gate/out/logs/optc_s7002_u075.err": {
+   "sha256": "9150656eb2c81b8553c6594dcdbc41150be76fd5ba7286470dd8940ea1176fc1",
+   "bytes": 1179
+  },
+  "experiments/stage6_gate/out/logs/optc_s7002_u075.out": {
+   "sha256": "15428bd35f5e5aecc58a4a9e7dbb165f26bac598b192d21a43e439468fbc4857",
+   "bytes": 1727
+  },
+  "experiments/stage6_gate/out/logs/optc_s7002_u100.err": {
+   "sha256": "9150656eb2c81b8553c6594dcdbc41150be76fd5ba7286470dd8940ea1176fc1",
+   "bytes": 1179
+  },
+  "experiments/stage6_gate/out/logs/optc_s7002_u100.out": {
+   "sha256": "99860ce321db92d373da6a8eb5787b507ce1fae86fcd5c5d1c6a6b9ec7d99630",
+   "bytes": 1727
+  },
+  "experiments/stage6_gate/out/logs/optc_s7003_u025.err": {
+   "sha256": "9150656eb2c81b8553c6594dcdbc41150be76fd5ba7286470dd8940ea1176fc1",
+   "bytes": 1179
+  },
+  "experiments/stage6_gate/out/logs/optc_s7003_u025.out": {
+   "sha256": "871eb7db20b1107e83d18092db954551316663e5812d4fdfc3eaefb45652dc6e",
+   "bytes": 1727
+  },
+  "experiments/stage6_gate/out/logs/optc_s7003_u050.err": {
+   "sha256": "9150656eb2c81b8553c6594dcdbc41150be76fd5ba7286470dd8940ea1176fc1",
+   "bytes": 1179
+  },
+  "experiments/stage6_gate/out/logs/optc_s7003_u050.out": {
+   "sha256": "db34c712b10cc074defee57ddf90d74d01d63e39dd17c667116eadd7b8a3691e",
+   "bytes": 1727
+  },
+  "experiments/stage6_gate/out/logs/optc_s7003_u075.err": {
+   "sha256": "9150656eb2c81b8553c6594dcdbc41150be76fd5ba7286470dd8940ea1176fc1",
+   "bytes": 1179
+  },
+  "experiments/stage6_gate/out/logs/optc_s7003_u075.out": {
+   "sha256": "c1c8ce2b866418be562d37a7ec0364bd3422f9df33ee04c863e738310bb6e872",
+   "bytes": 1727
+  },
+  "experiments/stage6_gate/out/logs/optc_s7003_u100.err": {
+   "sha256": "9150656eb2c81b8553c6594dcdbc41150be76fd5ba7286470dd8940ea1176fc1",
+   "bytes": 1179
+  },
+  "experiments/stage6_gate/out/logs/optc_s7003_u100.out": {
+   "sha256": "37653b3e1dac64b02464d1d86749ddc22f49dd025041577e70a22e60074fb02c",
+   "bytes": 1727
+  },
+  "experiments/stage6_gate/out/logs/optc_s7004_u025.err": {
+   "sha256": "9150656eb2c81b8553c6594dcdbc41150be76fd5ba7286470dd8940ea1176fc1",
+   "bytes": 1179
+  },
+  "experiments/stage6_gate/out/logs/optc_s7004_u025.out": {
+   "sha256": "3723151d3cc8a88f2f9e2174a2f2ad65a5273dcd6423bf364956cf90e916cc03",
+   "bytes": 1727
+  },
+  "experiments/stage6_gate/out/logs/optc_s7004_u050.err": {
+   "sha256": "9150656eb2c81b8553c6594dcdbc41150be76fd5ba7286470dd8940ea1176fc1",
+   "bytes": 1179
+  },
+  "experiments/stage6_gate/out/logs/optc_s7004_u050.out": {
+   "sha256": "a0dfb567e49c852c373f0164ecd76fd9345352c690a33acf4944bf50f276b504",
+   "bytes": 1727
+  },
+  "experiments/stage6_gate/out/logs/optc_s7004_u075.err": {
+   "sha256": "9150656eb2c81b8553c6594dcdbc41150be76fd5ba7286470dd8940ea1176fc1",
+   "bytes": 1179
+  },
+  "experiments/stage6_gate/out/logs/optc_s7004_u075.out": {
+   "sha256": "20fab57b62ace9eef56cbfa3ef8325d9a30ecdec2ba232d6603b075e2281585b",
+   "bytes": 1727
+  },
+  "experiments/stage6_gate/out/logs/optc_s7004_u100.err": {
+   "sha256": "9150656eb2c81b8553c6594dcdbc41150be76fd5ba7286470dd8940ea1176fc1",
+   "bytes": 1179
+  },
+  "experiments/stage6_gate/out/logs/optc_s7004_u100.out": {
+   "sha256": "48db1acff36880347ff86f74b6edda6f0952f11b5e39a8aa9e66233dd7b20a78",
+   "bytes": 1727
+  },
+  "experiments/stage6_gate/out/logs/optg_s7000.err": {
+   "sha256": "9150656eb2c81b8553c6594dcdbc41150be76fd5ba7286470dd8940ea1176fc1",
+   "bytes": 1179
+  },
+  "experiments/stage6_gate/out/logs/optg_s7000.out": {
+   "sha256": "7732f157d0e97d991399016290010b05d10d93dff664a978315d22eb0b5a091f",
+   "bytes": 1734
+  },
+  "experiments/stage6_gate/out/logs/optg_s7001.err": {
+   "sha256": "9150656eb2c81b8553c6594dcdbc41150be76fd5ba7286470dd8940ea1176fc1",
+   "bytes": 1179
+  },
+  "experiments/stage6_gate/out/logs/optg_s7001.out": {
+   "sha256": "34438341a959919b2008c8f7dd30f32312381821b74e5b089514e0651de1df2a",
+   "bytes": 1738
+  },
+  "experiments/stage6_gate/out/logs/optg_s7002.err": {
+   "sha256": "9150656eb2c81b8553c6594dcdbc41150be76fd5ba7286470dd8940ea1176fc1",
+   "bytes": 1179
+  },
+  "experiments/stage6_gate/out/logs/optg_s7002.out": {
+   "sha256": "9019b67da910f349fc8f0dc182b0dd41679744abbda40a50dd42fe41755ab708",
+   "bytes": 1736
+  },
+  "experiments/stage6_gate/out/logs/optg_s7003.err": {
+   "sha256": "9150656eb2c81b8553c6594dcdbc41150be76fd5ba7286470dd8940ea1176fc1",
+   "bytes": 1179
+  },
+  "experiments/stage6_gate/out/logs/optg_s7003.out": {
+   "sha256": "18325276759f0e5f57067a606e28918bc2a0939f18d6a4d9a14cddc97e093536",
+   "bytes": 1732
+  },
+  "experiments/stage6_gate/out/logs/optg_s7004.err": {
+   "sha256": "9150656eb2c81b8553c6594dcdbc41150be76fd5ba7286470dd8940ea1176fc1",
+   "bytes": 1179
+  },
+  "experiments/stage6_gate/out/logs/optg_s7004.out": {
+   "sha256": "f1b807452fc5234c7c685fff28d96fee2e53d3d3d0b8c68b3c4f2d6b426386af",
+   "bytes": 1731
+  },
+  "experiments/stage6_gate/out/prep.npz": {
+   "sha256": "02f2d8f069308747a52fda7c3383eaade3f775acf105da7289576dab4bedfe71",
+   "bytes": 300094362
+  },
+  "experiments/stage6_gate/out/run_prep.json": {
+   "sha256": "2c5c768370bf64d1f89cd866e8a7fae629363ff1e56ca88181418ddb8eab89db",
+   "bytes": 958
+  },
+  "experiments/stage6_gate/out/run_V1.json": {
+   "sha256": "4404b7e6e33cf4fd8f2fdcb6d89a20e42aca33a1ed61fac1dac871f13e118996",
+   "bytes": 1050
+  },
+  "experiments/stage6_gate/out/run_V2.json": {
+   "sha256": "e8a919e3982973b4cd079fca20f8afa8a5c5ca7d0d193c9f63b89670b1862275",
+   "bytes": 1130
+  },
+  "experiments/stage6_gate/out/run_V3.json": {
+   "sha256": "4eb43de06887ddf63616d09b1eac4ec0d1857a979e40647cba91f41282dce166",
+   "bytes": 1162
+  },
+  "experiments/stage6_gate/out/runner.log": {
+   "sha256": "73ee47cf84419c737bbd764b166a1aea063c0237913a16d44839a80f71a2a123",
+   "bytes": 20285
+  },
+  "experiments/stage6_gate/out/runner_status.json": {
+   "sha256": "3f0ec55b789f3a1b2496e3e1728d2742fa41369bedf4114d44b2a8998077898b",
+   "bytes": 20978
+  },
+  "experiments/stage6_gate/out/V1_fit_history.npz": {
+   "sha256": "fd127afbf6b49b03006c05817d5aacdd030e8e1d09bbf6961b473013b71115b9",
+   "bytes": 197810
+  },
+  "experiments/stage6_gate/out/V1_heldout.npz": {
+   "sha256": "b9e2d5af2a08b5d6a46edff08ae25bb438fdd9881f6441d6e2f03bfaa14e0277",
+   "bytes": 112072114
+  },
+  "experiments/stage6_gate/out/V1_params.pt": {
+   "sha256": "4735fa6a3bcc9334b288cf012b06db599681713cebf453e60033b18137b08958",
+   "bytes": 592511
+  },
+  "experiments/stage6_gate/out/V2_fit_history.npz": {
+   "sha256": "aae3ca5fc0a1124287944348b1a98755d2549b3988aef9c62e4d11ffdcebe454",
+   "bytes": 197810
+  },
+  "experiments/stage6_gate/out/V2_heldout.npz": {
+   "sha256": "69f623484d110f36c2496a71613f966255e1a74c564f0d4a048cbc41dd8bded2",
+   "bytes": 112072114
+  },
+  "experiments/stage6_gate/out/V2_params.pt": {
+   "sha256": "a3d3503e4ac185ecb7b0568d6d9ddff2c0fca0f89de089b3c5065c2e03976266",
+   "bytes": 44463
+  },
+  "experiments/stage6_gate/out/V2_shuffle.npz": {
+   "sha256": "79636b792778a968dfe06438b6d453a5722ab242d0f1e48cebd83112f3fc0c14",
+   "bytes": 112072114
+  },
+  "experiments/stage6_gate/out/V3_fit_history.npz": {
+   "sha256": "efca2e69ec44ee172f6da820d7cdb0dba9bd4c6f9bea51e5d1bbef17a5286d6b",
+   "bytes": 197810
+  },
+  "experiments/stage6_gate/out/V3_heldout.npz": {
+   "sha256": "d8eab8cda2406c4e56a792d72eccd631cbd62b308f7e01b4ccd4fe5c42b37946",
+   "bytes": 112072114
+  },
+  "experiments/stage6_gate/out/V3_params.pt": {
+   "sha256": "d75569367789905c8f060132d5c2f94015335a8ddd251985b43dd89440ada4eb",
+   "bytes": 88395
+  },
+  "experiments/stage6_gate/out/V3_shuffle.npz": {
+   "sha256": "931b88f930e352060ab81ae40af38173b30ed1b7880d4718751e3273f7cbb1e6",
+   "bytes": 112072114
+  },
+  "experiments/stage6_gate/out_test/fg1_results.json": {
+   "sha256": "bed961c5182899cdaeab7c51834d2e64b18f60d70e075bf3eb559807edd2bba0",
+   "bytes": 25876
+  },
+  "experiments/stage6_gate/out_test/gate_clips.json": {
+   "sha256": "94213e4a4f12d5cac988fb9080efc21c4b25a80eaac675c1ba2a2f3d47da7e8e",
+   "bytes": 1438
+  },
+  "experiments/stage6_gate/out_test/prep.npz": {
+   "sha256": "efcd660508f2224c6a8c50762dcefbd43224f4ddcb40a1166cf84345e3dbd40f",
+   "bytes": 9381818
+  },
+  "experiments/stage6_gate/out_test/run_prep.json": {
+   "sha256": "cc6034a17be1e640f6a95629a79eee5d390be9ed61d71915654f3f00f19bcac8",
+   "bytes": 961
+  },
+  "experiments/stage6_gate/out_test/run_V1.json": {
+   "sha256": "44371b211d8dd157ef0f989a417352c3e38e1767b2028260700b31aff65db8de",
+   "bytes": 1053
+  },
+  "experiments/stage6_gate/out_test/run_V2.json": {
+   "sha256": "29511f8d432e000c2cc09e49266fb7f6a0a58ec882acd86103584e3d0d41b836",
+   "bytes": 1136
+  },
+  "experiments/stage6_gate/out_test/run_V3.json": {
+   "sha256": "933e5d27653c45f169b7085806ff551b0e5ab800aae7cccf615f3fa307b24f2a",
+   "bytes": 1166
+  },
+  "experiments/stage6_gate/out_test/V1_fit_history.npz": {
+   "sha256": "7b284849e8b5d95fde80cea58516b315959dd1faf26498446cd581511fc3eaeb",
+   "bytes": 2226
+  },
+  "experiments/stage6_gate/out_test/V1_heldout.npz": {
+   "sha256": "d44b8042eb3a3ce21591c9c3ea244440793d97188521dcb033c5f8e67a17e871",
+   "bytes": 3503666
+  },
+  "experiments/stage6_gate/out_test/V1_params.pt": {
+   "sha256": "0e70257bde2ec1ed7ad2301fa4f8058b44942c6cd68768eacbcda5757caf6abf",
+   "bytes": 75181
+  },
+  "experiments/stage6_gate/out_test/V2_fit_history.npz": {
+   "sha256": "29b713f7b8ca48c821cc0ae1ea4257f68e15b09df76a41a29cfd4272c051af3c",
+   "bytes": 2226
+  },
+  "experiments/stage6_gate/out_test/V2_heldout.npz": {
+   "sha256": "7eb57fe83fadea72cc9764928804909ace4f917630190bddec152424dd8940fe",
+   "bytes": 3503666
+  },
+  "experiments/stage6_gate/out_test/V2_params.pt": {
+   "sha256": "6488dca63e4cd338179900f9cc7c0546080b68f4eaa8ab3fefa9e9accca0776e",
+   "bytes": 6697
+  },
+  "experiments/stage6_gate/out_test/V2_shuffle.npz": {
+   "sha256": "9b03d9f33c7d9581a900e4bba1248a61664b0f9b9daf2f56f40173ce88ce55a4",
+   "bytes": 3503666
+  },
+  "experiments/stage6_gate/out_test/V3_fit_history.npz": {
+   "sha256": "e7e4936cfdb2418109f3aeca4eafd95873052400869b5004b0ecc34215c25a24",
+   "bytes": 2226
+  },
+  "experiments/stage6_gate/out_test/V3_heldout.npz": {
+   "sha256": "b7a7913fa7cd9088dd9b7e4dba663b8da1abf2a9076b588633195e3be9d6ec0d",
+   "bytes": 3503666
+  },
+  "experiments/stage6_gate/out_test/V3_params.pt": {
+   "sha256": "a77393faf1b939cf4451ba098386252ca51feba836809f74fe392f58b46786c3",
+   "bytes": 11999
+  },
+  "experiments/stage6_gate/out_test/V3_shuffle.npz": {
+   "sha256": "61ae38a4d8a069db8daf10cae8266fb00c602b34d6e9ee8277f55dbe718f72ef",
+   "bytes": 3503666
+  },
+  "experiments/stage6_gate/run_stage6.py": {
+   "sha256": "1a5bbd61e0d86599e248a4d0c820e6eef0fe79c29181ba31190039d3a0c3681e",
+   "bytes": 3835
+  },
+  "experiments/stage6_final/compute_table.json": {
+   "sha256": "a38294844a5dd18e6e717db9bdb9e87e458f8e6f1159a87e5d0c33cd7d264dc9",
+   "bytes": 5348
+  },
+  "experiments/stage6_final/deck_content.py": {
+   "sha256": "901dc2266398505be9c806ebc2eb71a5c8cf265accc6fdf24caa2cdca4242ba4",
+   "bytes": 18418
+  },
+  "experiments/stage6_final/deckgen.py": {
+   "sha256": "556f29607daf429586823a579573d0a084887e52caea0165aaa761e940e01f6d",
+   "bytes": 26418
+  },
+  "experiments/stage6_final/figures/f01_training_return.png": {
+   "sha256": "faebb00555a5e699f251d09b48d1c5e8759e5472e70227371e47937da045d913",
+   "bytes": 198491
+  },
+  "experiments/stage6_final/figures/f02_heldout_vs_progress.png": {
+   "sha256": "a2705babeab19a330a0c2585a5e2c33d6bce4f9516f49f9fbd43c1ef744a80ba",
+   "bytes": 92617
+  },
+  "experiments/stage6_final/figures/f03_training_constraints.png": {
+   "sha256": "059a74e60f6c93dd5dd064b1feaf454656e1b71badf7c1577604141070714a57",
+   "bytes": 90564
+  },
+  "experiments/stage6_final/figures/f04_coordination_multiseed.png": {
+   "sha256": "92335c627c4a1a1dfff62a67ae440449fb5d7b838b9bd8f1a4e8f7a42461b390",
+   "bytes": 77362
+  },
+  "experiments/stage6_final/figures/f04b_coordination_multiseed_J.png": {
+   "sha256": "4bc2b5894e3d1d5e59ac9bd812f46a753c62abb2745a91c01d4c7a12668d94f8",
+   "bytes": 43708
+  },
+  "experiments/stage6_final/figures/f05_preservation_multiseed.png": {
+   "sha256": "d558d9d3afe706fed6ab940bcc09178a19fdf07dc634d8f0792d19bafaed8e3a",
+   "bytes": 84543
+  },
+  "experiments/stage6_final/figures/f06_kl_multiseed.png": {
+   "sha256": "9fee7ed2b260a4e85485b0e0a2444871d46917b2efcd3e170ba6d7d2a5bcd907",
+   "bytes": 94817
+  },
+  "experiments/stage6_final/figures/f07_mc_history.png": {
+   "sha256": "413254e659204d2b116cdd0b7b949377b6527ede193ef66aab17af0574d8efaa",
+   "bytes": 103316
+  },
+  "experiments/stage6_final/figures/f08_fg1_comparison.png": {
+   "sha256": "082e4d94fdd1cd351162176bd4dc4b9a87f150adc8454ef5a353f15d9bb34abf",
+   "bytes": 85767
+  },
+  "experiments/stage6_final/figures/f08b_cross_study_kl.png": {
+   "sha256": "c4b2da408cdd10263a3473483aad40db2fe7d9531c831621100b120dbf421c45",
+   "bytes": 72146
+  },
+  "experiments/stage6_final/figures/f09_seed_stability.png": {
+   "sha256": "adc117094b3b914470df0b3709354cefc9d79a43b67b17faaf6c8c7b3dbe8d46",
+   "bytes": 83154
+  },
+  "experiments/stage6_final/figures/f10_generalisation.png": {
+   "sha256": "f429155556f8a03750b7e6d86e712653cb649babed46ddf619078edf0cffb9c4",
+   "bytes": 88040
+  },
+  "experiments/stage6_final/figures/f11_compute.png": {
+   "sha256": "ca8ac163298d06345e43e26c4846c4c897a0a58dace8437d2102f5dae2799d33",
+   "bytes": 187422
+  },
+  "experiments/stage6_final/figures/f12_ablations.png": {
+   "sha256": "6097162cd4715d927e78938e760ac67ed546a2179dd3ddd2f0223d98238eb32c",
+   "bytes": 85394
+  },
+  "experiments/stage6_final/figures_index.json": {
+   "sha256": "5f82d34678f82b41878f6e4ba64db532ed63c99852de2df28f2fe40605fa3697",
+   "bytes": 1369
+  },
+  "experiments/stage6_final/final_data.py": {
+   "sha256": "dc1af3fe073a1747d73c96221c1bf3afde70e086073cf2bece87e114f6935c9a",
+   "bytes": 2927
+  },
+  "experiments/stage6_final/make_figures.py": {
+   "sha256": "0432c60b7af17d9d1be3bd43c6df63b444b3144e8883a87186efc47b47b64a8e",
+   "bytes": 23637
+  },
+  "experiments/stage6_final/manifest.py": {
+   "sha256": "f8541e810d72fbbf7bae28e0797487f2924c199f0ac2d8239d22430645ad2607",
+   "bytes": 5114
+  },
+  "experiments/stage6_final/posthoc_return/f13_posthoc_return.png": {
+   "sha256": "afa5611dc91d2ce71d512f91197470589d3b665221e905cc91a6490f1094c38d",
+   "bytes": 222304
+  },
+  "experiments/stage6_final/posthoc_return/posthoc_return_results.json": {
+   "sha256": "70e807c02cd7e90e85865c8e628ed482536fd1e4ce85083e5dbe3bafa8afa7f9",
+   "bytes": 121832
+  },
+  "experiments/stage6_final/posthoc_return.py": {
+   "sha256": "31bd210888eb77431fc8fc1d4e6f5b10a25c96a28282b202c4edb3dd6f7b8dfb",
+   "bytes": 12857
+  },
+  "experiments/stage6_final/report_build.py": {
+   "sha256": "644888e78dfb1dfb56c1bf0352c7524552e52faedd506393dc16a698eec079ef",
+   "bytes": 9944
+  },
+  "experiments/stage6_final/report_content.py": {
+   "sha256": "7a22acded06929a54ef9bfa0d566f89b981cacef0b77026cd04ab693995b5cc0",
+   "bytes": 43173
+  },
+  "experiments/stage6_final/run_all_tests.py": {
+   "sha256": "92b551ef1f4416ad6b56f74ced871da98cfc62534a2076a697d750b2cb180d7c",
+   "bytes": 2828
+  },
+  "experiments/stage6_final/test_out/c_c3_fixes.json": {
+   "sha256": "2d82328ac9f1f903c277e75c74edaf47b2ad1bad98162894a312d1876bd3e42e",
+   "bytes": 13103
+  },
+  "experiments/stage6_final/test_out/c_c3_fixes.log": {
+   "sha256": "ed9c5e8475af9a2eadea267fa34a3ac86c275ae75c4e5463b318c2b000e02afb",
+   "bytes": 1332
+  },
+  "experiments/stage6_final/test_out/e2e_selftest.log": {
+   "sha256": "3ebd31c29b48eacb3443d7d70ef706b022f4a6e5e40ef4e8e3feb9109c032991",
+   "bytes": 2529
+  },
+  "experiments/stage6_final/test_out/mc_reward.log": {
+   "sha256": "61f6d2017e1490808c906b140611cd8de5480227993b1843c9b358b9db21e5ec",
+   "bytes": 2095
+  },
+  "experiments/stage6_final/test_out/phase0_selftest.log": {
+   "sha256": "42d37e34218aeefffb959475428d0493b15ec97365c586fe9101b4536e48c016",
+   "bytes": 1031
+  },
+  "experiments/stage6_final/test_out/stage5/bad_config.json": {
+   "sha256": "355294630c83bb7d57ebe1c1cd35f0bd77e5a73e671762fe1eb65334fdac2129",
+   "bytes": 2057
+  },
+  "experiments/stage6_final/test_out/stage5/integration_tests.json": {
+   "sha256": "f85414a9427d863e218ca656446688c1a613ae63318d468ea57e7e2aa9317686",
+   "bytes": 2772
+  },
+  "experiments/stage6_final/test_out/stage5/mini_eval/eval_results.json": {
+   "sha256": "eafcf11d6ea900113fdc9012d4f809c9a0d074d8d18050ef9c3aebc4a272b726",
+   "bytes": 31987
+  },
+  "experiments/stage6_final/test_out/stage5/mini_eval/eval_samples.json": {
+   "sha256": "21ed7630b46b931803c9c6981e7b1568717c8dfaf80da17e2694b610b56b62ba",
+   "bytes": 8155
+  },
+  "experiments/stage6_final/test_out/stage5/mini_eval.log": {
+   "sha256": "3682810343689027344b5396e95a6a63e7a7e1e438bbaa3435c506652a1bb092",
+   "bytes": 2681
+  },
+  "experiments/stage6_final/test_out/stage5/mini_train_a/checkpoints/update_000.pt": {
+   "sha256": "4ea1d3b1b3534af1f2d12910c10fdfeceb5217afed873363beaeb6730ea914ff",
+   "bytes": 4475
+  },
+  "experiments/stage6_final/test_out/stage5/mini_train_a/checkpoints/update_001.pt": {
+   "sha256": "0f68a0df51a37c211ad0f4c6592e439ad9f7ef8172e4e0024082df06faef3f2e",
+   "bytes": 10869
+  },
+  "experiments/stage6_final/test_out/stage5/mini_train_a/checkpoints/update_002.pt": {
+   "sha256": "9ce6672bb12e2ace4e5b65428f0b260f88c6d05b10eaae740b853d8548205893",
+   "bytes": 10869
+  },
+  "experiments/stage6_final/test_out/stage5/mini_train_a/episodes.csv": {
+   "sha256": "d9a7cf71a02d0e757f48164b06ed3a8a028e5b8c4b28b0e11d10f6a808d47823",
+   "bytes": 13166
+  },
+  "experiments/stage6_final/test_out/stage5/mini_train_a/episodes.json": {
+   "sha256": "d31a7a0abbe681e6a60142409c269cc0e004edf3ccadfd5d4709bf6722c354c5",
+   "bytes": 26464
+  },
+  "experiments/stage6_final/test_out/stage5/mini_train_a/groups.json": {
+   "sha256": "e4d037ee30ae4271a9709594a59205e22bad9132bb030bbf709be9880e52f77a",
+   "bytes": 1915
+  },
+  "experiments/stage6_final/test_out/stage5/mini_train_a/run.json": {
+   "sha256": "45aa0ed05a96125d3853a1eb4fc8034748adb42506c2e502589d95bfe6969ac0",
+   "bytes": 3615
+  },
+  "experiments/stage6_final/test_out/stage5/mini_train_a/train_log.txt": {
+   "sha256": "759196e9f3223b495dca25bcbba938097cc294269b0ec1426aff365600eebc92",
+   "bytes": 333
+  },
+  "experiments/stage6_final/test_out/stage5/mini_train_a.log": {
+   "sha256": "e319264e7fd1464557580611eada98c8494f6de6d2130bb8a7d57765c167a649",
+   "bytes": 3362
+  },
+  "experiments/stage6_final/test_out/stage5/mini_train_b/checkpoints/update_000.pt": {
+   "sha256": "4ea1d3b1b3534af1f2d12910c10fdfeceb5217afed873363beaeb6730ea914ff",
+   "bytes": 4475
+  },
+  "experiments/stage6_final/test_out/stage5/mini_train_b/checkpoints/update_001.pt": {
+   "sha256": "0f68a0df51a37c211ad0f4c6592e439ad9f7ef8172e4e0024082df06faef3f2e",
+   "bytes": 10869
+  },
+  "experiments/stage6_final/test_out/stage5/mini_train_b/checkpoints/update_002.pt": {
+   "sha256": "9ce6672bb12e2ace4e5b65428f0b260f88c6d05b10eaae740b853d8548205893",
+   "bytes": 10869
+  },
+  "experiments/stage6_final/test_out/stage5/mini_train_b/episodes.csv": {
+   "sha256": "d9a7cf71a02d0e757f48164b06ed3a8a028e5b8c4b28b0e11d10f6a808d47823",
+   "bytes": 13166
+  },
+  "experiments/stage6_final/test_out/stage5/mini_train_b/episodes.json": {
+   "sha256": "d31a7a0abbe681e6a60142409c269cc0e004edf3ccadfd5d4709bf6722c354c5",
+   "bytes": 26464
+  },
+  "experiments/stage6_final/test_out/stage5/mini_train_b/groups.json": {
+   "sha256": "c7faa368eeaff12144d995e815722274b88f82a7ff443d42b6945f79ed7726e6",
+   "bytes": 1916
+  },
+  "experiments/stage6_final/test_out/stage5/mini_train_b/run.json": {
+   "sha256": "3c895d18051dfcef7d78abca8bcebbe6e0bc52b3986cbf006a08b71bd79c48f9",
+   "bytes": 3615
+  },
+  "experiments/stage6_final/test_out/stage5/mini_train_b/train_log.txt": {
+   "sha256": "1e4e0a968065d68da4c7fea17b804cdc9b5d814aab8ba115d1900c06f8ee73da",
+   "bytes": 333
+  },
+  "experiments/stage6_final/test_out/stage5/mini_train_b.log": {
+   "sha256": "92f9a92fb857a148b7d291e3c8edb2c0318fd939db8f613b5b3ba50fb7a6a0be",
+   "bytes": 3362
+  },
+  "experiments/stage6_final/test_out/stage5/ref_body.pt": {
+   "sha256": "dd5c4d2004276af1d38d76dcbbc3630cd811c1a891702929d8ad3410012cd704",
+   "bytes": 2353258
+  },
+  "experiments/stage6_final/test_out/stage5/ref_hand.pt": {
+   "sha256": "d68d55f85c3ea92afcc65121394aa9fe13127eba92f16d22be79831a2dcc63d7",
+   "bytes": 7034730
+  },
+  "experiments/stage6_final/test_out/stage5/unit_tests.json": {
+   "sha256": "74e916e1848025c90eb6718bc3f460beffdd0b3d21a9dc01a97ba46ee31376eb",
+   "bytes": 4763
+  },
+  "experiments/stage6_final/test_out/stage5_integration.log": {
+   "sha256": "843d82ad59872a064b1524633520b4810b4cf46c97d3e746f335b43e44833f82",
+   "bytes": 7471
+  },
+  "experiments/stage6_final/test_out/stage5_unit.log": {
+   "sha256": "a25f54893173841769eaac384346511c52eded3a9f7b41d8479732148362fe3e",
+   "bytes": 2749
+  },
+  "experiments/stage6_final/test_out/stage6_unit.log": {
+   "sha256": "3383eeb00b09813fbd0460c015dfd7f922799eb33006aff521ea92b3ae0b68a8",
+   "bytes": 1022
+  },
+  "experiments/stage6_final/test_out/summary.json": {
+   "sha256": "56ff432dab08f98a4f11d88d96307685c1170ed560b6bd54a4642d9048c4a665",
+   "bytes": 2694
+  },
+  "experiments/stage6_final/test_out/validity.json": {
+   "sha256": "ccc2c42e81afeb47536e5d1ac844974f3083e8ea07432eaec75bc3d4f385dbc3",
+   "bytes": 2567
+  },
+  "experiments/stage6_final/test_out/validity.log": {
+   "sha256": "3fe9f25b47b80b9c55120ca18d015c0963e8a20009d0794628129a701a897b9f",
+   "bytes": 1703
+  },
+  "research/stage6_proposal/ACMS_MULTISEED_DESIGN.md": {
+   "sha256": "599c3f20bb2b6acfb2536ef5add0b91d606f0170a34cf2be70d1570a54a31110",
+   "bytes": 15662
+  },
+  "research/stage6_proposal/EVALUATION_PPT_FIGURE_PLAN.md": {
+   "sha256": "98b164bf06db15c640631756906b97cd2b6be189146128206462dd945cf848b8",
+   "bytes": 8952
+  },
+  "research/stage6_proposal/MC_REDESIGN_PROPOSAL.md": {
+   "sha256": "f1b72f853df57ca98f45a158df2d89098a69d350cec0abdfbc962e95427e6d90",
+   "bytes": 20111
+  },
+  "research/stage6_proposal/PPT_METRIC_COVERAGE.md": {
+   "sha256": "e4dafe590d74d6dd716b93f8671ee21fd0b1198f8284133f9a8a00d16cf7f482",
+   "bytes": 8400
+  },
+  "research/stage6_proposal/PROGRAMME_PLAN.md": {
+   "sha256": "f7b754a8c415f2b49acd25ee9590e236b60d8e443e1864abf8a6d28632fd4921",
+   "bytes": 9567
+  },
+  "research/stage6_gate/FG1_OPERATIONAL_DECISIONS.md": {
+   "sha256": "b25a02899f5fda080becec0490d83750d64910d8d7e4196337e54f43a5840323",
+   "bytes": 3464
+  },
+  "research/final/EXPERIMENT_MANIFEST.json": {
+   "sha256": "04dabfed7c8b5471eb516edbd87786077e6596f4ab2756f96b5361d67c644484",
+   "bytes": 85192
+  },
+  "research/final/EXPERIMENT_MANIFEST.md": {
+   "sha256": "d096b1287d7075909725c8cf429ab4926c8a8ab966c1fd903a669099f898a666",
+   "bytes": 21568
+  },
+  "research/final/latex/figures/f01_training_return.png": {
+   "sha256": "faebb00555a5e699f251d09b48d1c5e8759e5472e70227371e47937da045d913",
+   "bytes": 198491
+  },
+  "research/final/latex/figures/f02_heldout_vs_progress.png": {
+   "sha256": "a2705babeab19a330a0c2585a5e2c33d6bce4f9516f49f9fbd43c1ef744a80ba",
+   "bytes": 92617
+  },
+  "research/final/latex/figures/f03_training_constraints.png": {
+   "sha256": "059a74e60f6c93dd5dd064b1feaf454656e1b71badf7c1577604141070714a57",
+   "bytes": 90564
+  },
+  "research/final/latex/figures/f04_coordination_multiseed.png": {
+   "sha256": "92335c627c4a1a1dfff62a67ae440449fb5d7b838b9bd8f1a4e8f7a42461b390",
+   "bytes": 77362
+  },
+  "research/final/latex/figures/f04b_coordination_multiseed_J.png": {
+   "sha256": "4bc2b5894e3d1d5e59ac9bd812f46a753c62abb2745a91c01d4c7a12668d94f8",
+   "bytes": 43708
+  },
+  "research/final/latex/figures/f05_preservation_multiseed.png": {
+   "sha256": "d558d9d3afe706fed6ab940bcc09178a19fdf07dc634d8f0792d19bafaed8e3a",
+   "bytes": 84543
+  },
+  "research/final/latex/figures/f06_kl_multiseed.png": {
+   "sha256": "9fee7ed2b260a4e85485b0e0a2444871d46917b2efcd3e170ba6d7d2a5bcd907",
+   "bytes": 94817
+  },
+  "research/final/latex/figures/f07_mc_history.png": {
+   "sha256": "413254e659204d2b116cdd0b7b949377b6527ede193ef66aab17af0574d8efaa",
+   "bytes": 103316
+  },
+  "research/final/latex/figures/f08_fg1_comparison.png": {
+   "sha256": "082e4d94fdd1cd351162176bd4dc4b9a87f150adc8454ef5a353f15d9bb34abf",
+   "bytes": 85767
+  },
+  "research/final/latex/figures/f08b_cross_study_kl.png": {
+   "sha256": "c4b2da408cdd10263a3473483aad40db2fe7d9531c831621100b120dbf421c45",
+   "bytes": 72146
+  },
+  "research/final/latex/figures/f09_seed_stability.png": {
+   "sha256": "adc117094b3b914470df0b3709354cefc9d79a43b67b17faaf6c8c7b3dbe8d46",
+   "bytes": 83154
+  },
+  "research/final/latex/figures/f10_generalisation.png": {
+   "sha256": "f429155556f8a03750b7e6d86e712653cb649babed46ddf619078edf0cffb9c4",
+   "bytes": 88040
+  },
+  "research/final/latex/figures/f12_ablations.png": {
+   "sha256": "6097162cd4715d927e78938e760ac67ed546a2179dd3ddd2f0223d98238eb32c",
+   "bytes": 85394
+  },
+  "research/final/latex/figures/f13_posthoc_return.png": {
+   "sha256": "afa5611dc91d2ce71d512f91197470589d3b665221e905cc91a6490f1094c38d",
+   "bytes": 222304
+  },
+  "research/final/latex/SignSparK_RL_report.tex": {
+   "sha256": "94e0caa3d81d2ea2ed13fd0897104bee8567f45b2ce5ac7432bdf136ca068792",
+   "bytes": 37492
+  },
+  "research/final/LIMITATIONS_AND_REPRODUCIBILITY.md": {
+   "sha256": "ef9215d165c2a79be6392d80f5fb35c8cb26728a13823814c2de833c75a19d09",
+   "bytes": 4458
+  },
+  "research/final/SignSparK_RL_presentation.html": {
+   "sha256": "d546d324559e11c5c298d9e02ef0cf9e9a042e4a2cb046a0ee99a7ce44d1c57d",
+   "bytes": 1427064
+  },
+  "research/final/SignSparK_RL_presentation.pdf": {
+   "sha256": "10ac7e88b2eae5bfdcb4570987c4038e96667bb30d6032974af4b1f30b215fb8",
+   "bytes": 1205353
+  },
+  "research/final/SignSparK_RL_presentation.pptx": {
+   "sha256": "7b67cd16f53cc119d08318ba777a1c339ed3f2da6b03a5fe2599de81eb8ebd04",
+   "bytes": 1050131
+  },
+  "research/final/SignSparK_RL_report.html": {
+   "sha256": "ba053238888fbd5e12384fb97df07747dd2aee718157ae846e381c07e52ccebe",
+   "bytes": 1938068
+  },
+  "research/final/SignSparK_RL_report.pdf": {
+   "sha256": "e5b2a834e6e527dacaf59ffd34c13042718c8221df6924d71fff29e8bdff144a",
+   "bytes": 1706520
+  }
+ }
+}

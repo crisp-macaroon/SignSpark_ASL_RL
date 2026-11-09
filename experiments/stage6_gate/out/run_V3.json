@@ -1,0 +1,44 @@
+{
+ "phase": "V3",
+ "command": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage6_gate\\fg1_run.py --phase V3",
+ "start": "2026-11-07 18:36:33",
+ "lr": 0.05,
+ "iterations": 30,
+ "noises_fit": 16,
+ "noises_heldout": 16,
+ "rows_per_pass": 8,
+ "cap_seconds": 7200,
+ "mem_cap_GiB": 14.0,
+ "params_per_clip": 866,
+ "weights_unchanged": true,
+ "flags": {
+  "matmul_allow_tf32": false,
+  "cudnn_allow_tf32": true,
+  "cudnn_benchmark": false,
+  "cudnn_deterministic": false,
+  "dtype": "float32",
+  "device": "NVIDIA RTX A4000",
+  "torch": "2.10.0+cu128",
+  "training_any": false,
+  "HF_HUB_OFFLINE": "1"
+ },
+ "opened_splits": [
+  "train"
+ ],
+ "outputs": {
+  "heldout": {
+   "kl_R_max": 0.11208391934633255,
+   "kl_L_max": 0.12638533115386963
+  },
+  "shuffle": {
+   "kl_R_max": 0.11208391934633255,
+   "kl_L_max": 0.12638533115386963
+  }
+ },
+ "final_train_geo_R": 0.23024733810331138,
+ "grad_norm_last": 0.9363899827003479,
+ "status": "completed",
+ "seconds": 6201.2,
+ "gpu_peak_alloc_GiB": 10.451,
+ "gpu_peak_reserved_GiB": 10.518
+}

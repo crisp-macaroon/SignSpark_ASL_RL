@@ -1,0 +1,19 @@
+﻿.\.venv-infer\Scripts\python.exe : 
+C:\Users\balaji\Downloads\rlproj\rlproj\.venv-infer\Lib\site-packages\pydantic\_internal\_generate_schema.py:2350: 
+UnsupportedFieldAttributeWarning: The 'repr' attribute with value False was provided to the `Field()` function, which 
+has no effect in the context it was used. 'repr' is field-specific metadata, and can only be attached to a model field 
+using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` 
+statement was used, or if the `Field()` function was attached to a single member of a union type.
+At line:1 char:1271
++ ... t=Get-Date; .\.venv-infer\Scripts\python.exe -E -s experiments\stage4 ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Users\balaji...f a union type.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  warnings.warn(
+C:\Users\balaji\Downloads\rlproj\rlproj\.venv-infer\Lib\site-packages\pydantic\_internal\_generate_schema.py:2350: 
+UnsupportedFieldAttributeWarning: The 'frozen' attribute with value True was provided to the `Field()` function, which 
+has no effect in the context it was used. 'frozen' is field-specific metadata, and can only be attached to a model 
+field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the 
+`type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(

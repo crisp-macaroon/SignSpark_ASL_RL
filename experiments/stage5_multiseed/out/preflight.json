@@ -1,0 +1,154 @@
+{
+ "config_diff": {
+  "7001": [
+   "design",
+   "name",
+   "policy.init_seed",
+   "seeds.train_clip_sampler",
+   "seeds.train_noise_base"
+  ],
+  "7002": [
+   "design",
+   "name",
+   "policy.init_seed",
+   "seeds.train_clip_sampler",
+   "seeds.train_noise_base"
+  ],
+  "7003": [
+   "design",
+   "name",
+   "policy.init_seed",
+   "seeds.train_clip_sampler",
+   "seeds.train_noise_base"
+  ],
+  "7004": [
+   "design",
+   "name",
+   "policy.init_seed",
+   "seeds.train_clip_sampler",
+   "seeds.train_noise_base"
+  ]
+ },
+ "config_diff_ok": true,
+ "config_sha256": {
+  "7001": "7c439233bd3abee1862ffd6098f3b94f96bd34ea03f21c7bb4abef24e14cc192",
+  "7002": "e892b8f0274ce7b8b8f04b4e2f9916f0a380ab25503e7dacb7e6b33df3b48e13",
+  "7003": "ece5e5490b6779c62f6479dc04e9d7370dc8667e4ca7204d3328f860c5d94b01",
+  "7004": "162f69c3c84534b5d6a705c23f9344f94cf927ef64b3bcf4cf99348e28e759bd",
+  "7000": "ccf2112c76ebdfc55a47c58ef2250d6119fed75355c458e8769048350d2b5dbd"
+ },
+ "noise_ranges": [
+  {
+   "name": "E2e A0",
+   "lo": 10000000,
+   "hi": 10031032
+  },
+  {
+   "name": "E2e A0p",
+   "lo": 20000000,
+   "hi": 20031032
+  },
+  {
+   "name": "E2d",
+   "lo": 20261103,
+   "hi": 20261104
+  },
+  {
+   "name": "E2b fresh",
+   "lo": 30000000,
+   "hi": 30255116
+  },
+  {
+   "name": "Stage5 eval",
+   "lo": 40000001,
+   "hi": 40255004
+  },
+  {
+   "name": "OPT-G fresh",
+   "lo": 45000001,
+   "hi": 45124004
+  },
+  {
+   "name": "FG-1 fit",
+   "lo": 60000001,
+   "hi": 60015016
+  },
+  {
+   "name": "FG-1 held-out",
+   "lo": 61000001,
+   "hi": 61015016
+  },
+  {
+   "name": "train s7000",
+   "lo": 50000000,
+   "hi": 50124003
+  },
+  {
+   "name": "train s7001",
+   "lo": 51000000,
+   "hi": 51124003
+  },
+  {
+   "name": "train s7002",
+   "lo": 52000000,
+   "hi": 52124003
+  },
+  {
+   "name": "train s7003",
+   "lo": 53000000,
+   "hi": 53124003
+  },
+  {
+   "name": "train s7004",
+   "lo": 54000000,
+   "hi": 54124003
+  }
+ ],
+ "noise_range_overlaps": [],
+ "policy_init_seeds": [
+  7000,
+  7001,
+  7002,
+  7003,
+  7004
+ ],
+ "policy_init_disjoint_from_e2c_family_init": true,
+ "train_noise_first_tensors_distinct": true,
+ "reference_eval_seeds_match_formula": true,
+ "eval_noise_base_shared": true,
+ "seed7000_clips_reproduced": true,
+ "clip_overlap_pairs": {
+  "7000-7001": 1,
+  "7000-7002": 0,
+  "7000-7003": 0,
+  "7000-7004": 1,
+  "7001-7002": 0,
+  "7001-7003": 2,
+  "7001-7004": 1,
+  "7002-7003": 2,
+  "7002-7004": 0,
+  "7003-7004": 1
+ },
+ "clip_overlap_expected_per_pair": 0.5273371582855214,
+ "code_mismatch": [],
+ "stage4_mismatch": [],
+ "checkpoint_mismatch": [],
+ "checkpoint_sha256": {
+  "models/SignSparK/body/ema_0.9999_200000.pt": "bf95bb02802b1c46f40afb4424f8f521be6c8641ad8acfe406a666b463e3a380",
+  "models/SignSparK/hand/ema_0.9999_200000.pt": "5bb8e407ba2c106a22c3b0c16fd1b0fc0f412a58d235143325fdb67efe5916c2"
+ },
+ "snapshot_files": 548,
+ "checks": {
+  "config_diff_ok": true,
+  "no_range_overlap": true,
+  "init_disjoint": true,
+  "tensors_distinct": true,
+  "eval_formula": true,
+  "eval_base_shared": true,
+  "seed7000_clips": true,
+  "code_identical": true,
+  "stage4_identical": true,
+  "checkpoints_identical": true
+ },
+ "pass": true
+}

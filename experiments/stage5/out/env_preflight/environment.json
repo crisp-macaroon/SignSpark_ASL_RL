@@ -1,0 +1,41 @@
+{
+ "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+ "executable": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe",
+ "platform": "Windows-11-10.0.26300-SP0",
+ "code_sha256": {
+  "common5.py": "103ca740dba787f99d7671bc8b581136ce4fd2d13b3c4bd5e13b0705b8de38da",
+  "acms_policy.py": "8f89a5848b9b92c492984e72935e983035d4f1feb655b2c551033f1eafc0315d",
+  "rewards.py": "b8af2e7ab722c63ebcfad79b81378793f44c6abe1ea969f77d416b0789f28fdd",
+  "episode_sampler.py": "ff26058e3cb862c34130c4dae6ba8afc54cdc3c5dbf6a554adda5016293372d3",
+  "train_500ep.py": "e637ec386b46c108f4f54fe7332a910cc399ce9bfd07c3de9b574a980ebefe57",
+  "evaluate.py": "602c5efd6066a87a932092c8186c383b214074c1cb18dace9b0bb06f7708e9cb",
+  "plots.py": "8213acb00160357a31fcc15e63fbdf7dbb1d216021538561810a9d3503bb1dd1",
+  "record_env.py": "76264ec01a70a40fbe77eeadf2afd8ade3ff48dd3eecbf1cf813653b6608473a",
+  "config_500ep.json": "ccf2112c76ebdfc55a47c58ef2250d6119fed75355c458e8769048350d2b5dbd",
+  "tests/run_tests.py": "eec48760f4eff06903a12eaa6040aeca706c5a79f828ed703540f0587e6ec63d",
+  "tests/config_test.json": "2ea9a898ee41e86c132ecf4592815abb9092b48efe889bc3960ceb9915c0da71"
+ },
+ "stage4_and_upstream_sha256": {
+  "experiments/stage4/e2d/unrolled_sampler.py": "d2ad413e928e865cd9ad6bf7a6e68ac8adefadf5844a7a2b5be52a1c0782ea9d",
+  "experiments/stage4/e2e/metrics.py": "9930224cadd0781de0199c8d1363493a26d3bb7827026f3e4e755164b71a370e",
+  "experiments/stage4/validity/validity.py": "edef79b3f83aa0beca2ab6a416408e9d14362b45026cf79f58a9ce999b320eed",
+  "experiments/stage4/jspace.py": "f664592de79a53e2c60826354c8ad05ada0922fb404139935a9eb227ef4ba654",
+  "experiments/stage4/e2c/typicality.py": "514ccba91d6fec1fc5df15488788e4cf1ff19eea536039a22f843847b966dbb6",
+  "research/stage4/FROZEN_TARGETS_R0.json": "26f28f9a68bc4d538cda942d4578e4e05c6bfd32e87a2422bef5566968f2e383",
+  "experiments/stage4/r0/out/r0_results.json": "427dd3631db8f8d6376d849bbd5bae2e5900f70fb00d27027c30128029541d1e",
+  "third_party/SignSparK/signspark/pose_datasets_lmdb.py": "440cd965409898a44f365567b0e0990fd133908c70a7bc39513703e189a81092",
+  "third_party/SignSparK/signspark/unet_model.py": "48ba37234f42851759e1614500763e29702afff835ab60855db7f42e796d999b"
+ },
+ "signspark_checkpoint_sha256": {
+  "models/SignSparK/body/ema_0.9999_200000.pt": "bf95bb02802b1c46f40afb4424f8f521be6c8641ad8acfe406a666b463e3a380",
+  "models/SignSparK/hand/ema_0.9999_200000.pt": "5bb8e407ba2c106a22c3b0c16fd1b0fc0f412a58d235143325fdb67efe5916c2"
+ },
+ "lmdb_sha256": {
+  "data\\raw\\SignSparK_data\\train\\How2Sign_reopt_train.lmdb\\data.mdb": "7950807733e7c09fc0699e76eade20d17922219eb7e6a05b58b8a2b966739426",
+  "data\\raw\\SignSparK_data\\dev\\How2Sign_reopt_dev.lmdb\\data.mdb": "79f37363d0086f998ffe4c4ecbdb3bf24da31778e6628ded8dd8deacd605c23e"
+ },
+ "torch": "2.10.0+cu128",
+ "cuda": "12.8",
+ "gpu": "NVIDIA RTX A4000",
+ "nvidia_smi": "NVIDIA RTX A4000, 595.79, 16376 MiB"
+}

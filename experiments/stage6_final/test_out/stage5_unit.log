@@ -1,0 +1,21 @@
+PASS  U1 log-prob exact  {"max_abs_diff": 0.0009765625, "pass": true}
+PASS  U2 beta=0 -> mu=0, eps=xi bitwise  {"beta": 0.0, "mu_all_zero": true, "eps_equals_xi_bitwise": true, "pass": true}
+PASS  U3 padded frames  {"padded_zero": true, "active_nonzero": true, "pass": true}
+PASS  U4 KL cap + formula  {"kl": [0.9977828860282898, 0.9990978837013245, 0.9995551109313965], "max_per_frame_kl": 1.0000001192092896, "beta_max": 0.7071067811865476, "formula_max_abs_diff": 1.1920928955078125e-07, "pass": true}
+PASS  U5 Stiefel  {"orth_err": 2.384185791015625e-07, "shape": [90, 4], "pass": true}
+PASS  U6 RLOO  {"adv_sum": -5.551115123125783e-17, "b0_matches_others_mean": true, "b0_independent_of_R0": true, "pass": "True"}
+PASS  U7 score-function unbiased (MC z-test)  {"n": 120000, "max_abs_z": 3.1588380336761475, "mean_z": -0.06567103415727615, "param_grad_cosine": 0.9867137670516968, "pass": true}
+PASS  U7b training-loss gradient  {"rel_max_diff": 1.222937129341517e-07, "pass": true}
+PASS  U8 S-3 / A3  {"S3_worst": -1.4514, "t1": {"r_ah": -1.4514, "s3_undefined_primary": true, "c_raw": {"art": -0.1, "jerk": -0.10000000000000009, "ext": -0.02, "act": -0.22314355131420976}, "c": {"art": -0.1, "jerk": -0.10000000000000009, "ext": -0.02, "act": -0.22314355131420976}, "a3_undefined": {"art": false, "je
+PASS  U9 dual ascent  {"l1": {"art": 0.30000000000000004, "jerk": 0.0, "ext": 1.0, "act": 0.0}, "l2": {"art": 0.0, "jerk": 0.0, "ext": 0.5, "act": 0.0}, "pass": true}
+PASS  U10 frozen target + thresholds  {"tau": 0.4514, "s3": -1.4514, "frozen_sha256": "26f28f9a68bc4d538cda942d4578e4e05c6bfd32e87a2422bef5566968f2e383", "pass": true}
+PASS  U11 sampler + seeds  {"first_clips": [19665, 27993, 2196, 12043, 18164], "seed_ranges": {"train": [50000000, 50124003], "eval": [40000001, 40255004], "e2e": [10000000, 20031032]}, "pass": true}
+PASS  U12 arm feature  {"mean": 1.9868215961338365e-09, "std": 1.0, "static_valid": false, "nan_valid": false, "pass": true}
+PASS  U13 config guard (500 = 125 x 4)  {"main_config_ok": true, "non_500_rejected": true, "pass": true}
+PASS  U14 split guard (no test)  {"error_message": "split 'test' is not allowed in Stage 5 (train/dev only)", "opened": [], "pass": true}
+unit: 15/15
+
+--- stderr ---
+C:\Users\balaji\Downloads\rlproj\rlproj\experiments\stage5\tests\run_tests.py:76: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:837.)
+  return {"beta": float(p.beta()), "mu_all_zero": bool((mu == 0).all()), "eps_equals_xi_bitwise": bool(torch.equal(xi + mu, xi)),

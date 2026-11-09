@@ -1,0 +1,32 @@
+Logging to C:\Users\balaji\AppData\Local\Temp\openai-2026-11-07-23-37-44-569893
+### Creating model and flow...
+Using UNET with: Input Dim 60 | Latent Dim: 512 | Mults: (2, 2, 2, 2) | Added channels: 120
+AdaGN: True | Zero: True | Attention: False
+[TemporalUnetLarge] channel dims : [60, 512, 1024, 2048, 2048]
+[TemporalUnetLarge] bottleneck   : 1024
+[TemporalUnetLarge] attn at depth: (2, 3)
+[TemporalUnetLarge] Total parameters: 0.832B
+Text Conditioning Enabled. Loading CLIP M-CLIP/XLM-Roberta-Large-Vit-B-16Plus...
+### RFlow with lbd_flow 1.0, lbd_recon 1.0, lbd_velocity 1.0
+### The parameter count is 1395037372
+### Creating model and flow...
+Using UNET with: Input Dim 90 | Latent Dim: 512 | Mults: (2, 2, 2, 2) | Added channels: 180
+AdaGN: True | Zero: True | Attention: False
+[TemporalUnetLarge] channel dims : [90, 512, 1024, 2048, 2048]
+[TemporalUnetLarge] bottleneck   : 1024
+[TemporalUnetLarge] attn at depth: (2, 3)
+[TemporalUnetLarge] Total parameters: 0.832B
+Text Conditioning Enabled. Loading CLIP M-CLIP/XLM-Roberta-Large-Vit-B-16Plus...
+### RFlow with lbd_flow 1.0, lbd_recon 1.0, lbd_velocity 1.0
+### The parameter count is 1395329242
+### flip_left_hand=True: converting left hand from SMPLX-left to right-hand convention
+############### 
+Loading [Dataset: full @ 1650 items | Seq_Len: 304] from C:\Users\balaji\Downloads\rlproj\rlproj\data\raw\SignSparK_data\dev\How2Sign_reopt_dev.lmdb
+clips 0-1 done (6 records)
+verdict negative 37.9 s
+
+--- stderr ---
+C:\Users\balaji\Downloads\rlproj\rlproj\.venv-infer\Lib\site-packages\pydantic\_internal\_generate_schema.py:2350: UnsupportedFieldAttributeWarning: The 'repr' attribute with value False was provided to the `Field()` function, which has no effect in the context it was used. 'repr' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+C:\Users\balaji\Downloads\rlproj\rlproj\.venv-infer\Lib\site-packages\pydantic\_internal\_generate_schema.py:2350: UnsupportedFieldAttributeWarning: The 'frozen' attribute with value True was provided to the `Field()` function, which has no effect in the context it was used. 'frozen' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(

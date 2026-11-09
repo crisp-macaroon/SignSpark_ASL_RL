@@ -1,0 +1,22 @@
+﻿### train
+  train: 0/29630 clips (0s)
+  train: 2000/29630 clips (38s)
+  train: 4000/29630 clips (75s)
+  train: 6000/29630 clips (116s)
+  train: 8000/29630 clips (150s)
+  train: 10000/29630 clips (194s)
+  train: 12000/29630 clips (229s)
+  train: 14000/29630 clips (265s)
+  train: 16000/29630 clips (303s)
+  train: 18000/29630 clips (338s)
+  train: 20000/29630 clips (374s)
+  train: 22000/29630 clips (408s)
+  train: 24000/29630 clips (443s)
+  train: 26000/29630 clips (478s)
+  train: 28000/29630 clips (513s)
+### dev
+  dev: 0/1650 clips (0s)
+### test
+  test: 0/2183 clips (0s)
+  test: 2000/2183 clips (37s)
+### wrote research\stage2\summary.json

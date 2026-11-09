@@ -1,0 +1,136 @@
+{
+ "label": "Stage 5 exploratory ACMS pilot; released-checkpoint result, not a paper reproduction; motion statistics only (no semantic, naturalness, intelligibility or ASL-quality claim)",
+ "config": {
+  "name": "stage5_acms_TEST",
+  "label": "Stage 5 exploratory ACMS pilot; released-checkpoint result, not a paper reproduction; motion statistics only (no semantic, naturalness, intelligibility or ASL-quality claim)",
+  "design": "research/stage5/STAGE5_500EP_DESIGN.md (A1-A7 approved 2026-11-04)",
+  "test_mode": true,
+  "episodes": 8,
+  "n_groups": 2,
+  "group_size": 4,
+  "policy": {
+   "rank": 4,
+   "half_width": 8,
+   "channels": 90,
+   "kl_cap_nats_per_frame": 1.0,
+   "init_seed": 7000,
+   "init_beta_frac": 0.1,
+   "init_w_std": 0.1
+  },
+  "optim": {
+   "algorithm": "REINFORCE with RLOO baseline (leave-one-out group mean)",
+   "adam_lr": 0.01,
+   "adam_betas": [
+    0.9,
+    0.999
+   ],
+   "grad_clip_norm": 1.0,
+   "updates": "one per group"
+  },
+  "reward": {
+   "primary": "target matching: r_ah = -|coord_ah^R(right) - tau_ah_R|, tau from FROZEN_TARGETS_R0.json (R v1.1)",
+   "s3_undefined_primary": "-(1 + |tau_ah_R|)",
+   "constraints": {
+    "art": "|m2_R/m2_R0 - 1| - 0.10",
+    "jerk": "m3_R/m3_R0 - 1.10",
+    "ext": "extreme_frac_R - extreme_frac_R0 - 0.02",
+    "act": "|log(A_R/A_R0)| - log(1.25)"
+   },
+   "constraint_clip": [
+    -1.0,
+    1.0
+   ],
+   "a3_undefined_constraint": 1.0,
+   "dual_ascent_eta": 1.0,
+   "lambda_init": 0.0
+  },
+  "seeds": {
+   "train_clip_sampler": 5000,
+   "train_noise_base": 50000000,
+   "eval_noise_base": 40000000,
+   "noise_formula": "torch.Generator().manual_seed(base + 1000*a + b); randn(240, 304): body 0:60, left 60:150, right 150:240",
+   "train_noise_index": "a = group g (0..124), b = episode-in-group i (0..3)",
+   "eval_noise_index": "a = dev clip j (0..255), b = noise k (1..4)"
+  },
+  "checkpoints_at_updates": [
+   0,
+   1,
+   2
+  ],
+  "evaluation": {
+   "split": "dev",
+   "n_clips": 2,
+   "n_noises": 1,
+   "conditions": [
+    "uncoupled",
+    "initial",
+    "trained"
+   ],
+   "trained_checkpoint": "final (update 125); no selection",
+   "bootstrap": {
+    "B": 2000,
+    "seed": 0
+   },
+   "preservation": {
+    "artic_ratio_band": [
+     0.9,
+     1.1
+    ],
+    "jerk_ratio_max": 1.1,
+    "extreme_diff_max": 0.02,
+    "abs_log_activity_ratio_max_log": 1.25,
+    "undefined_excess_max": 0.005,
+    "kl_max_nats_per_frame": 1.0
+   },
+   "threshold_reported_separately": 0.05
+  },
+  "cap_seconds": 900,
+  "env": {
+   "HF_HUB_OFFLINE": "1"
+  }
+ },
+ "train_clips": [
+  1639,
+  13230
+ ],
+ "flags": {
+  "matmul_allow_tf32": false,
+  "cudnn_allow_tf32": true,
+  "cudnn_benchmark": false,
+  "cudnn_deterministic": false,
+  "dtype": "float32",
+  "device": "NVIDIA RTX A4000",
+  "torch": "2.10.0+cu128",
+  "training_any": false,
+  "HF_HUB_OFFLINE": "1"
+ },
+ "tau_ah_R": 0.4514,
+ "s3_worst": -1.4514,
+ "model_weight_checksum_start": {
+  "body": -2039906.5271300434,
+  "hand": -2053331.4827418507
+ },
+ "status": "completed",
+ "episodes_completed": 8,
+ "groups_completed": 2,
+ "model_weight_checksum_end": {
+  "body": -2039906.5271300434,
+  "hand": -2053331.4827418507
+ },
+ "model_weights_unchanged": true,
+ "model_trainable_params": 0,
+ "opened_splits": [
+  "train"
+ ],
+ "seconds": 44.5,
+ "gpu_peak_alloc_GiB": 10.414,
+ "gpu_peak_reserved_GiB": 10.471,
+ "final_lambda": {
+  "art": 0.0,
+  "jerk": 0.0,
+  "ext": 0.0,
+  "act": 0.0
+ },
+ "final_param_norm": 19.615802764892578,
+ "final_beta": 0.07192664593458176
+}

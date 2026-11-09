@@ -1,0 +1,20 @@
+C:\Users\balaji\Downloads\rlproj\rlproj\.venv-infer\Lib\site-packages\pydantic\_internal\_generate_schema.py:2350: UnsupportedFieldAttributeWarning: The 'repr' attribute with value False was provided to the `Field()` function, which has no effect in the context it was used. 'repr' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+C:\Users\balaji\Downloads\rlproj\rlproj\.venv-infer\Lib\site-packages\pydantic\_internal\_generate_schema.py:2350: UnsupportedFieldAttributeWarning: The 'frozen' attribute with value True was provided to the `Field()` function, which has no effect in the context it was used. 'frozen' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+Traceback (most recent call last):
+  File "C:\Users\balaji\Downloads\rlproj\rlproj\experiments\stage4\r0\r0_run.py", line 244, in <module>
+    main()
+  File "C:\Users\balaji\Downloads\rlproj\rlproj\experiments\stage4\r0\r0_run.py", line 186, in main
+    fh, Lh, _, _, nh = dh[i]
+                       ~~^^^
+  File "C:\Users\balaji\Downloads\rlproj\rlproj\third_party\SignSparK\signspark\pose_datasets_lmdb.py", line 226, in __getitem__
+    with self.env.begin(write=False) as txn:
+         ^^^^^^^^
+  File "C:\Users\balaji\Downloads\rlproj\rlproj\third_party\SignSparK\signspark\pose_datasets_lmdb.py", line 210, in env
+    self._env = self._open_env()
+                ^^^^^^^^^^^^^^^^
+  File "C:\Users\balaji\Downloads\rlproj\rlproj\third_party\SignSparK\signspark\pose_datasets_lmdb.py", line 193, in _open_env
+    return lmdb.open(
+           ^^^^^^^^^^
+lmdb.Error: The environment 'C:\Users\balaji\Downloads\rlproj\rlproj\data\raw\SignSparK_data\train\How2Sign_reopt_train.lmdb' is already open in this process.

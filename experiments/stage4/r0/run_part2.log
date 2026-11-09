@@ -1,0 +1,34 @@
+Logging to C:\Users\balaji\AppData\Local\Temp\openai-2026-11-03-22-44-47-763766
+### flip_left_hand=True: converting left hand from SMPLX-left to right-hand convention
+############### 
+Loading [Dataset: full @ 29630 items | Seq_Len: 304] from C:\Users\balaji\Downloads\rlproj\rlproj\data\raw\SignSparK_data\train\How2Sign_reopt_train.lmdb
+chunk 31/60 clips=500 excl=0 92s run_time=31.4min
+chunk 32/60 clips=500 excl=0 105s run_time=33.1min
+chunk 33/60 clips=500 excl=0 104s run_time=34.9min
+chunk 34/60 clips=500 excl=0 99s run_time=36.5min
+chunk 35/60 clips=500 excl=0 97s run_time=38.1min
+chunk 36/60 clips=500 excl=0 101s run_time=39.8min
+chunk 37/60 clips=500 excl=0 84s run_time=41.2min
+chunk 38/60 clips=500 excl=0 52s run_time=42.1min
+chunk 39/60 clips=500 excl=0 50s run_time=42.9min
+chunk 40/60 clips=500 excl=0 59s run_time=43.9min
+chunk 41/60 clips=500 excl=0 50s run_time=44.7min
+chunk 42/60 clips=500 excl=0 53s run_time=45.6min
+chunk 43/60 clips=500 excl=0 50s run_time=46.4min
+chunk 44/60 clips=500 excl=0 46s run_time=47.2min
+chunk 45/60 clips=500 excl=0 50s run_time=48.1min
+chunk 46/60 clips=500 excl=0 50s run_time=48.9min
+chunk 47/60 clips=500 excl=0 54s run_time=49.8min
+chunk 48/60 clips=500 excl=0 49s run_time=50.6min
+chunk 49/60 clips=500 excl=0 54s run_time=51.5min
+chunk 50/60 clips=500 excl=0 53s run_time=52.4min
+chunk 51/60 clips=500 excl=0 47s run_time=53.2min
+chunk 52/60 clips=500 excl=0 48s run_time=54.0min
+chunk 53/60 clips=500 excl=0 46s run_time=54.7min
+chunk 54/60 clips=500 excl=0 54s run_time=55.6min
+chunk 55/60 clips=500 excl=0 52s run_time=56.5min
+chunk 56/60 clips=500 excl=0 49s run_time=57.3min
+chunk 57/60 clips=500 excl=0 50s run_time=58.1min
+chunk 58/60 clips=500 excl=0 54s run_time=59.0min
+chunk 59/60 clips=500 excl=0 51s run_time=59.9min
+chunk 60/60 clips=130 excl=0 17s run_time=60.2min

@@ -1,0 +1,41 @@
+# Evaluation-deck metric coverage (PROPOSAL)
+
+*2026-11-06. Coverage of the deck's metric groups, as listed in your request (the PPT file is not in the workspace).*
+
+**Notation:**
+- r_ah = −|coord_ah^R − τ| with τ = 0.4514 (R v1.1).
+- Δ = paired clip-mean trained − uncoupled on common noise.
+- "Seed" = an independent training run (`ACMS_MULTISEED_DESIGN.md` §2).
+
+**Column key:**
+- **Now?** = measurable from existing artifacts with no new experiment (CPU analysis only).
+- **Status:** ✓ measured · ◐ partly / computable · ✗ missing · ⊘ not defensible as defined.
+
+| Metric | Definition | Procedure | Data required | Status | Now? | Limitations |
+|---|---|---|---|---|---|---|
+| **Mean episodic return** | Training: R̄ = (1/N) Σᵢ Rᵢ, Rᵢ = r_ah,i − Σ_k λ_k c_k,i (= r_ah, since λ ≡ 0).<br>Evaluation: mean over the 1,024 dev samples of r_ah | Training: average `episodes.json → R` per bin.<br>Evaluation: compute −\|coord − τ\| per sample from `eval_samples.json`, clip-mean, bootstrap | `episodes.json`; `eval_samples.json` | Training ✓ (−0.420 → −0.438, first / last 25 groups).<br>Evaluation ◐ (derivable; not yet tabulated) | **Yes** (seed 7000) | Return is dominated by the clip (each group = 1 clip), so trends are confounded with clip order. It is a target-matching return, not task success |
+| **Success rate** | **No defensible task-level success definition exists.** The project defines no success criterion for a single generated sign; the registered criteria are population-level (CI > 0, 0.05 transmission) | — | — | **⊘** | — | A per-sample threshold ("coord within δ of τ") would be a **new, unregistered definition**; τ is a population reference, and A3 shows the statistic is chance-satisfiable.<br>**Not reported.**<br>Available substitutes: the per-clip **paired win fraction** (156/256 clips with Δ > 0) and the per-sample paired win fraction, labelled as such, **not** "success rate" |
+| **Cumulative regret** | Regret vs an *optimal* policy requires r* (the optimal expected return per context). **No optimal or reference policy with known value exists**: τ is not attainable on average (best-of-8×8 0.408 is selection over held-out draws) | — | — | **⊘** | — | **Not reported as regret.**<br>A defensible, clearly labelled alternative: **cumulative shortfall vs the uncoupled twin**, Σ_t (r_twin,t − r_t), computable from `episodes.json` (the twin is logged). It measures cumulative cost relative to *not controlling*, not regret |
+| **Convergence speed** | Episodes until the held-out Δ (or training return) first stays within ε of its final value | Needs a held-out curve over checkpoints; training return shows no trend | OPT-C intermediate-checkpoint evaluations; multi-seed | **✗** | No | With one noisy training curve and no trend, convergence is **undefined**. Even with OPT-C there are only 6 points per seed; report as a curve, not a single number unless ε is pre-registered |
+| **Sample efficiency** | Held-out Δ as a function of training episodes (area under the curve, or Δ per 100 episodes) | OPT-C curve; per seed; pooled | OPT-C | **✗** | No | Only one budget (500 episodes) is trained. A comparison across methods needs equal-budget runs, which do not exist (E2c is per-clip pathwise, E2e is untrained) |
+| **Generalisation gap** | G = E_train-like[Δ] − E_held-out[Δ], with the same policy, statistic and noise count | ACMS: final policy on its own TRAIN clips with fresh noise (OPT-G) vs dev-256.<br>E2c (ii): in-sample best − held-out | ACMS: OPT-G.<br>E2c (ii): `e2c_ii_per_clip.json` | E2c (ii) **✓** (0.704 [0.650, 0.759]).<br>ACMS **✗** | E2c (ii) yes; ACMS no | ACMS training logs cannot substitute: they mix 125 intermediate policies. For E2c (ii), "train" is in-sample noise on the same clip (a noise gap), not a clip gap |
+| **Stability across seeds** | Across-seed SD of Δ_s; t-interval; I²; range | `ACMS_MULTISEED_DESIGN.md` §5 | 4 new runs | **✗** (n = 1) | No | n = 4–5 seeds gives a coarse SD estimate (t df 3–4); the evaluation set is shared, so the variance is conditional on it |
+| **Computational efficiency** | Wall-clock, GPU-seconds, peak memory, trainable parameters, generated sequences per unit of held-out Δ | Read `run.json` / `eval_results.json → run` / reports | existing | **✓** (E2e memory not logged) | **Yes** | Single-GPU, single-run timings. Not normalised for different clip counts. "Δ per GPU-hour" is not comparable across studies with different protocols |
+| **Pose-generation metrics** (registered) | R v1.1: coord_ah (L, R), coord_lr, dominance; per-stream activity A, m1 speed, m2 articulation, m3 jerk, m4 angle, extreme-frame fraction; validity flags; KL; typicality monitor.<br>J v1.1: as R, plus leakage | `evaluate.py` (all computed) | `eval_results.json` | **✓** | **Yes** | Motion statistics only; no semantics or intelligibility. J shares rotations with R (not independent) |
+| **Pose-generation metrics** (standard, e.g. FID / diversity / MPJPE / DTW to reference) | Not computed in Stage 5 | Could be computed from `eval_dumps.npz` (seed 7000 only, 523 MB) against dev `gt_poses`, without new generation | `eval_dumps.npz`; dev reference poses | **✗** | Possible for seed 7000 only, but these are **new metric definitions** (not registered); they need analysis approval and would be descriptive | The multi-seed runs would need `--save-dumps` (≈ 523 MB per run) to support this; decision U-A5. FID-type metrics need a feature extractor that does not exist here |
+| **Robustness and sensitivity** | (a) worst-case S-4 undefined handling; (b) outlier exclusion / trimmed mean; (c) per-noise-index k consistency; (d) length strata; (e) seed sensitivity; (f) hyperparameter sensitivity | (a)–(d) from `eval_samples.json`; (e) multi-seed; (f) would need tuning runs | existing; multi-seed | (a) ✓ (+0.0022, identical); (b) ✓ (+0.0019 without the max clip; trimmed +0.0017); (c), (d) ◐; (e) ✗; (f) **✗, not proposed** (tuning is forbidden by the replication protocol) | (a)–(d) yes | All on one training run until multi-seed exists |
+| **Algorithm comparisons** | Two or more RL algorithms trained and evaluated at an equal budget on the same clips and noise | — | — | **✗. No algorithm comparison exists or may be claimed.**<br>Only REINFORCE + RLOO was trained. E2e (fixed transforms, untrained) and E2c (ii) (per-clip pathwise gradient, not RL, different clips) are **different controller classes and protocols** | No | Figure 8 may show them side by side only as a descriptive, explicitly non-comparable panel. FG-1 compares controller *families* under one protocol (per-clip pathwise), still not RL algorithms |
+| **Ablations** | Remove one component; measure the paired change | Existing: *trained vs initial* (the effect of training: +0.00277 [0.00221, 0.00341]) and *initial vs uncoupled* (the effect of a random controller: −0.00057).<br>Proposed in FG-1: state-shuffle (H1), V2 vs V3 | existing; FG-1 | ◐ | 2 ablations yes | Rank, kernel width, KL cap and RLOO-vs-no-baseline ablations are **not run** and would be new experiments |
+| **Statistical reliability** | Clip-bootstrap 95% CIs (B = 2,000); paired common-noise design; Wilcoxon (descriptive); S-4; undefined counts; across-seed t-interval (proposed) | as implemented | existing; multi-seed | Within-run ✓; across-seed ✗ | Within-run yes | Clip bootstrap ignores within-clip noise variance as a separate level; 4 noises per clip. No multiplicity correction across secondary statistics (they are descriptive) |
+
+## Missing metrics (summary)
+
+| Missing | What unblocks it |
+|---|---|
+| Held-out return vs training progress; convergence speed; sample efficiency | OPT-C (intermediate-checkpoint evaluation) |
+| Stability across seeds | MS-T/E (multi-seed) |
+| ACMS generalisation gap | OPT-G (new train-split evaluation script + run) |
+| Algorithm comparison | **Nothing in the current plan.** It would need a second RL algorithm at an equal budget, which is not proposed |
+| Success rate, cumulative regret | **Not defensible as defined.** Substitutes: paired win fraction; cumulative shortfall vs twin |
+| Standard pose metrics (FID, MPJPE, DTW) | Analysis approval + definitions; `--save-dumps` in the multi-seed runs |
+| Further ablations (rank, KL cap, baseline) | New experiments; not proposed |

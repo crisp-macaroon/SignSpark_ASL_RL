@@ -1,0 +1,77 @@
+﻿28 {'M': 0.0043, 'V': 0.0051, 'A': 0.0, 'P': 0.0004, 'any': 0.0097} pA 0.00e+00 z_any -6.26
+47 {'M': 0.0053, 'V': 0.0055, 'A': 0.0006, 'P': 0.0007, 'any': 0.0119} pA 6.25e-06 z_any -3.98
+56 {'M': 0.0053, 'V': 0.0051, 'A': 0.0015, 'P': 0.0005, 'any': 0.0123} pA 1.67e-05 z_any -3.6
+67 {'M': 0.0053, 'V': 0.0049, 'A': 0.0011, 'P': 0.0008, 'any': 0.0119} pA 1.18e-05 z_any -4.05
+71 {'M': 0.0049, 'V': 0.0046, 'A': 0.0016, 'P': 0.0008, 'any': 0.0116} pA 1.81e-05 z_any -4.3
+78 {'M': 0.0054, 'V': 0.0053, 'A': 0.0013, 'P': 0.0007, 'any': 0.0124} pA 1.39e-05 z_any -3.48
+83 {'M': 0.0045, 'V': 0.0042, 'A': 0.0016, 'P': 0.0006, 'any': 0.0108} pA 1.81e-05 z_any -5.12
+84 {'M': 0.0047, 'V': 0.0061, 'A': 0.0021, 'P': 0.0004, 'any': 0.0132} pA 2.36e-05 z_any -2.66
+85 {'M': 0.0053, 'V': 0.0053, 'A': 0.0016, 'P': 0.0012, 'any': 0.0133} pA 1.74e-05 z_any -2.59
+99 {'M': 0.0046, 'V': 0.0057, 'A': 0.0021, 'P': 0.0004, 'any': 0.0127} pA 2.29e-05 z_any -3.22
+102 {'M': 0.0054, 'V': 0.0059, 'A': 0.0016, 'P': 0.0011, 'any': 0.0139} pA 1.74e-05 z_any -1.96
+116 {'M': 0.0053, 'V': 0.0047, 'A': 0.0028, 'P': 0.0006, 'any': 0.0131} pA 3.13e-05 z_any -2.78
+120 {'M': 0.0055, 'V': 0.0054, 'A': 0.0026, 'P': 0.0009, 'any': 0.0143} pA 2.85e-05 z_any -1.64
+125 {'M': 0.0043, 'V': 0.0054, 'A': 0.0018, 'P': 0.0008, 'any': 0.0122} pA 1.94e-05 z_any -3.73
+132 {'M': 0.0042, 'V': 0.0053, 'A': 0.0024, 'P': 0.0009, 'any': 0.0127} pA 2.64e-05 z_any -3.16
+139 {'M': 0.0044, 'V': 0.0051, 'A': 0.0027, 'P': 0.0008, 'any': 0.0129} pA 2.99e-05 z_any -3.03
+146 {'M': 0.0044, 'V': 0.0049, 'A': 0.0025, 'P': 0.0007, 'any': 0.0125} pA 2.78e-05 z_any -3.41
+157 {'M': 0.0051, 'V': 0.0048, 'A': 0.0034, 'P': 0.0011, 'any': 0.0141} pA 3.75e-05 z_any -1.77
+159 {'M': 0.0049, 'V': 0.0051, 'A': 0.0027, 'P': 0.0009, 'any': 0.0136} pA 2.99e-05 z_any -2.28
+171 {'M': 0.0056, 'V': 0.0051, 'A': 0.0025, 'P': 0.0005, 'any': 0.0137} pA 2.78e-05 z_any -2.21
+174 {'M': 0.0057, 'V': 0.0051, 'A': 0.0027, 'P': 0.0014, 'any': 0.0149} pA 3.06e-05 z_any -1.01
+177 {'M': 0.0055, 'V': 0.0048, 'A': 0.0028, 'P': 0.0006, 'any': 0.0138} pA 3.13e-05 z_any -2.15
+189 {'M': 0.0049, 'V': 0.0051, 'A': 0.0023, 'P': 0.0009, 'any': 0.013} pA 2.57e-05 z_any -2.91
+212 {'M': 0.0044, 'V': 0.0049, 'A': 0.0024, 'P': 0.0014, 'any': 0.013} pA 2.71e-05 z_any -2.91
+219 {'M': 0.005, 'V': 0.005, 'A': 0.0027, 'P': 0.0008, 'any': 0.0134} pA 3.06e-05 z_any -2.47
+220 {'M': 0.0046, 'V': 0.0046, 'A': 0.0035, 'P': 0.0008, 'any': 0.0133} pA 3.89e-05 z_any -2.59
+248 {'M': 0.0045, 'V': 0.0063, 'A': 0.0035, 'P': 0.0012, 'any': 0.0154} pA 3.89e-05 z_any -0.44
+252 {'M': 0.005, 'V': 0.0047, 'A': 0.0042, 'P': 0.0013, 'any': 0.0152} pA 4.65e-05 z_any -0.69
+263 {'M': 0.0053, 'V': 0.0057, 'A': 0.0039, 'P': 0.0009, 'any': 0.0157} pA 4.37e-05 z_any -0.19
+304 {'M': 0.0041, 'V': 0.0057, 'A': 0.0028, 'P': 0.0013, 'any': 0.0139} pA 3.13e-05 z_any -2.02
+28 null_violators {'n': 500, 'alternating5_MVN_feasible': 0.0, 'exact_MVN_feasible': 1.0}
+28 offset {'n': 500, 'alternating5_MVN_feasible': 0.998, 'exact_MVN_feasible': 1.0}
+28 scale {'n': 500, 'alternating5_MVN_feasible': 0.29, 'exact_MVN_feasible': 1.0}
+28 global {'n': 500, 'alternating5_MVN_feasible': 0.998, 'exact_MVN_feasible': 1.0}
+28 combined {'n': 500, 'alternating5_MVN_feasible': 0.326, 'exact_MVN_feasible': 1.0}
+56 null_violators {'n': 500, 'alternating5_MVN_feasible': 0.0, 'exact_MVN_feasible': 1.0}
+56 offset {'n': 500, 'alternating5_MVN_feasible': 0.998, 'exact_MVN_feasible': 1.0}
+56 scale {'n': 500, 'alternating5_MVN_feasible': 0.162, 'exact_MVN_feasible': 1.0}
+56 global {'n': 500, 'alternating5_MVN_feasible': 1.0, 'exact_MVN_feasible': 1.0}
+56 combined {'n': 500, 'alternating5_MVN_feasible': 0.218, 'exact_MVN_feasible': 1.0}
+146 null_violators {'n': 500, 'alternating5_MVN_feasible': 0.274, 'exact_MVN_feasible': 1.0}
+146 offset {'n': 500, 'alternating5_MVN_feasible': 1.0, 'exact_MVN_feasible': 1.0}
+146 scale {'n': 500, 'alternating5_MVN_feasible': 0.07, 'exact_MVN_feasible': 1.0}
+146 global {'n': 500, 'alternating5_MVN_feasible': 1.0, 'exact_MVN_feasible': 1.0}
+146 combined {'n': 500, 'alternating5_MVN_feasible': 0.128, 'exact_MVN_feasible': 1.0}
+304 null_violators {'n': 500, 'alternating5_MVN_feasible': 0.378, 'exact_MVN_feasible': 1.0}
+304 offset {'n': 500, 'alternating5_MVN_feasible': 1.0, 'exact_MVN_feasible': 1.0}
+304 scale {'n': 500, 'alternating5_MVN_feasible': 0.06, 'exact_MVN_feasible': 1.0}
+304 global {'n': 500, 'alternating5_MVN_feasible': 1.0, 'exact_MVN_feasible': 1.0}
+304 combined {'n': 500, 'alternating5_MVN_feasible': 0.106, 'exact_MVN_feasible': 1.0}
+28 null_AP_violators {'n': 60, 'success': 1.0, 'median_steps': 1.0, 'median_rel_change': 0.010012092541318546, 'max_rel_change': 0.027974971476541842}
+28 AR(1) 0.3 all channels {'n': 60, 'success': 1.0, 'median_steps': 22.0, 'median_rel_change': 0.1851366729461793, 'max_rel_change': 0.22158790742180667}
+56 null_AP_violators {'n': 60, 'success': 1.0, 'median_steps': 1.0, 'median_rel_change': 0.006151614080487311, 'max_rel_change': 0.016492318563796977}
+56 AR(1) 0.3 all channels {'n': 60, 'success': 1.0, 'median_steps': 26.0, 'median_rel_change': 0.20832038090778832, 'max_rel_change': 0.23003708348568913}
+146 null_AP_violators {'n': 60, 'success': 1.0, 'median_steps': 1.0, 'median_rel_change': 0.0020088183053894757, 'max_rel_change': 0.010109905067242313}
+146 AR(1) 0.3 all channels {'n': 60, 'success': 1.0, 'median_steps': 35.0, 'median_rel_change': 0.23545050190280353, 'max_rel_change': 0.25560092334500656}
+304 null_AP_violators {'n': 60, 'success': 1.0, 'median_steps': 1.0, 'median_rel_change': 0.0019589622532180952, 'max_rel_change': 0.010116869537743657}
+304 AR(1) 0.3 all channels {'n': 60, 'success': 0.0, 'median_steps': None, 'median_rel_change': None, 'max_rel_change': None}
+{
+ "n": 19200,
+ "fraction_modified": 0.013385416666666667,
+ "unrepaired": 0,
+ "rel_change_among_modified": {
+  "median": 0.0014100732070435032,
+  "p95": 0.009930374111746375,
+  "max": 0.016665586894184087
+ },
+ "rel_change_population_mean": 3.194521890824351e-05,
+ "KS_pre_vs_post_by_statistic(L-scaled mean, lag1)": {
+  "mean": 0.005520833333333308,
+  "var_min": 0.00046875000000001776,
+  "var_max": 0.0003645833333333348,
+  "lag1": 0.0026562500000000266,
+  "lag1_pooled": 0.0005208333333334147
+ },
+ "P(at least one of 8 raw candidates atypical) at this rate": 0.1021986698781917
+}

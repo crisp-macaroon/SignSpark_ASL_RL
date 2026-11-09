@@ -1,0 +1,62 @@
+{
+ "rule": "FG-1 clip selection (MC_REDESIGN_PROPOSAL.md \u00a75.1). CPU only; opens the TRAIN split only.\n\nnumpy default_rng(5100).permutation(29,630) over the How2Sign TRAIN indices (R0 order); walk the permutation, skip any\nclip used by the five ACMS training sets (stage5_multiseed/out/train_clips.json); take the first 8 with L < 100 and the\nfirst 8 with L >= 100 (length-stratified; E2c (ii) length effect). Gate position a = 0..15 in the order taken\n(short clips first, then long).",
+ "seed": 5100,
+ "clips": [
+  17079,
+  4249,
+  11279,
+  13940,
+  28162,
+  7420,
+  15205,
+  21494,
+  19470,
+  17780,
+  9937,
+  4169,
+  27331,
+  13252,
+  10252,
+  26746
+ ],
+ "lengths": [
+  35,
+  86,
+  78,
+  59,
+  39,
+  53,
+  57,
+  32,
+  178,
+  178,
+  191,
+  304,
+  140,
+  161,
+  136,
+  115
+ ],
+ "names": [
+  "48DncKS_yN0_20-8-rgb_front",
+  "0HObK-sd2ds_14-5-rgb_front",
+  "1dLchY8R6tU_18-8-rgb_front",
+  "2-JvO5SCsCc_3-8-rgb_front",
+  "dvBdWGLzayI_14-8-rgb_front",
+  "19loES0r7_4_10-8-rgb_front",
+  "2l9_6UKlhmM_17-8-rgb_front",
+  "Dvq-Fc0-Lxk_16-5-rgb_front",
+  "C9TWqHwLWcg_3-8-rgb_front",
+  "5AlpcMspHX4_7-8-rgb_front",
+  "1UG52nvLLVA_0-5-rgb_front",
+  "0GwSyviALiU_0-11-rgb_front",
+  "cwXQVmfKj48_15-5-rgb_front",
+  "1rGiqgUx360_5-8-rgb_front",
+  "1WIZH2vgOJE_5-5-rgb_front",
+  "cQBrXCcfDyc_45-5-rgb_front"
+ ],
+ "skipped_acms_training_clips": 3,
+ "opened_splits": [
+  "train"
+ ]
+}

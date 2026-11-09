@@ -1,0 +1,27 @@
+Logging to C:\Users\balaji\AppData\Local\Temp\openai-2026-11-07-16-43-27-675769
+### Creating model and flow...
+Using UNET with: Input Dim 60 | Latent Dim: 512 | Mults: (2, 2, 2, 2) | Added channels: 120
+AdaGN: True | Zero: True | Attention: False
+[TemporalUnetLarge] channel dims : [60, 512, 1024, 2048, 2048]
+[TemporalUnetLarge] bottleneck   : 1024
+[TemporalUnetLarge] attn at depth: (2, 3)
+[TemporalUnetLarge] Total parameters: 0.832B
+Text Conditioning Enabled. Loading CLIP M-CLIP/XLM-Roberta-Large-Vit-B-16Plus...
+### RFlow with lbd_flow 1.0, lbd_recon 1.0, lbd_velocity 1.0
+### The parameter count is 1395037372
+### Creating model and flow...
+Using UNET with: Input Dim 90 | Latent Dim: 512 | Mults: (2, 2, 2, 2) | Added channels: 180
+AdaGN: True | Zero: True | Attention: False
+[TemporalUnetLarge] channel dims : [90, 512, 1024, 2048, 2048]
+[TemporalUnetLarge] bottleneck   : 1024
+[TemporalUnetLarge] attn at depth: (2, 3)
+[TemporalUnetLarge] Total parameters: 0.832B
+Text Conditioning Enabled. Loading CLIP M-CLIP/XLM-Roberta-Large-Vit-B-16Plus...
+### RFlow with lbd_flow 1.0, lbd_recon 1.0, lbd_velocity 1.0
+### The parameter count is 1395329242
+### flip_left_hand=True: converting left hand from SMPLX-left to right-hand convention
+############### 
+Loading [Dataset: full @ 29630 items | Seq_Len: 304] from C:\Users\balaji\Downloads\rlproj\rlproj\data\raw\SignSparK_data\train\How2Sign_reopt_train.lmdb
+[    37s] prep fit done
+[    40s] prep ho done
+completed 40.9 s

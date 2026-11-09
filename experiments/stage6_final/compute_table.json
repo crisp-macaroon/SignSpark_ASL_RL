@@ -1,0 +1,277 @@
+[
+ {
+  "experiment": "Stage 4 E2e (fixed M-C, 16 conditions)",
+  "seconds": 1726.0,
+  "gpu_peak_reserved_GiB": null,
+  "params": 0
+ },
+ {
+  "experiment": "Stage 4 E2c (ii) (per-clip M-C, 32 clips)",
+  "seconds": 1614.0,
+  "gpu_peak_reserved_GiB": 8.7,
+  "params": "\u22489,060/clip"
+ },
+ {
+  "experiment": "ACMS train run 7000",
+  "seconds": 283.8,
+  "gpu_peak_reserved_GiB": 10.725,
+  "params": 433
+ },
+ {
+  "experiment": "ACMS eval run 7000 (R+J)",
+  "seconds": 1638.9,
+  "gpu_peak_reserved_GiB": 10.781,
+  "params": 0
+ },
+ {
+  "experiment": "ACMS train run 7001",
+  "seconds": 283.0,
+  "gpu_peak_reserved_GiB": 10.748,
+  "params": 433
+ },
+ {
+  "experiment": "ACMS eval run 7001 (R+J)",
+  "seconds": 1693.6,
+  "gpu_peak_reserved_GiB": 10.781,
+  "params": 0
+ },
+ {
+  "experiment": "ACMS train run 7002",
+  "seconds": 282.2,
+  "gpu_peak_reserved_GiB": 10.82,
+  "params": 433
+ },
+ {
+  "experiment": "ACMS eval run 7002 (R+J)",
+  "seconds": 1555.6,
+  "gpu_peak_reserved_GiB": 10.781,
+  "params": 0
+ },
+ {
+  "experiment": "ACMS train run 7003",
+  "seconds": 272.6,
+  "gpu_peak_reserved_GiB": 10.77,
+  "params": 433
+ },
+ {
+  "experiment": "ACMS eval run 7003 (R+J)",
+  "seconds": 1551.1,
+  "gpu_peak_reserved_GiB": 10.781,
+  "params": 0
+ },
+ {
+  "experiment": "ACMS train run 7004",
+  "seconds": 273.3,
+  "gpu_peak_reserved_GiB": 10.689,
+  "params": 433
+ },
+ {
+  "experiment": "ACMS eval run 7004 (R+J)",
+  "seconds": 1551.1,
+  "gpu_peak_reserved_GiB": 10.781,
+  "params": 0
+ },
+ {
+  "experiment": "FG-1 prep",
+  "seconds": 167.6,
+  "gpu_peak_reserved_GiB": 10.518,
+  "params": 0,
+  "status": "completed"
+ },
+ {
+  "experiment": "FG-1 V1",
+  "seconds": 3197.5,
+  "gpu_peak_reserved_GiB": 10.518,
+  "params": 9060,
+  "status": "completed"
+ },
+ {
+  "experiment": "FG-1 V2",
+  "seconds": 3180.1,
+  "gpu_peak_reserved_GiB": 10.518,
+  "params": 433,
+  "status": "completed"
+ },
+ {
+  "experiment": "FG-1 V3",
+  "seconds": 6201.2,
+  "gpu_peak_reserved_GiB": 10.518,
+  "params": 866,
+  "status": "completed"
+ },
+ {
+  "experiment": "optg_s7000",
+  "seconds": 259.0,
+  "gpu_peak_reserved_GiB": 10.725,
+  "params": 0,
+  "exit": 0
+ },
+ {
+  "experiment": "optg_s7001",
+  "seconds": 257.8,
+  "gpu_peak_reserved_GiB": 10.748,
+  "params": 0,
+  "exit": 0
+ },
+ {
+  "experiment": "optg_s7002",
+  "seconds": 258.5,
+  "gpu_peak_reserved_GiB": 10.82,
+  "params": 0,
+  "exit": 0
+ },
+ {
+  "experiment": "optg_s7003",
+  "seconds": 258.7,
+  "gpu_peak_reserved_GiB": 10.77,
+  "params": 0,
+  "exit": 0
+ },
+ {
+  "experiment": "optg_s7004",
+  "seconds": 257.5,
+  "gpu_peak_reserved_GiB": 10.689,
+  "params": 0,
+  "exit": 0
+ },
+ {
+  "experiment": "optc_s7000_u025",
+  "seconds": 487.5,
+  "gpu_peak_reserved_GiB": 10.781,
+  "params": 0,
+  "exit": 0
+ },
+ {
+  "experiment": "optc_s7000_u050",
+  "seconds": 486.9,
+  "gpu_peak_reserved_GiB": 10.781,
+  "params": 0,
+  "exit": 0
+ },
+ {
+  "experiment": "optc_s7000_u075",
+  "seconds": 487.0,
+  "gpu_peak_reserved_GiB": 10.781,
+  "params": 0,
+  "exit": 0
+ },
+ {
+  "experiment": "optc_s7000_u100",
+  "seconds": 487.5,
+  "gpu_peak_reserved_GiB": 10.781,
+  "params": 0,
+  "exit": 0
+ },
+ {
+  "experiment": "optc_s7001_u025",
+  "seconds": 487.3,
+  "gpu_peak_reserved_GiB": 10.781,
+  "params": 0,
+  "exit": 0
+ },
+ {
+  "experiment": "optc_s7001_u050",
+  "seconds": 487.7,
+  "gpu_peak_reserved_GiB": 10.781,
+  "params": 0,
+  "exit": 0
+ },
+ {
+  "experiment": "optc_s7001_u075",
+  "seconds": 487.7,
+  "gpu_peak_reserved_GiB": 10.781,
+  "params": 0,
+  "exit": 0
+ },
+ {
+  "experiment": "optc_s7001_u100",
+  "seconds": 487.9,
+  "gpu_peak_reserved_GiB": 10.781,
+  "params": 0,
+  "exit": 0
+ },
+ {
+  "experiment": "optc_s7002_u025",
+  "seconds": 488.2,
+  "gpu_peak_reserved_GiB": 10.781,
+  "params": 0,
+  "exit": 0
+ },
+ {
+  "experiment": "optc_s7002_u050",
+  "seconds": 488.1,
+  "gpu_peak_reserved_GiB": 10.781,
+  "params": 0,
+  "exit": 0
+ },
+ {
+  "experiment": "optc_s7002_u075",
+  "seconds": 487.6,
+  "gpu_peak_reserved_GiB": 10.781,
+  "params": 0,
+  "exit": 0
+ },
+ {
+  "experiment": "optc_s7002_u100",
+  "seconds": 487.0,
+  "gpu_peak_reserved_GiB": 10.781,
+  "params": 0,
+  "exit": 0
+ },
+ {
+  "experiment": "optc_s7003_u025",
+  "seconds": 487.5,
+  "gpu_peak_reserved_GiB": 10.781,
+  "params": 0,
+  "exit": 0
+ },
+ {
+  "experiment": "optc_s7003_u050",
+  "seconds": 489.3,
+  "gpu_peak_reserved_GiB": 10.781,
+  "params": 0,
+  "exit": 0
+ },
+ {
+  "experiment": "optc_s7003_u075",
+  "seconds": 490.9,
+  "gpu_peak_reserved_GiB": 10.781,
+  "params": 0,
+  "exit": 0
+ },
+ {
+  "experiment": "optc_s7003_u100",
+  "seconds": 490.9,
+  "gpu_peak_reserved_GiB": 10.781,
+  "params": 0,
+  "exit": 0
+ },
+ {
+  "experiment": "optc_s7004_u025",
+  "seconds": 491.0,
+  "gpu_peak_reserved_GiB": 10.781,
+  "params": 0,
+  "exit": 0
+ },
+ {
+  "experiment": "optc_s7004_u050",
+  "seconds": 490.3,
+  "gpu_peak_reserved_GiB": 10.781,
+  "params": 0,
+  "exit": 0
+ },
+ {
+  "experiment": "optc_s7004_u075",
+  "seconds": 489.0,
+  "gpu_peak_reserved_GiB": 10.781,
+  "params": 0,
+  "exit": 0
+ },
+ {
+  "experiment": "optc_s7004_u100",
+  "seconds": 487.4,
+  "gpu_peak_reserved_GiB": 10.781,
+  "params": 0,
+  "exit": 0
+ }
+]

@@ -1,0 +1,195 @@
+Logging to C:\Users\balaji\AppData\Local\Temp\openai-2026-11-03-23-52-01-165437
+### flip_left_hand=True: converting left hand from SMPLX-left to right-hand convention
+############### 
+Loading [Dataset: full @ 29630 items | Seq_Len: 304] from C:\Users\balaji\Downloads\rlproj\rlproj\data\raw\SignSparK_data\train\How2Sign_reopt_train.lmdb
+chunk 1/60 81s total 1.4min
+chunk 2/60 68s total 2.5min
+chunk 3/60 67s total 3.6min
+chunk 4/60 72s total 4.9min
+chunk 5/60 81s total 6.2min
+chunk 6/60 60s total 7.2min
+chunk 7/60 71s total 8.4min
+chunk 8/60 54s total 9.3min
+chunk 9/60 71s total 10.5min
+chunk 10/60 76s total 11.7min
+chunk 11/60 72s total 12.9min
+chunk 12/60 76s total 14.2min
+chunk 13/60 72s total 15.4min
+chunk 14/60 62s total 16.4min
+chunk 15/60 64s total 17.5min
+chunk 16/60 77s total 18.8min
+chunk 17/60 81s total 20.1min
+chunk 18/60 80s total 21.4min
+chunk 19/60 69s total 22.6min
+chunk 20/60 78s total 23.9min
+chunk 21/60 75s total 25.1min
+chunk 22/60 69s total 26.3min
+chunk 23/60 61s total 27.3min
+chunk 24/60 65s total 28.4min
+chunk 25/60 74s total 29.6min
+chunk 26/60 66s total 30.7min
+chunk 27/60 70s total 31.9min
+chunk 28/60 74s total 33.1min
+chunk 29/60 74s total 34.4min
+chunk 30/60 72s total 35.6min
+chunk 31/60 70s total 36.7min
+chunk 32/60 76s total 38.0min
+chunk 33/60 76s total 39.3min
+chunk 34/60 69s total 40.4min
+chunk 35/60 67s total 41.5min
+chunk 36/60 68s total 42.7min
+chunk 37/60 66s total 43.8min
+chunk 38/60 57s total 44.7min
+chunk 39/60 65s total 45.8min
+chunk 40/60 74s total 47.0min
+chunk 41/60 63s total 48.1min
+chunk 42/60 67s total 49.2min
+chunk 43/60 63s total 50.2min
+chunk 44/60 57s total 51.2min
+chunk 45/60 63s total 52.2min
+chunk 46/60 63s total 53.3min
+chunk 47/60 68s total 54.4min
+chunk 48/60 64s total 55.5min
+chunk 49/60 76s total 56.7min
+chunk 50/60 75s total 58.0min
+chunk 51/60 66s total 59.1min
+chunk 52/60 67s total 60.2min
+chunk 53/60 65s total 61.3min
+chunk 54/60 75s total 62.5min
+chunk 55/60 74s total 63.8min
+chunk 56/60 66s total 64.9min
+chunk 57/60 70s total 66.0min
+chunk 58/60 74s total 67.3min
+chunk 59/60 70s total 68.4min
+chunk 60/60 20s total 68.8min
+{
+ "task1_J_v1.1_verification": {
+  "clips": 29630,
+  "order_matches_R0": true,
+  "fk_nonfinite_clips": 0,
+  "invalid_streams_by_signal": {
+   "arm_L": 0,
+   "arm_R": 0,
+   "hand_L": 0,
+   "hand_R": 0
+  },
+  "invalid_streams_total": 0,
+  "definedness_changes_v1_to_v1.1": {
+   "coord_ah_J_L": 0,
+   "coord_ah_J_R": 0,
+   "coord_lr_J": 0,
+   "dom_J": 0
+  },
+  "max_abs_diff_where_defined": {
+   "coord_ah_J_L": 0.0,
+   "coord_ah_J_R": 0.0,
+   "coord_lr_J": 0.0,
+   "dom_J": 0.0
+  },
+  "v1.1_means_vs_frozen_J_targets": {
+   "coord_ah_J_L": {
+    "v1.1_mean": 0.422004108966902,
+    "v1_mean": 0.422004108966902
+   },
+   "coord_ah_J_R": {
+    "v1.1_mean": 0.24902149842319268,
+    "v1_mean": 0.24902149842319268
+   },
+   "coord_lr_J": {
+    "v1.1_mean": 0.3196211313449238,
+    "v1_mean": 0.3196211313449238
+   },
+   "dom_J": {
+    "v1.1_mean": -0.4148973111261466,
+    "v1_mean": -0.4148973111261466
+   }
+  },
+  "conclusion": "No invalid J streams; v1.1 equals v1 on all clips: frozen J targets remain valid under J v1.1 unchanged."
+ },
+ "task2_skinning_leakage": {
+  "subset": "every 10th train clip (i % 10 == 0)",
+  "n_clips": 2963,
+  "real_data": {
+   "L": {
+    "leakage_m_per_frame": {
+     "median": 3.693150716754702e-05,
+     "mean": 3.6946033218371184e-05,
+     "p95": 5.4888685781929996e-05
+    },
+    "actual_hand_signal_m_per_frame": {
+     "median": 0.001976626733936232
+    },
+    "leakage_ratio_vs_actual": {
+     "median": 0.01867799628398392,
+     "p95": 0.03443694320136378,
+     "mean": 0.020730505088313814
+    },
+    "coord_actual_mean": 0.42043295100900924,
+    "coord_noleak_mean": 0.4195753549007745,
+    "coord_leakonly_mean": 0.30204867279770237,
+    "paired_diff_actual_minus_noleak": {
+     "mean": 0.0008575961082346669,
+     "ci95": [
+      0.0005719455703606966,
+      0.0012595645937483373
+     ],
+     "n": 2963
+    },
+    "spearman_actual_vs_noleak": 0.9994943269599387,
+    "material_by_prestated_criterion": false
+   },
+   "R": {
+    "leakage_m_per_frame": {
+     "median": 2.9508361820530615e-05,
+     "mean": 2.9641260653770394e-05,
+     "p95": 4.3569551246960685e-05
+    },
+    "actual_hand_signal_m_per_frame": {
+     "median": 0.002920860504347972
+    },
+    "leakage_ratio_vs_actual": {
+     "median": 0.010237341470018708,
+     "p95": 0.016066114435298692,
+     "mean": 0.010753413748346643
+    },
+    "coord_actual_mean": 0.24917398504920277,
+    "coord_noleak_mean": 0.24790703055874133,
+    "coord_leakonly_mean": 0.4038293595440084,
+    "paired_diff_actual_minus_noleak": {
+     "mean": 0.001266954490461459,
+     "ci95": [
+      0.0011667885153593901,
+      0.0013617786855702155
+     ],
+     "n": 2963
+    },
+    "spearman_actual_vs_noleak": 0.9999047035513301,
+    "material_by_prestated_criterion": false
+   },
+   "LR": {
+    "lr_actual_mean": 0.31975205163817383,
+    "lr_noleak_mean": 0.31943680098832067,
+    "paired_diff": {
+     "mean": 0.0003152506498531703,
+     "ci95": [
+      -6.785741917394292e-05,
+      0.0006063478118744445
+     ],
+     "n": 2963
+    }
+   }
+  },
+  "material_overall": false,
+  "synthetic": {
+   "n": 50,
+   "label": "SYNTHETIC random-walk poses (0.05 rad/frame steps), not real data",
+   "leak_mean_m_per_frame": 4.8942342209208494e-05,
+   "arm_speed_m_per_frame": 0.05053431598115568,
+   "leak_per_unit_wrist_speed": 0.0009712498600828327,
+   "hand_signal_mean_armstatic": 0.0027000429291532146,
+   "leak_ratio_vs_moving_hand": 0.01812650520507011,
+   "coord_leakonly_mean": 0.18251366572043348
+  }
+ },
+ "minutes": 68.9
+}

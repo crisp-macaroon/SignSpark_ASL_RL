@@ -1,0 +1,50 @@
+PASS 16 conditions (2 base, 6 BH, 4 LR, 4 SS)
+PASS T1(a) analytic checks pass for all 16 conditions
+PASS BH: ||K_L||_2 = kappa < 1
+PASS BH: K_RL = 0
+PASS arm12: right-hand source = body channels 42..47, 54..59
+PASS arm12: left-hand source = body channels 36..41, 48..53
+PASS LR: K_L = K_Rb = 0; S_R = sqrt(1-k^2) I
+PASS KL BH-r60-k0.9 = 2*60*(-0.5 log 0.19)  99.644 nats/frame
+PASS KL SS-0.75-1 = 45 (s^2 - 1 - log s^2)
+PASS padded frames untouched
+PASS empirical cov of eps~ matches design (max |diff| < 0.05 at n ~ 10k)  max 0.044
+PASS body noise unchanged (z_b = eps_b)
+PASS sample record finite
+PASS swapping hands negates X
+PASS Gram-Schmidt gives rotations
+PASS T2 on equal-law synthetic data passes all eight  h = 0.68%
+PASS T2 detects a 10% shift as fail
+PASS T5-A parity data -> pass  mu = 0.0023
+PASS T5-A shifted data (mu = 0.2) -> fail
+PASS paired delta detects +0.10 coupling  delta = 0.103
+PASS D-a passes for a -0.35 shift toward t* = -0.4
+PASS D-b closer for that shift
+PASS T1 calibration widens only within registered caps; lag-1 untouched  margins {'mean': 0.05, 'var': 0.1, 'corr': 0.05, 'cross': 0.05, 'lag1': 0.03} fw 1.00 (toy n=5000, 20 sets)
+PASS P-1 registered initial margins unchanged
+PASS P-1 registered caps only (no lag-1 cap)
+PASS P-1 lag-1 null failures -> no widening, calibration fails (stop)
+PASS P-1 mean null failures -> mean widens once to 0.035, others unchanged
+PASS P-1 widening stops at the registered mean cap 0.05
+PASS P-2 mean-over-joints extreme fraction reported and <= any-joint fraction
+PASS P-4 R-only: existence true, bilateral false, side named
+PASS P-4 monotonicity judged on the transmitting side only
+PASS P-4 orientation counts per side
+PASS P-4 both sides / neither side named
+PASS P-11 efficiency ratio = (0.06/10)/(0.12/100) = 5 with a bootstrap CI  [4.999999999999999, 5.000000000000001]
+PASS P-13 S3 caveat attached to T5-A output
+PASS energy distance permutation test runs  {'energy_distance': 0.13612832437997557, 'p_perm': np.float64(0.31840796019900497)}
+[    0.5s] T5B SS-0.9-1.0 False
+[    0.9s] T5B SS-0.75-1.0 False
+[    1.3s] T5B SS-1.0-1.15 False
+[    1.7s] T5B SS-0.85-1.15 False
+PASS orchestrator analysis runs end-to-end on synthetic records
+PASS analysis carries P-4 fields
+PASS analysis carries P-11 efficiency CIs
+PASS analysis carries P-10 descriptive n* block
+PASS analysis carries P-2 descriptive mean-joint extremes
+PASS plan states registered vs new T1 items
+
+42/42 checks passed
+
+--- stderr ---

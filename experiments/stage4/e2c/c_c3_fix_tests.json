@@ -1,0 +1,627 @@
+{
+ "constants": {
+  "NORM_RTOL": 1e-06,
+  "INWARD_MARGIN": 1e-05,
+  "MODEL_DTYPE": "float32",
+  "FAM": {
+   "M": 0.005,
+   "V": 0.005,
+   "A": 0.005,
+   "P": 0.001
+  }
+ },
+ "A": {
+  "cases": [
+   {
+    "L": 28,
+    "case": "one NaN",
+    "feasible": false,
+    "project_ok": false,
+    "to_model_input_ok": false,
+    "repair_ok": false,
+    "pre_fix_feasible_result": true,
+    "problems": []
+   },
+   {
+    "L": 28,
+    "case": "one +inf",
+    "feasible": false,
+    "project_ok": false,
+    "to_model_input_ok": false,
+    "repair_ok": false,
+    "pre_fix_feasible_result": false,
+    "problems": []
+   },
+   {
+    "L": 28,
+    "case": "one -inf",
+    "feasible": false,
+    "project_ok": false,
+    "to_model_input_ok": false,
+    "repair_ok": false,
+    "pre_fix_feasible_result": false,
+    "problems": []
+   },
+   {
+    "L": 28,
+    "case": "all NaN",
+    "feasible": false,
+    "project_ok": false,
+    "to_model_input_ok": false,
+    "repair_ok": false,
+    "pre_fix_feasible_result": true,
+    "problems": []
+   },
+   {
+    "L": 28,
+    "case": "NaN row",
+    "feasible": false,
+    "project_ok": false,
+    "to_model_input_ok": false,
+    "repair_ok": false,
+    "pre_fix_feasible_result": true,
+    "problems": []
+   },
+   {
+    "L": 28,
+    "case": "norm2 NaN",
+    "feasible": false,
+    "project_ok": false,
+    "to_model_input_ok": false,
+    "repair_ok": false,
+    "pre_fix_feasible_result": true,
+    "problems": []
+   },
+   {
+    "L": 28,
+    "case": "float32 overflow (1e39)",
+    "feasible": false,
+    "project_ok": true,
+    "to_model_input_ok": true,
+    "repair_ok": true,
+    "pre_fix_feasible_result": false,
+    "problems": []
+   },
+   {
+    "L": 146,
+    "case": "one NaN",
+    "feasible": false,
+    "project_ok": false,
+    "to_model_input_ok": false,
+    "repair_ok": false,
+    "pre_fix_feasible_result": true,
+    "problems": []
+   },
+   {
+    "L": 146,
+    "case": "one +inf",
+    "feasible": false,
+    "project_ok": false,
+    "to_model_input_ok": false,
+    "repair_ok": false,
+    "pre_fix_feasible_result": false,
+    "problems": []
+   },
+   {
+    "L": 146,
+    "case": "one -inf",
+    "feasible": false,
+    "project_ok": false,
+    "to_model_input_ok": false,
+    "repair_ok": false,
+    "pre_fix_feasible_result": false,
+    "problems": []
+   },
+   {
+    "L": 146,
+    "case": "all NaN",
+    "feasible": false,
+    "project_ok": false,
+    "to_model_input_ok": false,
+    "repair_ok": false,
+    "pre_fix_feasible_result": true,
+    "problems": []
+   },
+   {
+    "L": 146,
+    "case": "NaN row",
+    "feasible": false,
+    "project_ok": false,
+    "to_model_input_ok": false,
+    "repair_ok": false,
+    "pre_fix_feasible_result": true,
+    "problems": []
+   },
+   {
+    "L": 146,
+    "case": "norm2 NaN",
+    "feasible": false,
+    "project_ok": false,
+    "to_model_input_ok": false,
+    "repair_ok": false,
+    "pre_fix_feasible_result": true,
+    "problems": []
+   },
+   {
+    "L": 146,
+    "case": "float32 overflow (1e39)",
+    "feasible": false,
+    "project_ok": true,
+    "to_model_input_ok": true,
+    "repair_ok": true,
+    "pre_fix_feasible_result": false,
+    "problems": []
+   },
+   {
+    "L": 304,
+    "case": "one NaN",
+    "feasible": false,
+    "project_ok": false,
+    "to_model_input_ok": false,
+    "repair_ok": false,
+    "pre_fix_feasible_result": true,
+    "problems": []
+   },
+   {
+    "L": 304,
+    "case": "one +inf",
+    "feasible": false,
+    "project_ok": false,
+    "to_model_input_ok": false,
+    "repair_ok": false,
+    "pre_fix_feasible_result": false,
+    "problems": []
+   },
+   {
+    "L": 304,
+    "case": "one -inf",
+    "feasible": false,
+    "project_ok": false,
+    "to_model_input_ok": false,
+    "repair_ok": false,
+    "pre_fix_feasible_result": false,
+    "problems": []
+   },
+   {
+    "L": 304,
+    "case": "all NaN",
+    "feasible": false,
+    "project_ok": false,
+    "to_model_input_ok": false,
+    "repair_ok": false,
+    "pre_fix_feasible_result": true,
+    "problems": []
+   },
+   {
+    "L": 304,
+    "case": "NaN row",
+    "feasible": false,
+    "project_ok": false,
+    "to_model_input_ok": false,
+    "repair_ok": false,
+    "pre_fix_feasible_result": true,
+    "problems": []
+   },
+   {
+    "L": 304,
+    "case": "norm2 NaN",
+    "feasible": false,
+    "project_ok": false,
+    "to_model_input_ok": false,
+    "repair_ok": false,
+    "pre_fix_feasible_result": true,
+    "problems": []
+   },
+   {
+    "L": 304,
+    "case": "float32 overflow (1e39)",
+    "feasible": false,
+    "project_ok": true,
+    "to_model_input_ok": true,
+    "repair_ok": true,
+    "pre_fix_feasible_result": false,
+    "problems": []
+   }
+  ],
+  "n": 21,
+  "failures": 0,
+  "pass": true
+ },
+ "B": {
+  "aggregate": {
+   "cases": 10000,
+   "success": 10000,
+   "failed": 0,
+   "postcast_violations_among_success": 0,
+   "nonfinite_among_success": 0,
+   "max_norm_rel_err": 7.0673650926293975e-09,
+   "max_M_dev": -9.96727558177268e-06,
+   "max_V_dev": -9.946912834025512e-06,
+   "reprojections_used": 0,
+   "AP_not_satisfied_among_success": 150,
+   "pass": true
+  },
+  "by_case": {
+   "L28_null_violators": {
+    "n": 500,
+    "success": 500,
+    "failed": 0,
+    "postcast_violations": 0,
+    "AP_not_satisfied": 0
+   },
+   "L28_offset": {
+    "n": 500,
+    "success": 500,
+    "failed": 0,
+    "postcast_violations": 0,
+    "AP_not_satisfied": 2
+   },
+   "L28_scale": {
+    "n": 500,
+    "success": 500,
+    "failed": 0,
+    "postcast_violations": 0,
+    "AP_not_satisfied": 0
+   },
+   "L28_global": {
+    "n": 500,
+    "success": 500,
+    "failed": 0,
+    "postcast_violations": 0,
+    "AP_not_satisfied": 5
+   },
+   "L28_combined": {
+    "n": 500,
+    "success": 500,
+    "failed": 0,
+    "postcast_violations": 0,
+    "AP_not_satisfied": 54
+   },
+   "L56_null_violators": {
+    "n": 500,
+    "success": 500,
+    "failed": 0,
+    "postcast_violations": 0,
+    "AP_not_satisfied": 3
+   },
+   "L56_offset": {
+    "n": 500,
+    "success": 500,
+    "failed": 0,
+    "postcast_violations": 0,
+    "AP_not_satisfied": 5
+   },
+   "L56_scale": {
+    "n": 500,
+    "success": 500,
+    "failed": 0,
+    "postcast_violations": 0,
+    "AP_not_satisfied": 0
+   },
+   "L56_global": {
+    "n": 500,
+    "success": 500,
+    "failed": 0,
+    "postcast_violations": 0,
+    "AP_not_satisfied": 3
+   },
+   "L56_combined": {
+    "n": 500,
+    "success": 500,
+    "failed": 0,
+    "postcast_violations": 0,
+    "AP_not_satisfied": 37
+   },
+   "L146_null_violators": {
+    "n": 500,
+    "success": 500,
+    "failed": 0,
+    "postcast_violations": 0,
+    "AP_not_satisfied": 2
+   },
+   "L146_offset": {
+    "n": 500,
+    "success": 500,
+    "failed": 0,
+    "postcast_violations": 0,
+    "AP_not_satisfied": 6
+   },
+   "L146_scale": {
+    "n": 500,
+    "success": 500,
+    "failed": 0,
+    "postcast_violations": 0,
+    "AP_not_satisfied": 4
+   },
+   "L146_global": {
+    "n": 500,
+    "success": 500,
+    "failed": 0,
+    "postcast_violations": 0,
+    "AP_not_satisfied": 1
+   },
+   "L146_combined": {
+    "n": 500,
+    "success": 500,
+    "failed": 0,
+    "postcast_violations": 0,
+    "AP_not_satisfied": 12
+   },
+   "L304_null_violators": {
+    "n": 500,
+    "success": 500,
+    "failed": 0,
+    "postcast_violations": 0,
+    "AP_not_satisfied": 1
+   },
+   "L304_offset": {
+    "n": 500,
+    "success": 500,
+    "failed": 0,
+    "postcast_violations": 0,
+    "AP_not_satisfied": 2
+   },
+   "L304_scale": {
+    "n": 500,
+    "success": 500,
+    "failed": 0,
+    "postcast_violations": 0,
+    "AP_not_satisfied": 3
+   },
+   "L304_global": {
+    "n": 500,
+    "success": 500,
+    "failed": 0,
+    "postcast_violations": 0,
+    "AP_not_satisfied": 4
+   },
+   "L304_combined": {
+    "n": 500,
+    "success": 500,
+    "failed": 0,
+    "postcast_violations": 0,
+    "AP_not_satisfied": 6
+   }
+  },
+  "note": "A/P are not enforced by projection (E-1); AP_not_satisfied counts cases that E-4 repair must handle"
+ },
+ "C": {
+  "cases": [
+   {
+    "L": 28,
+    "case": "one channel exactly constant",
+    "n": 20,
+    "ok": 0,
+    "failed_safely": 40,
+    "ok_with_violation": 0
+   },
+   {
+    "L": 28,
+    "case": "all channels exactly constant",
+    "n": 20,
+    "ok": 0,
+    "failed_safely": 40,
+    "ok_with_violation": 0
+   },
+   {
+    "L": 28,
+    "case": "one channel near-constant 1e-15",
+    "n": 20,
+    "ok": 0,
+    "failed_safely": 40,
+    "ok_with_violation": 0
+   },
+   {
+    "L": 28,
+    "case": "one channel near-constant 1e-12",
+    "n": 20,
+    "ok": 26,
+    "failed_safely": 14,
+    "ok_with_violation": 0,
+    "ok_float32_violation": 0
+   },
+   {
+    "L": 28,
+    "case": "one channel near-constant 1e-8",
+    "n": 20,
+    "ok": 40,
+    "failed_safely": 0,
+    "ok_with_violation": 0,
+    "ok_float32_violation": 0
+   },
+   {
+    "L": 28,
+    "case": "10 channels variance 1e-6",
+    "n": 20,
+    "ok": 40,
+    "failed_safely": 0,
+    "ok_with_violation": 0,
+    "ok_float32_violation": 0
+   },
+   {
+    "L": 28,
+    "case": "10 channels variance 1e-3",
+    "n": 20,
+    "ok": 40,
+    "failed_safely": 0,
+    "ok_with_violation": 0,
+    "ok_float32_violation": 0
+   },
+   {
+    "L": 28,
+    "case": "mixed: 45 ordinary + 45 near-constant 1e-10",
+    "n": 20,
+    "ok": 40,
+    "failed_safely": 0,
+    "ok_with_violation": 0,
+    "ok_float32_violation": 0
+   },
+   {
+    "L": 28,
+    "case": "mixed: 89 ordinary + 1 zero channel",
+    "n": 20,
+    "ok": 0,
+    "failed_safely": 40,
+    "ok_with_violation": 0
+   },
+   {
+    "L": 146,
+    "case": "one channel exactly constant",
+    "n": 20,
+    "ok": 0,
+    "failed_safely": 40,
+    "ok_with_violation": 0
+   },
+   {
+    "L": 146,
+    "case": "all channels exactly constant",
+    "n": 20,
+    "ok": 0,
+    "failed_safely": 40,
+    "ok_with_violation": 0
+   },
+   {
+    "L": 146,
+    "case": "one channel near-constant 1e-15",
+    "n": 20,
+    "ok": 0,
+    "failed_safely": 40,
+    "ok_with_violation": 0
+   },
+   {
+    "L": 146,
+    "case": "one channel near-constant 1e-12",
+    "n": 20,
+    "ok": 26,
+    "failed_safely": 14,
+    "ok_with_violation": 0,
+    "ok_float32_violation": 0
+   },
+   {
+    "L": 146,
+    "case": "one channel near-constant 1e-8",
+    "n": 20,
+    "ok": 40,
+    "failed_safely": 0,
+    "ok_with_violation": 0,
+    "ok_float32_violation": 0
+   },
+   {
+    "L": 146,
+    "case": "10 channels variance 1e-6",
+    "n": 20,
+    "ok": 40,
+    "failed_safely": 0,
+    "ok_with_violation": 0,
+    "ok_float32_violation": 0
+   },
+   {
+    "L": 146,
+    "case": "10 channels variance 1e-3",
+    "n": 20,
+    "ok": 40,
+    "failed_safely": 0,
+    "ok_with_violation": 0,
+    "ok_float32_violation": 0
+   },
+   {
+    "L": 146,
+    "case": "mixed: 45 ordinary + 45 near-constant 1e-10",
+    "n": 20,
+    "ok": 40,
+    "failed_safely": 0,
+    "ok_with_violation": 0,
+    "ok_float32_violation": 0
+   },
+   {
+    "L": 146,
+    "case": "mixed: 89 ordinary + 1 zero channel",
+    "n": 20,
+    "ok": 0,
+    "failed_safely": 40,
+    "ok_with_violation": 0
+   },
+   {
+    "L": 304,
+    "case": "one channel exactly constant",
+    "n": 20,
+    "ok": 0,
+    "failed_safely": 40,
+    "ok_with_violation": 0
+   },
+   {
+    "L": 304,
+    "case": "all channels exactly constant",
+    "n": 20,
+    "ok": 0,
+    "failed_safely": 40,
+    "ok_with_violation": 0
+   },
+   {
+    "L": 304,
+    "case": "one channel near-constant 1e-15",
+    "n": 20,
+    "ok": 0,
+    "failed_safely": 40,
+    "ok_with_violation": 0
+   },
+   {
+    "L": 304,
+    "case": "one channel near-constant 1e-12",
+    "n": 20,
+    "ok": 12,
+    "failed_safely": 28,
+    "ok_with_violation": 0,
+    "ok_float32_violation": 0
+   },
+   {
+    "L": 304,
+    "case": "one channel near-constant 1e-8",
+    "n": 20,
+    "ok": 40,
+    "failed_safely": 0,
+    "ok_with_violation": 0,
+    "ok_float32_violation": 0
+   },
+   {
+    "L": 304,
+    "case": "10 channels variance 1e-6",
+    "n": 20,
+    "ok": 40,
+    "failed_safely": 0,
+    "ok_with_violation": 0,
+    "ok_float32_violation": 0
+   },
+   {
+    "L": 304,
+    "case": "10 channels variance 1e-3",
+    "n": 20,
+    "ok": 40,
+    "failed_safely": 0,
+    "ok_with_violation": 0,
+    "ok_float32_violation": 0
+   },
+   {
+    "L": 304,
+    "case": "mixed: 45 ordinary + 45 near-constant 1e-10",
+    "n": 20,
+    "ok": 40,
+    "failed_safely": 0,
+    "ok_with_violation": 0,
+    "ok_float32_violation": 0
+   },
+   {
+    "L": 304,
+    "case": "mixed: 89 ordinary + 1 zero channel",
+    "n": 20,
+    "ok": 0,
+    "failed_safely": 40,
+    "ok_with_violation": 0
+   }
+  ],
+  "ok_with_violation_total": 0,
+  "pass": true
+ },
+ "seconds": 81,
+ "all_pass": true
+}

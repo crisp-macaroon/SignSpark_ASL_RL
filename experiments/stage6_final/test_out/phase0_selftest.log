@@ -1,0 +1,23 @@
+PASS E2b shift: eps'(t) = eps(t - 8) inside the active frames
+PASS E2b shift: vacated frames are fresh noise, not the old values
+PASS E2b shift: padded frames unchanged
+PASS E2b negative shift: eps'(t) = eps(t + 4)
+PASS E2b fresh noise deterministic
+PASS E2b equivariance index = 1 for an exact shift
+PASS E2e-J agreement categories
+PASS E2e-J D-a/D-b in J: a -0.35 shift toward -0.4 passes D-a and is closer
+PASS E2c Stiefel U^T U = I
+PASS E2c (ii) coupled noise has unit covariance (marginal preserved)  max |cov - I| 0.029
+PASS E2c (ii) kappa clamped at 0.9, KL = 60*(-0.5 log 0.19) <= 99.64  49.822 nats/frame
+PASS E2c (ii) init kappa = 0.1
+PASS E2c E-2 penalty is 0 inside the A/P bounds
+PASS E2c E-2 penalty > 0 for AR(1) 0.6 noise
+PASS E2c monitoring flags computed (non-gating)
+PASS E2c surrogate finite and within [-1, 1]
+PASS R0 rot6d round trip matches the upstream rot6d_to_matrix
+PASS R0 boot_ci excludes NaN and reports n
+PASS R0 uses train references only
+
+19/19 checks passed
+
+--- stderr ---

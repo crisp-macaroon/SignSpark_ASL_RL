@@ -1,0 +1,20 @@
+C:\Users\balaji\Downloads\rlproj\rlproj\.venv-infer\Lib\site-packages\pydantic\_internal\_generate_schema.py:2350: UnsupportedFieldAttributeWarning: The 'repr' attribute with value False was provided to the `Field()` function, which has no effect in the context it was used. 'repr' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+C:\Users\balaji\Downloads\rlproj\rlproj\.venv-infer\Lib\site-packages\pydantic\_internal\_generate_schema.py:2350: UnsupportedFieldAttributeWarning: The 'frozen' attribute with value True was provided to the `Field()` function, which has no effect in the context it was used. 'frozen' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+Traceback (most recent call last):
+  File "C:\Users\balaji\Downloads\rlproj\rlproj\experiments\stage4\r0\r0_run.py", line 243, in <module>
+    main()
+  File "C:\Users\balaji\Downloads\rlproj\rlproj\experiments\stage4\r0\r0_run.py", line 235, in main
+    res["synthetic"] = synthetic_checks(ctx, mean6)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\balaji\Downloads\rlproj\rlproj\experiments\stage4\r0\r0_run.py", line 136, in synthetic_checks
+    static = both(np.tile(ident, (L, 1)), np.tile(hid, (L, 1)), np.tile(hid, (L, 1)))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\balaji\Downloads\rlproj\rlproj\experiments\stage4\r0\r0_run.py", line 127, in both
+    r = MR.sample_record(b6.T, h6l.T, h6r.T, L)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\balaji\Downloads\rlproj\rlproj\experiments\stage4\e2e\metrics.py", line 71, in sample_record
+    "A_L": hl["A"], "A_R": hr["A"], "X": float(np.log(hl["A"] / hr["A"])),
+                                                      ~~~~~~~~^~~~~~~~~
+ZeroDivisionError: float division by zero

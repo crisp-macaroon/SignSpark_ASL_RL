@@ -1,0 +1,65 @@
+[
+ {
+  "name": "record_env",
+  "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\record_env.py --out C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\env --lmdb",
+  "start": "2026-11-07 14:36:12",
+  "exit": 0,
+  "seconds": 71.8
+ },
+ {
+  "name": "train_s7001",
+  "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\train_500ep.py --config C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\configs\\config_500ep_s7001.json --out C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7001\\train",
+  "start": "2026-11-07 14:37:23",
+  "exit": 0,
+  "seconds": 292.0
+ },
+ {
+  "name": "eval_s7001",
+  "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\evaluate.py --config C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\configs\\config_500ep_s7001.json --ckpt-init C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7001\\train\\checkpoints\\update_000.pt --ckpt-final C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7001\\train\\checkpoints\\update_125.pt --out C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7001\\eval --save-dumps",
+  "start": "2026-11-07 14:42:15",
+  "exit": 0,
+  "seconds": 1702.7
+ },
+ {
+  "name": "train_s7002",
+  "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\train_500ep.py --config C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\configs\\config_500ep_s7002.json --out C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7002\\train",
+  "start": "2026-11-07 15:10:38",
+  "exit": 0,
+  "seconds": 309.9
+ },
+ {
+  "name": "eval_s7002",
+  "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\evaluate.py --config C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\configs\\config_500ep_s7002.json --ckpt-init C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7002\\train\\checkpoints\\update_000.pt --ckpt-final C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7002\\train\\checkpoints\\update_125.pt --out C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7002\\eval --save-dumps",
+  "start": "2026-11-07 15:15:48",
+  "exit": 0,
+  "seconds": 1564.2
+ },
+ {
+  "name": "train_s7003",
+  "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\train_500ep.py --config C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\configs\\config_500ep_s7003.json --out C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7003\\train",
+  "start": "2026-11-07 15:41:52",
+  "exit": 0,
+  "seconds": 281.0
+ },
+ {
+  "name": "eval_s7003",
+  "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\evaluate.py --config C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\configs\\config_500ep_s7003.json --ckpt-init C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7003\\train\\checkpoints\\update_000.pt --ckpt-final C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7003\\train\\checkpoints\\update_125.pt --out C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7003\\eval --save-dumps",
+  "start": "2026-11-07 15:46:33",
+  "exit": 0,
+  "seconds": 1559.6
+ },
+ {
+  "name": "train_s7004",
+  "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\train_500ep.py --config C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\configs\\config_500ep_s7004.json --out C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7004\\train",
+  "start": "2026-11-07 16:12:33",
+  "exit": 0,
+  "seconds": 281.7
+ },
+ {
+  "name": "eval_s7004",
+  "cmd": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe -E -s C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5\\evaluate.py --config C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\configs\\config_500ep_s7004.json --ckpt-init C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7004\\train\\checkpoints\\update_000.pt --ckpt-final C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7004\\train\\checkpoints\\update_125.pt --out C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage5_multiseed\\out\\s7004\\eval --save-dumps",
+  "start": "2026-11-07 16:17:14",
+  "exit": 0,
+  "seconds": 1559.5
+ }
+]

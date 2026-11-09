@@ -1,0 +1,4 @@
+﻿A pass True failures 0 of 21
+B {"cases": 10000, "success": 10000, "failed": 0, "postcast_violations_among_success": 0, "nonfinite_among_success": 0, "max_norm_rel_err": 7.0673650926293975e-09, "max_M_dev": -9.96727558177268e-06, "max_V_dev": -9.946912834025512e-06, "reprojections_used": 0, "AP_not_satisfied_among_success": 150, "pass": true}
+C pass True ok_with_violation 0
+ALL PASS (81 s)

@@ -1,0 +1,20 @@
+{
+ "stream": "rhand",
+ "clips": 256,
+ "N": 8,
+ "V1_dtw_matched_mean": 1.0814812183380127,
+ "V1_dtw_mismatched_mean": 1.0874111652374268,
+ "V1_frac_matched_lower": 0.52294921875,
+ "V2_within_clip_std": 0.08781297504901886,
+ "V2_between_clip_std": 0.09612707793712616,
+ "V2_err_mean_deg": 21.753853325883348,
+ "V2_err_dtw_selected_deg": 19.402612830032012,
+ "V2_artic_mean": 0.8941261616231473,
+ "V2_artic_dtw_selected": 0.856988199310526,
+ "V3_samples_dtw_mean": 1.0814812183380127,
+ "V3_static_dataset_mean_pose": 0.9073955416679382,
+ "V3_static_own_clip_mean_pose": 0.7964228391647339,
+ "V3_real_motion_other_clip": 1.1361329555511475,
+ "V3_frac_clips_static_dataset_beats_mean_sample": 0.99609375,
+ "V3_frac_clips_static_own_beats_mean_sample": 0.99609375
+}

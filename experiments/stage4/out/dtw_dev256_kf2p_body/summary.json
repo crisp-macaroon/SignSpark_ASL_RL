@@ -1,0 +1,20 @@
+{
+ "stream": "body",
+ "clips": 256,
+ "N": 8,
+ "V1_dtw_matched_mean": 0.1364811509847641,
+ "V1_dtw_mismatched_mean": 0.8777996301651001,
+ "V1_frac_matched_lower": 0.99609375,
+ "V2_within_clip_std": 0.01104789786040783,
+ "V2_between_clip_std": 0.06066856533288956,
+ "V2_err_mean_deg": 3.384855255973922,
+ "V2_err_dtw_selected_deg": 3.025572890044422,
+ "V2_artic_mean": 1.013292645150767,
+ "V2_artic_dtw_selected": 1.0002923161712223,
+ "V3_samples_dtw_mean": 0.1364811509847641,
+ "V3_static_dataset_mean_pose": 0.6528081893920898,
+ "V3_static_own_clip_mean_pose": 0.5330153107643127,
+ "V3_real_motion_other_clip": 0.8809658885002136,
+ "V3_frac_clips_static_dataset_beats_mean_sample": 0.0,
+ "V3_frac_clips_static_own_beats_mean_sample": 0.00390625
+}

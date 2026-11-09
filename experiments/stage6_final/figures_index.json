@@ -1,0 +1,19 @@
+{
+ "drawn": {
+  "f01_training_return.png": "ACMS training return vs episodes, five runs",
+  "f03_training_constraints.png": "ACMS constraint curves during training, five runs",
+  "f06_kl_multiseed.png": "Policy KL to the uncoupled sampler during training (cap 1 nat/frame, dashed)",
+  "f07_mc_history.png": "M-C historical feasibility (Stage 4)",
+  "f02_heldout_vs_progress.png": "Held-out improvement vs training progress (monitoring; no checkpoint selection)",
+  "f04_coordination_multiseed.png": "Held-out coordination change per run and pooled (space R, primary)",
+  "f04b_coordination_multiseed_J.png": "Same comparison in joint space J (descriptive; not an independent replication)",
+  "f05_preservation_multiseed.png": "Pre-registered preservation checks per run (dashed = limit)",
+  "f09_seed_stability.png": "Across-run stability of the ACMS effect and controller statistics",
+  "f10_generalisation.png": "Training-like vs held-out generalisation",
+  "f12_ablations.png": "Ablations that were actually run",
+  "f08_fg1_comparison.png": "FG-1 like-for-like gate: M-C vs ACMS vs SC-MC vs uncoupled on fresh noise",
+  "f08b_cross_study_kl.png": "Held-out gain vs KL across studies (DESCRIPTIVE: different clips, noises, budgets)",
+  "f11_compute.png": "Computational cost of every executed experiment (single RTX A4000)"
+ },
+ "unavailable": {}
+}

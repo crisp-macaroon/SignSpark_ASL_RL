@@ -1,0 +1,1215 @@
+{
+ "label": "FG-1 fresh-noise controllability gate; per-clip fits on 16 TRAIN clips; released-checkpoint result, not a paper reproduction; motion statistics only",
+ "clips": {
+  "rule": "FG-1 clip selection (MC_REDESIGN_PROPOSAL.md \u00a75.1). CPU only; opens the TRAIN split only.\n\nnumpy default_rng(5100).permutation(29,630) over the How2Sign TRAIN indices (R0 order); walk the permutation, skip any\nclip used by the five ACMS training sets (stage5_multiseed/out/train_clips.json); take the first 8 with L < 100 and the\nfirst 8 with L >= 100 (length-stratified; E2c (ii) length effect). Gate position a = 0..15 in the order taken\n(short clips first, then long).",
+  "seed": 5100,
+  "clips": [
+   17079,
+   4249
+  ],
+  "lengths": [
+   35,
+   86
+  ],
+  "names": [
+   "48DncKS_yN0_20-8-rgb_front",
+   "0HObK-sd2ds_14-5-rgb_front"
+  ],
+  "skipped_acms_training_clips": 3,
+  "opened_splits": [
+   "train"
+  ]
+ },
+ "threshold": 0.05,
+ "runs": {
+  "prep": {
+   "phase": "prep",
+   "command": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage6_gate\\fg1_run.py --phase prep --test",
+   "start": "2026-11-07 16:43:26",
+   "lr": 0.05,
+   "iterations": 2,
+   "noises_fit": 4,
+   "noises_heldout": 4,
+   "rows_per_pass": 8,
+   "cap_seconds": 1800,
+   "mem_cap_GiB": 14.0,
+   "weights_unchanged": true,
+   "flags": {
+    "matmul_allow_tf32": false,
+    "cudnn_allow_tf32": true,
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": false,
+    "dtype": "float32",
+    "device": "NVIDIA RTX A4000",
+    "torch": "2.10.0+cu128",
+    "training_any": false,
+    "HF_HUB_OFFLINE": "1"
+   },
+   "opened_splits": [
+    "train"
+   ],
+   "arm_feature_invalid": {
+    "fit": {
+     "R": 0,
+     "L": 0
+    },
+    "ho": {
+     "R": 0,
+     "L": 0
+    }
+   },
+   "status": "completed",
+   "seconds": 40.9,
+   "gpu_peak_alloc_GiB": 10.413,
+   "gpu_peak_reserved_GiB": 10.469
+  },
+  "V1": {
+   "phase": "V1",
+   "command": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage6_gate\\fg1_run.py --phase V1 --test",
+   "start": "2026-11-07 16:45:12",
+   "lr": 0.05,
+   "iterations": 2,
+   "noises_fit": 4,
+   "noises_heldout": 4,
+   "rows_per_pass": 8,
+   "cap_seconds": 4500,
+   "mem_cap_GiB": 14.0,
+   "params_per_clip": 9060,
+   "weights_unchanged": true,
+   "flags": {
+    "matmul_allow_tf32": false,
+    "cudnn_allow_tf32": true,
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": false,
+    "dtype": "float32",
+    "device": "NVIDIA RTX A4000",
+    "torch": "2.10.0+cu128",
+    "training_any": false,
+    "HF_HUB_OFFLINE": "1"
+   },
+   "opened_splits": [
+    "train"
+   ],
+   "outputs": {
+    "heldout": {
+     "kl_R_max": 0.3195227384567261,
+     "kl_L_max": 0.0
+    }
+   },
+   "final_train_geo_R": 0.272429374587578,
+   "grad_norm_last": 0.062142640352249146,
+   "status": "completed",
+   "seconds": 44.9,
+   "gpu_peak_alloc_GiB": 10.413,
+   "gpu_peak_reserved_GiB": 10.469
+  },
+  "V2": {
+   "phase": "V2",
+   "command": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage6_gate\\fg1_run.py --phase V2 --test",
+   "start": "2026-11-07 16:44:15",
+   "lr": 0.05,
+   "iterations": 2,
+   "noises_fit": 4,
+   "noises_heldout": 4,
+   "rows_per_pass": 8,
+   "cap_seconds": 4500,
+   "mem_cap_GiB": 14.0,
+   "params_per_clip": 433,
+   "weights_unchanged": true,
+   "flags": {
+    "matmul_allow_tf32": false,
+    "cudnn_allow_tf32": true,
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": false,
+    "dtype": "float32",
+    "device": "NVIDIA RTX A4000",
+    "torch": "2.10.0+cu128",
+    "training_any": false,
+    "HF_HUB_OFFLINE": "1"
+   },
+   "opened_splits": [
+    "train"
+   ],
+   "outputs": {
+    "heldout": {
+     "kl_R_max": 0.003118271939456463,
+     "kl_L_max": 0.0
+    },
+    "shuffle": {
+     "kl_R_max": 0.003118271939456463,
+     "kl_L_max": 0.0
+    }
+   },
+   "final_train_geo_R": 0.18199710866213759,
+   "grad_norm_last": 0.029209334403276443,
+   "status": "completed",
+   "seconds": 48.2,
+   "gpu_peak_alloc_GiB": 10.413,
+   "gpu_peak_reserved_GiB": 10.469
+  },
+  "V3": {
+   "phase": "V3",
+   "command": "C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\.venv-infer\\Scripts\\python.exe C:\\Users\\balaji\\Downloads\\rlproj\\rlproj\\experiments\\stage6_gate\\fg1_run.py --phase V3 --test",
+   "start": "2026-11-07 16:46:05",
+   "lr": 0.05,
+   "iterations": 2,
+   "noises_fit": 4,
+   "noises_heldout": 4,
+   "rows_per_pass": 8,
+   "cap_seconds": 7200,
+   "mem_cap_GiB": 14.0,
+   "params_per_clip": 866,
+   "weights_unchanged": true,
+   "flags": {
+    "matmul_allow_tf32": false,
+    "cudnn_allow_tf32": true,
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": false,
+    "dtype": "float32",
+    "device": "NVIDIA RTX A4000",
+    "torch": "2.10.0+cu128",
+    "training_any": false,
+    "HF_HUB_OFFLINE": "1"
+   },
+   "opened_splits": [
+    "train"
+   ],
+   "outputs": {
+    "heldout": {
+     "kl_R_max": 0.003185713430866599,
+     "kl_L_max": 0.00458342581987381
+    },
+    "shuffle": {
+     "kl_R_max": 0.003185713430866599,
+     "kl_L_max": 0.00458342581987381
+    }
+   },
+   "final_train_geo_R": 0.1787236229270044,
+   "grad_norm_last": 0.07760775834321976,
+   "status": "completed",
+   "seconds": 48.9,
+   "gpu_peak_alloc_GiB": 10.413,
+   "gpu_peak_reserved_GiB": 10.469
+  }
+ },
+ "V0": {
+  "R": {
+   "mean": 0.10617521856765044,
+   "ci95": [
+    3.846087741644216e-05,
+    0.21231197625788445
+   ],
+   "n": 2
+  },
+  "L": {
+   "mean": -0.07779621088959213,
+   "ci95": [
+    -0.10814793527980575,
+    -0.04744448649937851
+   ],
+   "n": 2
+  },
+  "LR": {
+   "mean": 0.01011307913747833,
+   "ci95": [
+    -0.010653766687748346,
+    0.030879924962705006
+   ],
+   "n": 2
+  }
+ },
+ "V0_fit_noises": {
+  "R": {
+   "mean": 0.17714924291155526,
+   "ci95": [
+    0.083767255551599,
+    0.2705312302715115
+   ],
+   "n": 2
+  },
+  "L": {
+   "mean": 0.19690434653010347,
+   "ci95": [
+    0.14004797022591411,
+    0.25376072283429285
+   ],
+   "n": 2
+  },
+  "LR": {
+   "mean": 0.17825220700121733,
+   "ci95": [
+    0.07977031071776997,
+    0.2767341032846647
+   ],
+   "n": 2
+  }
+ },
+ "best_of_16_heldout_V0_selection_context": {
+  "R": {
+   "mean": 0.2622834884704081,
+   "ci95": [
+    0.11081947892230917,
+    0.413747498018507
+   ],
+   "n": 2
+  },
+  "L": {
+   "mean": 0.43953879498228887,
+   "ci95": [
+    0.4046560415274588,
+    0.474421548437119
+   ],
+   "n": 2
+  },
+  "LR": {
+   "mean": 0.3318021186990775,
+   "ci95": [
+    0.2438574435345131,
+    0.4197467938636419
+   ],
+   "n": 2
+  }
+ },
+ "V0_undefined": {
+  "R": 0,
+  "L": 0,
+  "LR": 0
+ },
+ "variants": {
+  "V1": {
+   "status": "completed",
+   "params_per_clip": 9060,
+   "seconds": 44.9,
+   "gpu_peak_reserved_GiB": 10.469,
+   "preservation": {
+    "R": {
+     "artic_ratio_mean": {
+      "value": 1.0182134771643692,
+      "pass": true
+     },
+     "jerk_ratio_mean": {
+      "value": 1.006529240540238,
+      "pass": true
+     },
+     "extreme_diff_mean": {
+      "value": 0.0,
+      "pass": true
+     },
+     "abs_mean_log_activity_ratio": {
+      "value": 0.005701673283346125,
+      "pass": true
+     },
+     "undefined_fraction": {
+      "value": 0.0,
+      "uncoupled": 0.0,
+      "pass": true
+     },
+     "kl_max": {
+      "value": 0.3195227384567261,
+      "bound": 49.82,
+      "pass": true
+     }
+    }
+   },
+   "preservation_pass": true,
+   "kl_max": {
+    "R": 0.3195227384567261,
+    "L": 0.0
+   },
+   "kl_mean": {
+    "R": 0.31916525959968567,
+    "L": 0.0
+   },
+   "undefined": {
+    "R": 0,
+    "L": 0,
+    "LR": 0
+   },
+   "statistics": {
+    "R": {
+     "heldout_level": {
+      "mean": 0.08806923367883085,
+      "ci95": [
+       -0.015209607258799065,
+       0.19134807461646075
+      ],
+      "n": 2
+     },
+     "heldout_delta_vs_V0": {
+      "mean": -0.018105984888819603,
+      "ci95": [
+       -0.0209639016414237,
+       -0.015248068136215508
+      ],
+      "n": 2
+     },
+     "per_clip_delta": [
+      -0.015248068136215508,
+      -0.0209639016414237
+     ],
+     "n_clips_positive": 0,
+     "insample_delta_last_iter": {
+      "mean": 0.09528013167602277,
+      "ci95": [
+       0.06274920712699597,
+       0.12781105622504957
+      ],
+      "n": 2
+     },
+     "insample_delta_best_iter": {
+      "mean": 0.09528013167602277,
+      "ci95": [
+       0.06274920712699597,
+       0.12781105622504957
+      ],
+      "n": 2
+     },
+     "generalisation_gap_last": {
+      "mean": 0.11338611656484238,
+      "ci95": [
+       0.08371310876841967,
+       0.14305912436126508
+      ],
+      "n": 2
+     },
+     "insample_mean_by_iteration": [
+      0.18848974392653822,
+      0.272429374587578
+     ],
+     "split_L": {
+      "L<100": {
+       "mean": -0.018105984888819603,
+       "ci95": [
+        -0.0209639016414237,
+        -0.015248068136215508
+       ],
+       "n": 2
+      },
+      "L>=100": {
+       "mean": null,
+       "ci95": [
+        null,
+        null
+       ],
+       "n": 0
+      }
+     },
+     "intended": true,
+     "outcome": "negative"
+    },
+    "L": {
+     "heldout_level": {
+      "mean": -0.07779621088959213,
+      "ci95": [
+       -0.10814793527980575,
+       -0.04744448649937851
+      ],
+      "n": 2
+     },
+     "heldout_delta_vs_V0": {
+      "mean": 0.0,
+      "ci95": [
+       0.0,
+       0.0
+      ],
+      "n": 2
+     },
+     "per_clip_delta": [
+      0.0,
+      0.0
+     ],
+     "n_clips_positive": 0,
+     "insample_delta_last_iter": {
+      "mean": 0.0,
+      "ci95": [
+       0.0,
+       0.0
+      ],
+      "n": 2
+     },
+     "insample_delta_best_iter": {
+      "mean": 0.0,
+      "ci95": [
+       0.0,
+       0.0
+      ],
+      "n": 2
+     },
+     "generalisation_gap_last": {
+      "mean": 0.0,
+      "ci95": [
+       0.0,
+       0.0
+      ],
+      "n": 2
+     },
+     "insample_mean_by_iteration": [
+      0.19690434653010347,
+      0.19690434653010347
+     ],
+     "split_L": {
+      "L<100": {
+       "mean": 0.0,
+       "ci95": [
+        0.0,
+        0.0
+       ],
+       "n": 2
+      },
+      "L>=100": {
+       "mean": null,
+       "ci95": [
+        null,
+        null
+       ],
+       "n": 0
+      }
+     },
+     "intended": false
+    },
+    "LR": {
+     "heldout_level": {
+      "mean": 0.014110174011131288,
+      "ci95": [
+       0.005624882909948354,
+       0.022595465112314222
+      ],
+      "n": 2
+     },
+     "heldout_delta_vs_V0": {
+      "mean": 0.003997094873652959,
+      "ci95": [
+       -0.02525504205275665,
+       0.03324923180006257
+      ],
+      "n": 2
+     },
+     "per_clip_delta": [
+      0.03324923180006257,
+      -0.02525504205275665
+     ],
+     "n_clips_positive": 1,
+     "insample_delta_last_iter": {
+      "mean": 0.004602632961922447,
+      "ci95": [
+       0.0031747863278062532,
+       0.00603047959603864
+      ],
+      "n": 2
+     },
+     "insample_delta_best_iter": {
+      "mean": 0.014561275050133153,
+      "ci95": [
+       0.0031747863278062532,
+       0.025947763772460053
+      ],
+      "n": 2
+     },
+     "generalisation_gap_last": {
+      "mean": 0.0006055380882694882,
+      "ci95": [
+       -0.02721875220402393,
+       0.028429828380562905
+      ],
+      "n": 2
+     },
+     "insample_mean_by_iteration": [
+      0.19276419998972089,
+      0.18285483996313978
+     ],
+     "split_L": {
+      "L<100": {
+       "mean": 0.003997094873652959,
+       "ci95": [
+        -0.02525504205275665,
+        0.03324923180006257
+       ],
+       "n": 2
+      },
+      "L>=100": {
+       "mean": null,
+       "ci95": [
+        null,
+        null
+       ],
+       "n": 0
+      }
+     },
+     "intended": false
+    }
+   },
+   "kl_R_le_1_nat_frame": true,
+   "outcome": "negative",
+   "typicality_violation_fraction": {
+    "R": {
+     "M": 0.0,
+     "V": 0.0,
+     "A": 0.0,
+     "P": 0.0
+    }
+   }
+  },
+  "V2": {
+   "status": "completed",
+   "params_per_clip": 433,
+   "seconds": 48.2,
+   "gpu_peak_reserved_GiB": 10.469,
+   "preservation": {
+    "R": {
+     "artic_ratio_mean": {
+      "value": 0.9987931473449445,
+      "pass": true
+     },
+     "jerk_ratio_mean": {
+      "value": 1.0039752668838857,
+      "pass": true
+     },
+     "extreme_diff_mean": {
+      "value": 0.0,
+      "pass": true
+     },
+     "abs_mean_log_activity_ratio": {
+      "value": 0.0024518440990934426,
+      "pass": true
+     },
+     "undefined_fraction": {
+      "value": 0.0,
+      "uncoupled": 0.0,
+      "pass": true
+     },
+     "kl_max": {
+      "value": 0.003118271939456463,
+      "bound": 1.0,
+      "pass": true
+     }
+    }
+   },
+   "preservation_pass": true,
+   "kl_max": {
+    "R": 0.003118271939456463,
+    "L": 0.0
+   },
+   "kl_mean": {
+    "R": 0.0026209644856862724,
+    "L": 0.0
+   },
+   "undefined": {
+    "R": 0,
+    "L": 0,
+    "LR": 0
+   },
+   "statistics": {
+    "R": {
+     "heldout_level": {
+      "mean": 0.11072577336377469,
+      "ci95": [
+       0.008664147616986438,
+       0.21278739911056294
+      ],
+      "n": 2
+     },
+     "heldout_delta_vs_V0": {
+      "mean": 0.004550554796124241,
+      "ci95": [
+       0.0004754228526784865,
+       0.008625686739569996
+      ],
+      "n": 2
+     },
+     "per_clip_delta": [
+      0.008625686739569996,
+      0.0004754228526784865
+     ],
+     "n_clips_positive": 2,
+     "insample_delta_last_iter": {
+      "mean": 0.004847865750582367,
+      "ci95": [
+       0.00481187067067923,
+       0.004883860830485504
+      ],
+      "n": 2
+     },
+     "insample_delta_best_iter": {
+      "mean": 0.004847865750582367,
+      "ci95": [
+       0.00481187067067923,
+       0.004883860830485504
+      ],
+      "n": 2
+     },
+     "generalisation_gap_last": {
+      "mean": 0.00029731095445812566,
+      "ci95": [
+       -0.0038138160688907657,
+       0.004408437977807017
+      ],
+      "n": 2
+     },
+     "insample_mean_by_iteration": [
+      0.17406308131461218,
+      0.1819971086621376
+     ],
+     "split_L": {
+      "L<100": {
+       "mean": 0.004550554796124241,
+       "ci95": [
+        0.0004754228526784865,
+        0.008625686739569996
+       ],
+       "n": 2
+      },
+      "L>=100": {
+       "mean": null,
+       "ci95": [
+        null,
+        null
+       ],
+       "n": 0
+      }
+     },
+     "intended": true,
+     "outcome": "negative"
+    },
+    "L": {
+     "heldout_level": {
+      "mean": -0.07779621088959213,
+      "ci95": [
+       -0.10814793527980575,
+       -0.04744448649937851
+      ],
+      "n": 2
+     },
+     "heldout_delta_vs_V0": {
+      "mean": 0.0,
+      "ci95": [
+       0.0,
+       0.0
+      ],
+      "n": 2
+     },
+     "per_clip_delta": [
+      0.0,
+      0.0
+     ],
+     "n_clips_positive": 0,
+     "insample_delta_last_iter": {
+      "mean": 0.0,
+      "ci95": [
+       0.0,
+       0.0
+      ],
+      "n": 2
+     },
+     "insample_delta_best_iter": {
+      "mean": 0.0,
+      "ci95": [
+       0.0,
+       0.0
+      ],
+      "n": 2
+     },
+     "generalisation_gap_last": {
+      "mean": 0.0,
+      "ci95": [
+       0.0,
+       0.0
+      ],
+      "n": 2
+     },
+     "insample_mean_by_iteration": [
+      0.19690434653010347,
+      0.19690434653010347
+     ],
+     "split_L": {
+      "L<100": {
+       "mean": 0.0,
+       "ci95": [
+        0.0,
+        0.0
+       ],
+       "n": 2
+      },
+      "L>=100": {
+       "mean": null,
+       "ci95": [
+        null,
+        null
+       ],
+       "n": 0
+      }
+     },
+     "intended": false
+    },
+    "LR": {
+     "heldout_level": {
+      "mean": 0.012301047427441095,
+      "ci95": [
+       -0.0106677033558688,
+       0.03526979821075099
+      ],
+      "n": 2
+     },
+     "heldout_delta_vs_V0": {
+      "mean": 0.002187968289962766,
+      "ci95": [
+       -1.393666812045391e-05,
+       0.0043898732480459855
+      ],
+      "n": 2
+     },
+     "per_clip_delta": [
+      -1.393666812045391e-05,
+      0.0043898732480459855
+     ],
+     "n_clips_positive": 1,
+     "insample_delta_last_iter": {
+      "mean": -0.004689045296071975,
+      "ci95": [
+       -0.005681827330159428,
+       -0.0036962632619845226
+      ],
+      "n": 2
+     },
+     "insample_delta_best_iter": {
+      "mean": -0.003744008178478614,
+      "ci95": [
+       -0.004766000620333888,
+       -0.00272201573662334
+      ],
+      "n": 2
+     },
+     "generalisation_gap_last": {
+      "mean": -0.006877013586034741,
+      "ci95": [
+       -0.010071700578205414,
+       -0.0036823265938640687
+      ],
+      "n": 2
+     },
+     "insample_mean_by_iteration": [
+      0.1745081988227387,
+      0.17356316170514535
+     ],
+     "split_L": {
+      "L<100": {
+       "mean": 0.002187968289962766,
+       "ci95": [
+        -1.393666812045391e-05,
+        0.0043898732480459855
+       ],
+       "n": 2
+      },
+      "L>=100": {
+       "mean": null,
+       "ci95": [
+        null,
+        null
+       ],
+       "n": 0
+      }
+     },
+     "intended": false
+    }
+   },
+   "outcome": "negative",
+   "state_shuffle_ablation": {
+    "R": {
+     "delta_vs_V0": {
+      "mean": 0.006409184566512235,
+      "ci95": [
+       0.0036010906384762176,
+       0.009217278494548252
+      ],
+      "n": 2
+     },
+     "delta_vs_unshuffled": {
+      "mean": 0.0018586297703879935,
+      "ci95": [
+       0.000591591754978256,
+       0.003125667785797731
+      ],
+      "n": 2
+     }
+    }
+   },
+   "typicality_violation_fraction": {
+    "R": {
+     "M": 0.0,
+     "V": 0.0,
+     "A": 0.0,
+     "P": 0.0
+    }
+   }
+  },
+  "V3": {
+   "status": "completed",
+   "params_per_clip": 866,
+   "seconds": 48.9,
+   "gpu_peak_reserved_GiB": 10.469,
+   "preservation": {
+    "L": {
+     "artic_ratio_mean": {
+      "value": 1.0036786588815596,
+      "pass": true
+     },
+     "jerk_ratio_mean": {
+      "value": 1.0014580090695526,
+      "pass": true
+     },
+     "extreme_diff_mean": {
+      "value": 0.0,
+      "pass": true
+     },
+     "abs_mean_log_activity_ratio": {
+      "value": 0.0018613754683548015,
+      "pass": true
+     },
+     "undefined_fraction": {
+      "value": 0.0,
+      "uncoupled": 0.0,
+      "pass": true
+     },
+     "kl_max": {
+      "value": 0.00458342581987381,
+      "bound": 1.0,
+      "pass": true
+     }
+    },
+    "R": {
+     "artic_ratio_mean": {
+      "value": 1.0072152196215667,
+      "pass": true
+     },
+     "jerk_ratio_mean": {
+      "value": 1.010333352636523,
+      "pass": true
+     },
+     "extreme_diff_mean": {
+      "value": 0.0,
+      "pass": true
+     },
+     "abs_mean_log_activity_ratio": {
+      "value": 0.00960546802106292,
+      "pass": true
+     },
+     "undefined_fraction": {
+      "value": 0.0,
+      "uncoupled": 0.0,
+      "pass": true
+     },
+     "kl_max": {
+      "value": 0.003185713430866599,
+      "bound": 1.0,
+      "pass": true
+     }
+    }
+   },
+   "preservation_pass": true,
+   "kl_max": {
+    "R": 0.003185713430866599,
+    "L": 0.00458342581987381
+   },
+   "kl_mean": {
+    "R": 0.0025160096411127597,
+    "L": 0.002760591625701636
+   },
+   "undefined": {
+    "R": 0,
+    "L": 0,
+    "LR": 0
+   },
+   "statistics": {
+    "R": {
+     "heldout_level": {
+      "mean": 0.10286456125761934,
+      "ci95": [
+       -0.0036576640613233125,
+       0.20938678657656198
+      ],
+      "n": 2
+     },
+     "heldout_delta_vs_V0": {
+      "mean": -0.00331065731003111,
+      "ci95": [
+       -0.0036961249387397546,
+       -0.0029251896813224654
+      ],
+      "n": 2
+     },
+     "per_clip_delta": [
+      -0.0036961249387397546,
+      -0.0029251896813224654
+     ],
+     "n_clips_positive": 0,
+     "insample_delta_last_iter": {
+      "mean": 0.0015743800154491283,
+      "ci95": [
+       0.001133356240708927,
+       0.0020154037901893296
+      ],
+      "n": 2
+     },
+     "insample_delta_best_iter": {
+      "mean": 0.0015743800154491283,
+      "ci95": [
+       0.001133356240708927,
+       0.0020154037901893296
+      ],
+      "n": 2
+     },
+     "generalisation_gap_last": {
+      "mean": 0.004885037325480238,
+      "ci95": [
+       0.004829481179448682,
+       0.004940593471511795
+      ],
+      "n": 2
+     },
+     "insample_mean_by_iteration": [
+      0.17411605063729715,
+      0.1787236229270044
+     ],
+     "split_L": {
+      "L<100": {
+       "mean": -0.00331065731003111,
+       "ci95": [
+        -0.0036961249387397546,
+        -0.0029251896813224654
+       ],
+       "n": 2
+      },
+      "L>=100": {
+       "mean": null,
+       "ci95": [
+        null,
+        null
+       ],
+       "n": 0
+      }
+     },
+     "intended": true,
+     "outcome": "negative"
+    },
+    "L": {
+     "heldout_level": {
+      "mean": -0.07653387746085435,
+      "ci95": [
+       -0.104653035492903,
+       -0.04841471942880572
+      ],
+      "n": 2
+     },
+     "heldout_delta_vs_V0": {
+      "mean": 0.0012623334287377684,
+      "ci95": [
+       -0.0009702329294272102,
+       0.003494899786902747
+      ],
+      "n": 2
+     },
+     "per_clip_delta": [
+      0.003494899786902747,
+      -0.0009702329294272102
+     ],
+     "n_clips_positive": 1,
+     "insample_delta_last_iter": {
+      "mean": 0.007603519778116338,
+      "ci95": [
+       0.003000616287850727,
+       0.01220642326838195
+      ],
+      "n": 2
+     },
+     "insample_delta_best_iter": {
+      "mean": 0.007603519778116338,
+      "ci95": [
+       0.003000616287850727,
+       0.01220642326838195
+      ],
+      "n": 2
+     },
+     "generalisation_gap_last": {
+      "mean": 0.00634118634937857,
+      "ci95": [
+       0.003970849217277937,
+       0.008711523481479203
+      ],
+      "n": 2
+     },
+     "insample_mean_by_iteration": [
+      0.19792592621446228,
+      0.20450786630821982
+     ],
+     "split_L": {
+      "L<100": {
+       "mean": 0.0012623334287377684,
+       "ci95": [
+        -0.0009702329294272102,
+        0.003494899786902747
+       ],
+       "n": 2
+      },
+      "L>=100": {
+       "mean": null,
+       "ci95": [
+        null,
+        null
+       ],
+       "n": 0
+      }
+     },
+     "intended": true,
+     "outcome": "negative"
+    },
+    "LR": {
+     "heldout_level": {
+      "mean": 0.012974750485854964,
+      "ci95": [
+       -0.005503777961772795,
+       0.03145327893348272
+      ],
+      "n": 2
+     },
+     "heldout_delta_vs_V0": {
+      "mean": 0.0028616713483766345,
+      "ci95": [
+       0.0005733539707777173,
+       0.005149988725975552
+      ],
+      "n": 2
+     },
+     "per_clip_delta": [
+      0.005149988725975552,
+      0.0005733539707777173
+     ],
+     "n_clips_positive": 2,
+     "insample_delta_last_iter": {
+      "mean": 0.012262470100173131,
+      "ci95": [
+       0.00405810122974673,
+       0.020466838970599532
+      ],
+      "n": 2
+     },
+     "insample_delta_best_iter": {
+      "mean": 0.012262470100173131,
+      "ci95": [
+       0.00405810122974673,
+       0.020466838970599532
+      ],
+      "n": 2
+     },
+     "generalisation_gap_last": {
+      "mean": 0.009400798751796497,
+      "ci95": [
+       0.0034847472589690127,
+       0.01531685024462398
+      ],
+      "n": 2
+     },
+     "insample_mean_by_iteration": [
+      0.17615389010551324,
+      0.19051467710139047
+     ],
+     "split_L": {
+      "L<100": {
+       "mean": 0.0028616713483766345,
+       "ci95": [
+        0.0005733539707777173,
+        0.005149988725975552
+       ],
+       "n": 2
+      },
+      "L>=100": {
+       "mean": null,
+       "ci95": [
+        null,
+        null
+       ],
+       "n": 0
+      }
+     },
+     "intended": true,
+     "outcome": "negative"
+    }
+   },
+   "outcome": "negative",
+   "state_shuffle_ablation": {
+    "R": {
+     "delta_vs_V0": {
+      "mean": -0.005780850543477236,
+      "ci95": [
+       -0.010105169878652197,
+       -0.0014565312083022752
+      ],
+      "n": 2
+     },
+     "delta_vs_unshuffled": {
+      "mean": -0.002470193233446126,
+      "ci95": [
+       -0.006409044939912442,
+       0.0014686584730201901
+      ],
+      "n": 2
+     }
+    },
+    "L": {
+     "delta_vs_V0": {
+      "mean": 0.000588934824641469,
+      "ci95": [
+       -0.0008899906596447904,
+       0.0020678603089277284
+      ],
+      "n": 2
+     },
+     "delta_vs_unshuffled": {
+      "mean": -0.0006733986040962994,
+      "ci95": [
+       -0.0043848904465475375,
+       0.0030380932383549386
+      ],
+      "n": 2
+     }
+    },
+    "LR": {
+     "delta_vs_V0": {
+      "mean": -0.0016877382164945283,
+      "ci95": [
+       -0.00225600300948723,
+       -0.0011194734235018267
+      ],
+      "n": 2
+     },
+     "delta_vs_unshuffled": {
+      "mean": -0.004549409564871163,
+      "ci95": [
+       -0.007405991735462782,
+       -0.001692827394279544
+      ],
+      "n": 2
+     }
+    }
+   },
+   "typicality_violation_fraction": {
+    "R": {
+     "M": 0.0,
+     "V": 0.0,
+     "A": 0.0,
+     "P": 0.0
+    },
+    "L": {
+     "M": 0.0,
+     "V": 0.0,
+     "A": 0.0,
+     "P": 0.0
+    }
+   }
+  }
+ },
+ "V0_typicality_violation_fraction_R": {
+  "M": 0.0,
+  "V": 0.0,
+  "A": 0.0,
+  "P": 0.0
+ }
+}

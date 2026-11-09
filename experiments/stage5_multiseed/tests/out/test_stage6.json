@@ -1,0 +1,86 @@
+[
+ {
+  "test": "tint mean/sd",
+  "pass": true
+ },
+ {
+  "test": "tint half-width uses t(0.975, 3)",
+  "pass": true
+ },
+ {
+  "test": "heterogeneity identical -> Q = 0, I2 = 0",
+  "pass": true
+ },
+ {
+  "test": "heterogeneity spread -> p < 0.05",
+  "pass": true
+ },
+ {
+  "test": "category reproducible positive",
+  "pass": true
+ },
+ {
+  "test": "category negative",
+  "pass": true
+ },
+ {
+  "test": "category inconclusive (validity) first",
+  "pass": true
+ },
+ {
+  "test": "category seed-sensitive (opposite-sign individual CIs)",
+  "pass": true
+ },
+ {
+  "test": "category inconclusive (precision)",
+  "pass": true
+ },
+ {
+  "test": "FG-1 positive needs CI > 0 and point >= 0.05",
+  "pass": true
+ },
+ {
+  "test": "FG-1 positive blocked by preservation",
+  "pass": true
+ },
+ {
+  "test": "FG-1 negative when CI upper < 0.05",
+  "pass": true
+ },
+ {
+  "test": "FG-1 inconclusive when CI straddles 0.05",
+  "pass": true
+ },
+ {
+  "test": "FG-1 point < 0.05 with CI > 0 and upper >= 0.05 is inconclusive",
+  "pass": true
+ },
+ {
+  "test": "preflight config s7001 differs only in allowed fields",
+  "pass": true
+ },
+ {
+  "test": "preflight config s7002 differs only in allowed fields",
+  "pass": true
+ },
+ {
+  "test": "preflight config s7003 differs only in allowed fields",
+  "pass": true
+ },
+ {
+  "test": "preflight config s7004 differs only in allowed fields",
+  "pass": true
+ },
+ {
+  "test": "preflight noise ranges pairwise disjoint",
+  "pass": true
+ },
+ {
+  "test": "left arm feature valid, z-scored over L",
+  "pass": true
+ },
+ {
+  "test": "left arm feature non-finite -> zeros + invalid",
+  "pass": true
+ }
+]

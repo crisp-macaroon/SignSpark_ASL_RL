@@ -1,0 +1,150 @@
+Logging to C:\Users\balaji\AppData\Local\Temp\openai-2026-11-07-15-42-00-229190
+### Creating model and flow...
+Using UNET with: Input Dim 60 | Latent Dim: 512 | Mults: (2, 2, 2, 2) | Added channels: 120
+AdaGN: True | Zero: True | Attention: False
+[TemporalUnetLarge] channel dims : [60, 512, 1024, 2048, 2048]
+[TemporalUnetLarge] bottleneck   : 1024
+[TemporalUnetLarge] attn at depth: (2, 3)
+[TemporalUnetLarge] Total parameters: 0.832B
+Text Conditioning Enabled. Loading CLIP M-CLIP/XLM-Roberta-Large-Vit-B-16Plus...
+### RFlow with lbd_flow 1.0, lbd_recon 1.0, lbd_velocity 1.0
+### The parameter count is 1395037372
+### Creating model and flow...
+Using UNET with: Input Dim 90 | Latent Dim: 512 | Mults: (2, 2, 2, 2) | Added channels: 180
+AdaGN: True | Zero: True | Attention: False
+[TemporalUnetLarge] channel dims : [90, 512, 1024, 2048, 2048]
+[TemporalUnetLarge] bottleneck   : 1024
+[TemporalUnetLarge] attn at depth: (2, 3)
+[TemporalUnetLarge] Total parameters: 0.832B
+Text Conditioning Enabled. Loading CLIP M-CLIP/XLM-Roberta-Large-Vit-B-16Plus...
+### RFlow with lbd_flow 1.0, lbd_recon 1.0, lbd_velocity 1.0
+### The parameter count is 1395329242
+### flip_left_hand=True: converting left hand from SMPLX-left to right-hand convention
+############### 
+Loading [Dataset: full @ 29630 items | Seq_Len: 304] from C:\Users\balaji\Downloads\rlproj\rlproj\data\raw\SignSparK_data\train\How2Sign_reopt_train.lmdb
+[    37s] group   0 clip 27685 L 304 R -0.442 r_ah -0.442 loss -6.0536 gn 0.325 beta 0.0713 KL 0.0009 lam [0.0, 0.0, 0.0, 0.0] S3 0 2.1s
+[    39s] group   1 clip 17917 L  96 R -0.452 r_ah -0.452 loss -0.3209 gn 0.690 beta 0.0709 KL 0.0009 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.8s
+[    41s] group   2 clip 22897 L 304 R -0.429 r_ah -0.429 loss -2.1617 gn 0.466 beta 0.0707 KL 0.0010 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.8s
+[    43s] group   3 clip 24992 L  33 R -0.315 r_ah -0.315 loss +7.5984 gn 0.346 beta 0.0705 KL 0.0009 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.8s
+[    44s] group   4 clip 10333 L 106 R -0.356 r_ah -0.356 loss +3.4210 gn 0.447 beta 0.0703 KL 0.0009 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.8s
+[    46s] group   5 clip  3442 L 100 R -0.348 r_ah -0.348 loss -1.9979 gn 0.620 beta 0.0701 KL 0.0010 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.8s
+[    48s] group   6 clip 12987 L 249 R -0.335 r_ah -0.335 loss -1.1394 gn 0.223 beta 0.0700 KL 0.0011 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.8s
+[    50s] group   7 clip  9597 L  59 R -0.339 r_ah -0.339 loss -1.7914 gn 0.263 beta 0.0700 KL 0.0010 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.8s
+[    52s] group   8 clip 21412 L 295 R -0.507 r_ah -0.507 loss +15.0890 gn 0.621 beta 0.0702 KL 0.0011 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[    53s] group   9 clip  9181 L  30 R -0.497 r_ah -0.497 loss -2.6751 gn 0.507 beta 0.0702 KL 0.0011 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.8s
+[    55s] group  10 clip 11199 L 229 R -0.467 r_ah -0.467 loss -0.3251 gn 0.329 beta 0.0701 KL 0.0012 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.8s
+[    57s] group  11 clip 19013 L 206 R -0.375 r_ah -0.375 loss +8.1460 gn 0.613 beta 0.0703 KL 0.0013 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.8s
+[    59s] group  12 clip  1244 L 121 R -0.371 r_ah -0.371 loss -8.9445 gn 0.577 beta 0.0704 KL 0.0012 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.8s
+[    61s] group  13 clip 11196 L  39 R -0.441 r_ah -0.441 loss -2.5500 gn 0.249 beta 0.0706 KL 0.0010 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.8s
+[    63s] group  14 clip  8485 L 304 R -0.447 r_ah -0.447 loss -7.9583 gn 0.632 beta 0.0707 KL 0.0014 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.8s
+[    65s] group  15 clip 19674 L 304 R -0.494 r_ah -0.494 loss +16.5026 gn 0.744 beta 0.0707 KL 0.0015 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[    66s] group  16 clip  3945 L 140 R -0.331 r_ah -0.331 loss -12.4626 gn 0.948 beta 0.0707 KL 0.0011 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.8s
+[    68s] group  17 clip 17308 L 132 R -0.342 r_ah -0.342 loss -1.1737 gn 0.510 beta 0.0707 KL 0.0015 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.8s
+[    70s] group  18 clip  6494 L  25 R -0.400 r_ah -0.400 loss +7.9930 gn 0.361 beta 0.0707 KL 0.0011 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.8s
+[    72s] group  19 clip  4365 L 131 R -0.425 r_ah -0.425 loss +2.1929 gn 0.290 beta 0.0706 KL 0.0016 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.8s
+[    74s] group  20 clip 25616 L  37 R -0.319 r_ah -0.319 loss +0.7459 gn 0.171 beta 0.0706 KL 0.0016 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.8s
+[    76s] group  21 clip 23005 L 144 R -0.326 r_ah -0.326 loss -5.2391 gn 0.517 beta 0.0705 KL 0.0016 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[    77s] group  22 clip 11065 L  59 R -0.354 r_ah -0.354 loss +0.4279 gn 0.516 beta 0.0705 KL 0.0016 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[    79s] group  23 clip  7632 L 112 R -0.505 r_ah -0.505 loss +4.4042 gn 0.474 beta 0.0703 KL 0.0016 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[    81s] group  24 clip  7714 L 304 R -0.457 r_ah -0.457 loss +8.0670 gn 0.482 beta 0.0704 KL 0.0017 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[    83s] group  25 clip 17314 L 304 R -0.493 r_ah -0.493 loss -12.1263 gn 0.447 beta 0.0704 KL 0.0017 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[    85s] group  26 clip 11877 L  62 R -0.589 r_ah -0.589 loss +6.5376 gn 0.316 beta 0.0704 KL 0.0016 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[    87s] group  27 clip 21906 L 161 R -0.498 r_ah -0.498 loss +15.6053 gn 0.493 beta 0.0706 KL 0.0018 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[    89s] group  28 clip 14926 L 300 R -0.434 r_ah -0.434 loss -7.4469 gn 0.769 beta 0.0709 KL 0.0019 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[    91s] group  29 clip 12425 L  60 R -0.366 r_ah -0.366 loss -2.4497 gn 0.446 beta 0.0712 KL 0.0020 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.8s
+[    92s] group  30 clip  6383 L  94 R -0.380 r_ah -0.380 loss -4.7563 gn 0.637 beta 0.0716 KL 0.0020 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[    94s] group  31 clip 17121 L  75 R -0.394 r_ah -0.394 loss +3.2475 gn 0.314 beta 0.0719 KL 0.0018 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[    96s] group  32 clip  8544 L 175 R -0.500 r_ah -0.500 loss +5.4121 gn 0.189 beta 0.0723 KL 0.0021 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[    98s] group  33 clip  7503 L  32 R -0.303 r_ah -0.303 loss +1.6043 gn 0.277 beta 0.0726 KL 0.0018 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   100s] group  34 clip  4041 L 107 R -0.476 r_ah -0.476 loss -8.2990 gn 0.429 beta 0.0729 KL 0.0024 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.8s
+[   102s] group  35 clip 20139 L 226 R -0.564 r_ah -0.564 loss +2.2896 gn 0.707 beta 0.0733 KL 0.0023 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   104s] group  36 clip 18013 L  77 R -0.404 r_ah -0.404 loss -2.0378 gn 0.252 beta 0.0736 KL 0.0026 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   106s] group  37 clip  7736 L 304 R -0.529 r_ah -0.529 loss +8.3381 gn 0.419 beta 0.0740 KL 0.0027 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   108s] group  38 clip 12098 L 187 R -0.364 r_ah -0.364 loss +12.3564 gn 0.761 beta 0.0743 KL 0.0026 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   109s] group  39 clip  7297 L 117 R -0.362 r_ah -0.362 loss -5.7549 gn 0.464 beta 0.0745 KL 0.0026 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   111s] group  40 clip  6109 L 147 R -0.528 r_ah -0.528 loss -0.6485 gn 0.380 beta 0.0746 KL 0.0027 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   113s] group  41 clip 21486 L  41 R -0.431 r_ah -0.431 loss -3.6056 gn 0.419 beta 0.0746 KL 0.0028 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   115s] group  42 clip 10700 L 161 R -0.329 r_ah -0.329 loss +5.4012 gn 0.191 beta 0.0747 KL 0.0029 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   117s] group  43 clip  7894 L 156 R -0.410 r_ah -0.410 loss +1.5029 gn 0.208 beta 0.0748 KL 0.0030 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   119s] group  44 clip 15063 L 304 R -0.380 r_ah -0.380 loss -0.0664 gn 0.296 beta 0.0749 KL 0.0027 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   121s] group  45 clip  7681 L 304 R -0.472 r_ah -0.472 loss +17.1829 gn 0.813 beta 0.0751 KL 0.0026 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   123s] group  46 clip 18909 L 170 R -0.483 r_ah -0.483 loss +1.0589 gn 0.211 beta 0.0753 KL 0.0030 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   125s] group  47 clip  1253 L 250 R -0.486 r_ah -0.486 loss -1.7595 gn 0.392 beta 0.0754 KL 0.0030 lam [0.0, 0.0, 0.0, 0.0] S3 0 2.0s
+[   127s] group  48 clip  9732 L 108 R -0.503 r_ah -0.503 loss -0.6238 gn 0.526 beta 0.0755 KL 0.0031 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   128s] group  49 clip 11020 L  74 R -0.324 r_ah -0.324 loss +0.1608 gn 0.375 beta 0.0755 KL 0.0030 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   130s] group  50 clip 10982 L  50 R -0.363 r_ah -0.363 loss +2.9984 gn 0.581 beta 0.0755 KL 0.0028 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   132s] group  51 clip 27800 L 293 R -0.424 r_ah -0.424 loss -10.4366 gn 0.621 beta 0.0754 KL 0.0032 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   134s] group  52 clip 11850 L  71 R -0.413 r_ah -0.413 loss +16.4491 gn 0.662 beta 0.0753 KL 0.0027 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   136s] group  53 clip   253 L 108 R -0.437 r_ah -0.437 loss +5.5181 gn 0.461 beta 0.0751 KL 0.0033 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   138s] group  54 clip 20690 L 150 R -0.456 r_ah -0.456 loss +5.5047 gn 0.434 beta 0.0749 KL 0.0032 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   140s] group  55 clip 17977 L  75 R -0.445 r_ah -0.445 loss -12.0822 gn 0.628 beta 0.0745 KL 0.0027 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   142s] group  56 clip  2680 L  90 R -0.370 r_ah -0.370 loss +2.0849 gn 0.199 beta 0.0743 KL 0.0030 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   143s] group  57 clip  3502 L 285 R -0.532 r_ah -0.532 loss +4.4427 gn 0.235 beta 0.0740 KL 0.0031 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   145s] group  58 clip  3647 L 133 R -0.363 r_ah -0.363 loss -8.5226 gn 0.722 beta 0.0740 KL 0.0030 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   147s] group  59 clip 22674 L 209 R -0.488 r_ah -0.488 loss +0.8159 gn 0.453 beta 0.0740 KL 0.0029 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   149s] group  60 clip 28152 L 254 R -0.486 r_ah -0.486 loss -0.3068 gn 0.406 beta 0.0740 KL 0.0033 lam [0.0, 0.0, 0.0, 0.0] S3 0 2.0s
+[   151s] group  61 clip 17277 L  73 R -0.451 r_ah -0.451 loss -0.7619 gn 0.404 beta 0.0738 KL 0.0025 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   153s] group  62 clip 21097 L 303 R -0.524 r_ah -0.524 loss -3.3848 gn 0.313 beta 0.0738 KL 0.0032 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   155s] group  63 clip 16858 L 304 R -0.339 r_ah -0.339 loss +6.2190 gn 0.945 beta 0.0738 KL 0.0034 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   157s] group  64 clip 24885 L 198 R -0.401 r_ah -0.401 loss -0.3845 gn 0.224 beta 0.0737 KL 0.0032 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   159s] group  65 clip 11613 L  77 R -0.424 r_ah -0.424 loss +0.5526 gn 0.407 beta 0.0737 KL 0.0034 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   161s] group  66 clip 17148 L  91 R -0.245 r_ah -0.245 loss +4.6701 gn 0.550 beta 0.0737 KL 0.0029 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   162s] group  67 clip 22595 L  61 R -0.253 r_ah -0.253 loss +12.4619 gn 0.696 beta 0.0735 KL 0.0029 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   164s] group  68 clip 22528 L  90 R -0.547 r_ah -0.547 loss -0.5744 gn 0.270 beta 0.0734 KL 0.0031 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   166s] group  69 clip  8858 L 209 R -0.350 r_ah -0.350 loss +4.9392 gn 0.315 beta 0.0733 KL 0.0033 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   168s] group  70 clip 21141 L 304 R -0.347 r_ah -0.347 loss +1.2633 gn 0.280 beta 0.0733 KL 0.0033 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   170s] group  71 clip 20548 L 208 R -0.435 r_ah -0.435 loss -3.0324 gn 0.221 beta 0.0731 KL 0.0033 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   172s] group  72 clip 25189 L 120 R -0.400 r_ah -0.400 loss -7.0673 gn 0.357 beta 0.0730 KL 0.0031 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   174s] group  73 clip  9911 L  70 R -0.498 r_ah -0.498 loss +1.9258 gn 0.677 beta 0.0728 KL 0.0034 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   176s] group  74 clip 25067 L 304 R -0.435 r_ah -0.435 loss +8.0129 gn 0.514 beta 0.0726 KL 0.0031 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   178s] group  75 clip  3827 L 116 R -0.456 r_ah -0.456 loss -1.7236 gn 0.348 beta 0.0723 KL 0.0029 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   180s] group  76 clip 11578 L 304 R -0.397 r_ah -0.397 loss -4.0231 gn 0.361 beta 0.0720 KL 0.0031 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   181s] group  77 clip   528 L 238 R -0.442 r_ah -0.442 loss +0.5422 gn 0.342 beta 0.0717 KL 0.0031 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   183s] group  78 clip 21660 L 261 R -0.500 r_ah -0.500 loss -2.8545 gn 1.024 beta 0.0713 KL 0.0031 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   185s] group  79 clip 11089 L 256 R -0.469 r_ah -0.469 loss -5.9488 gn 0.286 beta 0.0709 KL 0.0031 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   187s] group  80 clip 12951 L  89 R -0.591 r_ah -0.591 loss +1.2475 gn 0.390 beta 0.0705 KL 0.0028 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   189s] group  81 clip 12004 L 124 R -0.274 r_ah -0.274 loss -10.5897 gn 0.316 beta 0.0701 KL 0.0027 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   191s] group  82 clip 26196 L 176 R -0.397 r_ah -0.397 loss -0.4514 gn 0.182 beta 0.0698 KL 0.0030 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   193s] group  83 clip 14854 L 292 R -0.368 r_ah -0.368 loss -6.0303 gn 0.545 beta 0.0695 KL 0.0030 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   195s] group  84 clip 27161 L  66 R -0.412 r_ah -0.412 loss +8.8352 gn 0.641 beta 0.0693 KL 0.0028 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   197s] group  85 clip  6301 L  70 R -0.427 r_ah -0.427 loss +0.5095 gn 0.358 beta 0.0691 KL 0.0021 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   199s] group  86 clip 28499 L 151 R -0.379 r_ah -0.379 loss +3.2769 gn 0.248 beta 0.0689 KL 0.0025 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   200s] group  87 clip 17969 L 161 R -0.337 r_ah -0.337 loss +0.6350 gn 0.404 beta 0.0686 KL 0.0027 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   202s] group  88 clip 21683 L 268 R -0.574 r_ah -0.574 loss +5.2771 gn 0.373 beta 0.0683 KL 0.0028 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   204s] group  89 clip  6754 L  28 R -0.410 r_ah -0.410 loss -9.1526 gn 0.538 beta 0.0681 KL 0.0021 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   206s] group  90 clip   235 L  77 R -0.525 r_ah -0.525 loss +0.8990 gn 0.246 beta 0.0680 KL 0.0024 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   208s] group  91 clip 20842 L 192 R -0.431 r_ah -0.431 loss +15.4429 gn 0.465 beta 0.0677 KL 0.0027 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   210s] group  92 clip 12688 L  82 R -0.462 r_ah -0.462 loss +0.1636 gn 0.435 beta 0.0676 KL 0.0025 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   212s] group  93 clip 21983 L 304 R -0.408 r_ah -0.408 loss -1.3939 gn 0.345 beta 0.0674 KL 0.0027 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   214s] group  94 clip  4961 L  56 R -0.292 r_ah -0.292 loss -4.0811 gn 0.333 beta 0.0674 KL 0.0023 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   216s] group  95 clip  1368 L 239 R -0.445 r_ah -0.445 loss -5.0209 gn 0.265 beta 0.0674 KL 0.0027 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   218s] group  96 clip  3820 L  45 R -0.290 r_ah -0.290 loss +8.8813 gn 0.334 beta 0.0674 KL 0.0019 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   220s] group  97 clip 22349 L 194 R -0.396 r_ah -0.396 loss -6.0042 gn 0.354 beta 0.0675 KL 0.0028 lam [0.0, 0.0, 0.0, 0.0] S3 0 2.0s
+[   222s] group  98 clip 23822 L 304 R -0.538 r_ah -0.538 loss +2.5164 gn 0.288 beta 0.0677 KL 0.0025 lam [0.0, 0.0, 0.0, 0.0] S3 0 2.0s
+[   223s] group  99 clip  2586 L  38 R -0.471 r_ah -0.471 loss -0.2701 gn 0.340 beta 0.0679 KL 0.0026 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   225s] group 100 clip 27383 L  52 R -0.325 r_ah -0.325 loss -10.3777 gn 0.417 beta 0.0680 KL 0.0029 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   227s] group 101 clip 18351 L  87 R -0.585 r_ah -0.585 loss -13.7352 gn 0.437 beta 0.0681 KL 0.0026 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   229s] group 102 clip  6467 L 105 R -0.322 r_ah -0.322 loss +10.8808 gn 0.485 beta 0.0682 KL 0.0024 lam [0.0, 0.0, 0.0, 0.0] S3 0 2.0s
+[   231s] group 103 clip 21445 L 164 R -0.448 r_ah -0.448 loss +1.3161 gn 0.291 beta 0.0681 KL 0.0029 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   233s] group 104 clip  9660 L 270 R -0.379 r_ah -0.379 loss -7.0621 gn 0.448 beta 0.0681 KL 0.0031 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   235s] group 105 clip 19281 L 304 R -0.479 r_ah -0.479 loss -0.2421 gn 0.405 beta 0.0682 KL 0.0030 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   237s] group 106 clip 15108 L 267 R -0.365 r_ah -0.365 loss -5.5795 gn 0.173 beta 0.0683 KL 0.0029 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   239s] group 107 clip 23476 L 304 R -0.471 r_ah -0.471 loss -7.8011 gn 0.442 beta 0.0684 KL 0.0031 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   241s] group 108 clip 19984 L  42 R -0.554 r_ah -0.554 loss -3.0518 gn 0.436 beta 0.0685 KL 0.0030 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   243s] group 109 clip 21615 L  67 R -0.223 r_ah -0.223 loss +10.8998 gn 0.323 beta 0.0687 KL 0.0027 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   245s] group 110 clip 10499 L 304 R -0.593 r_ah -0.593 loss -8.9720 gn 0.235 beta 0.0689 KL 0.0030 lam [0.0, 0.0, 0.0, 0.0] S3 0 2.0s
+[   247s] group 111 clip  1013 L 162 R -0.373 r_ah -0.373 loss -7.3252 gn 0.582 beta 0.0692 KL 0.0032 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   249s] group 112 clip 14868 L 177 R -0.329 r_ah -0.329 loss -0.5300 gn 0.205 beta 0.0694 KL 0.0030 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   250s] group 113 clip 19377 L 214 R -0.441 r_ah -0.441 loss +2.4277 gn 0.411 beta 0.0697 KL 0.0027 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   252s] group 114 clip 10985 L  85 R -0.291 r_ah -0.291 loss -0.6919 gn 0.022 beta 0.0700 KL 0.0032 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   254s] group 115 clip   396 L 148 R -0.488 r_ah -0.488 loss -1.5345 gn 0.369 beta 0.0703 KL 0.0027 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   256s] group 116 clip 25233 L 132 R -0.585 r_ah -0.585 loss -1.4693 gn 0.155 beta 0.0705 KL 0.0031 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   258s] group 117 clip 18938 L  57 R -0.438 r_ah -0.438 loss -8.4261 gn 0.815 beta 0.0706 KL 0.0033 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   260s] group 118 clip 13701 L 106 R -0.471 r_ah -0.471 loss +2.3423 gn 0.350 beta 0.0707 KL 0.0034 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   262s] group 119 clip 24032 L 283 R -0.536 r_ah -0.536 loss -11.0443 gn 0.626 beta 0.0710 KL 0.0034 lam [0.0, 0.0, 0.0, 0.0] S3 0 2.0s
+[   264s] group 120 clip 24305 L  61 R -0.409 r_ah -0.409 loss -4.9614 gn 0.531 beta 0.0711 KL 0.0031 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   266s] group 121 clip  7314 L  88 R -0.409 r_ah -0.409 loss +9.4102 gn 0.316 beta 0.0713 KL 0.0034 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   268s] group 122 clip  3497 L  63 R -0.313 r_ah -0.313 loss +5.3884 gn 0.248 beta 0.0715 KL 0.0032 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   269s] group 123 clip 19834 L 234 R -0.440 r_ah -0.440 loss +1.5586 gn 0.337 beta 0.0716 KL 0.0039 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+[   271s] group 124 clip 19057 L 159 R -0.281 r_ah -0.281 loss -0.2611 gn 0.167 beta 0.0717 KL 0.0034 lam [0.0, 0.0, 0.0, 0.0] S3 0 1.9s
+status completed; episodes 500; 272.6 s; peak 10.57 GiB

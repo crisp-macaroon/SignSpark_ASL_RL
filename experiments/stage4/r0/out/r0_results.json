@@ -1,0 +1,152 @@
+{
+ "label": "R0 reference-only targets, How2Sign TRAIN references; frozen before Stage 5",
+ "N_train_items": 29630,
+ "clips_used": 29630,
+ "clips_excluded_L_lt_8": 0,
+ "targets": {
+  "tau_ah_R(L)": {
+   "mean": 0.6102693751451344,
+   "ci95": [
+    0.6082687470495441,
+    0.6122125597028165
+   ],
+   "n": 29630
+  },
+  "tau_ah_R(R)": {
+   "mean": 0.4513610601121581,
+   "ci95": [
+    0.4490963333200153,
+    0.4536958738498368
+   ],
+   "n": 29630
+  },
+  "tau_lr_R": {
+   "mean": 0.3224749240722765,
+   "ci95": [
+    0.3198166516164464,
+    0.3253114285374544
+   ],
+   "n": 29630
+  },
+  "t*_R": {
+   "mean": -0.39239512365542173,
+   "ci95": [
+    -0.3967589659067926,
+    -0.38782189391142785
+   ],
+   "n": 29630
+  },
+  "tau_ah_J(L)": {
+   "mean": 0.422004108966902,
+   "ci95": [
+    0.4197525475560807,
+    0.42436818396742987
+   ],
+   "n": 29630
+  },
+  "tau_ah_J(R)": {
+   "mean": 0.24902149842319268,
+   "ci95": [
+    0.24655928011790337,
+    0.2516223872587135
+   ],
+   "n": 29630
+  },
+  "tau_lr_J": {
+   "mean": 0.3196211313449238,
+   "ci95": [
+    0.316977365478934,
+    0.32225246859673473
+   ],
+   "n": 29630
+  },
+  "t*_J": {
+   "mean": -0.4148973111261466,
+   "ci95": [
+    -0.41954110674529105,
+    -0.4100088604808616
+   ],
+   "n": 29630
+  }
+ },
+ "nan_counts": {
+  "coord_ah_R_L": 0,
+  "coord_ah_R_R": 0,
+  "coord_lr_R": 0,
+  "dom_R": 0,
+  "coord_ah_J_L": 0,
+  "coord_ah_J_R": 0,
+  "coord_lr_J": 0,
+  "dom_J": 0
+ },
+ "fk_bone_max_rel_dev": 1.6320387111305975e-05,
+ "per_clip_R_vs_J_spearman": {
+  "coord_ah_R_R vs coord_ah_J_R": 0.5807503022000964,
+  "coord_ah_R_L vs coord_ah_J_L": 0.5150996873787212,
+  "coord_lr_R vs coord_lr_J": 0.9302616521121247,
+  "dom_R vs dom_J": 0.9583915811291707
+ },
+ "run_time_min": 60.2,
+ "wall_time_this_session_min": 0.1,
+ "synthetic": {
+  "U-A11": {
+   "max_abs_mm": 3.29667329788208,
+   "max_abs_wrist_relative_mm": 5.317866802215576,
+   "wrist_mirror_mm": 3.095638006925583,
+   "dom_J_identical_hands": {
+    "mean": -0.0003180573723487428,
+    "max_abs": 0.0018741247191334982
+   }
+  },
+  "V-R3": {
+   "expected": {
+    "static": "all NaN (undefined)",
+    "train_mean_pose": "all NaN (undefined)",
+    "shared_spike": "coord = 1.0 (R, J); dom_R = 0; dom_J ~ 0"
+   },
+   "static": {
+    "R": {
+     "coord_ah_L": NaN,
+     "coord_ah_R": NaN,
+     "coord_lr": NaN,
+     "dom": "undefined: ZeroDivisionError (A_R = 0)"
+    },
+    "J": {
+     "coord_ah_L": NaN,
+     "coord_ah_R": NaN,
+     "coord_lr": NaN,
+     "dom": NaN
+    }
+   },
+   "train_mean_pose": {
+    "R": {
+     "coord_ah_L": -1.0,
+     "coord_ah_R": NaN,
+     "coord_lr": -1.0,
+     "dom": -0.08969107795815848
+    },
+    "J": {
+     "coord_ah_L": NaN,
+     "coord_ah_R": NaN,
+     "coord_lr": NaN,
+     "dom": NaN
+    }
+   },
+   "shared_spike": {
+    "R": {
+     "coord_ah_L": 1.0,
+     "coord_ah_R": 1.0,
+     "coord_lr": 1.0,
+     "dom": 0.0
+    },
+    "J": {
+     "coord_ah_L": 1.0,
+     "coord_ah_R": 0.9999999999999999,
+     "coord_lr": 1.0,
+     "dom": -0.01370666725539992
+    }
+   }
+  }
+ },
+ "status": "completed"
+}

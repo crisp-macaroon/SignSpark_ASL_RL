@@ -1,0 +1,253 @@
+{
+ "tests": [
+  {
+   "test": "U1 log-prob exact",
+   "pass": true,
+   "seconds": 0.02,
+   "detail": {
+    "max_abs_diff": 0.0009765625,
+    "pass": true
+   }
+  },
+  {
+   "test": "U2 beta=0 -> mu=0, eps=xi bitwise",
+   "pass": true,
+   "seconds": 0.02,
+   "detail": {
+    "beta": 0.0,
+    "mu_all_zero": true,
+    "eps_equals_xi_bitwise": true,
+    "pass": true
+   }
+  },
+  {
+   "test": "U3 padded frames",
+   "pass": true,
+   "seconds": 0.0,
+   "detail": {
+    "padded_zero": true,
+    "active_nonzero": true,
+    "pass": true
+   }
+  },
+  {
+   "test": "U4 KL cap + formula",
+   "pass": true,
+   "seconds": 0.01,
+   "detail": {
+    "kl": [
+     0.9977828860282898,
+     0.9990978837013245,
+     0.9995551109313965
+    ],
+    "max_per_frame_kl": 1.0000001192092896,
+    "beta_max": 0.7071067811865476,
+    "formula_max_abs_diff": 1.1920928955078125e-07,
+    "pass": true
+   }
+  },
+  {
+   "test": "U5 Stiefel",
+   "pass": true,
+   "seconds": 0.0,
+   "detail": {
+    "orth_err": 2.384185791015625e-07,
+    "shape": [
+     90,
+     4
+    ],
+    "pass": true
+   }
+  },
+  {
+   "test": "U6 RLOO",
+   "pass": true,
+   "seconds": 0.0,
+   "detail": {
+    "adv_sum": -5.551115123125783e-17,
+    "b0_matches_others_mean": true,
+    "b0_independent_of_R0": true,
+    "pass": "True"
+   }
+  },
+  {
+   "test": "U7 score-function unbiased (MC z-test)",
+   "pass": true,
+   "seconds": 1.49,
+   "detail": {
+    "n": 120000,
+    "max_abs_z": 3.1588380336761475,
+    "mean_z": -0.06567103415727615,
+    "param_grad_cosine": 0.9867137670516968,
+    "pass": true
+   }
+  },
+  {
+   "test": "U7b training-loss gradient",
+   "pass": true,
+   "seconds": 0.0,
+   "detail": {
+    "rel_max_diff": 1.222937129341517e-07,
+    "pass": true
+   }
+  },
+  {
+   "test": "U8 S-3 / A3",
+   "pass": true,
+   "seconds": 0.0,
+   "detail": {
+    "S3_worst": -1.4514,
+    "t1": {
+     "r_ah": -1.4514,
+     "s3_undefined_primary": true,
+     "c_raw": {
+      "art": -0.1,
+      "jerk": -0.10000000000000009,
+      "ext": -0.02,
+      "act": -0.22314355131420976
+     },
+     "c": {
+      "art": -0.1,
+      "jerk": -0.10000000000000009,
+      "ext": -0.02,
+      "act": -0.22314355131420976
+     },
+     "a3_undefined": {
+      "art": false,
+      "jerk": false,
+      "ext": false,
+      "act": false
+     },
+     "lambda_used": {
+      "art": 0.5,
+      "jerk": 0.5,
+      "ext": 0.5,
+      "act": 0.5
+     },
+     "R": -1.229828224342895
+    },
+    "t2_c": {
+     "art": 1.0,
+     "jerk": 1.0,
+     "ext": 1.0,
+     "act": 1.0
+    },
+    "t3_undefined": {
+     "art": true,
+     "jerk": true,
+     "ext": false,
+     "act": true
+    },
+    "t4_c": {
+     "art": -0.1,
+     "jerk": -0.10000000000000009,
+     "ext": -0.02,
+     "act": -0.22314355131420976
+    },
+    "static_hand_valid": {
+     "input_finite": true,
+     "arm_R": true,
+     "arm_L": true,
+     "hand_L": true,
+     "hand_R": false
+    },
+    "t5_R": -3.4514,
+    "pass": true
+   }
+  },
+  {
+   "test": "U9 dual ascent",
+   "pass": true,
+   "seconds": 0.0,
+   "detail": {
+    "l1": {
+     "art": 0.30000000000000004,
+     "jerk": 0.0,
+     "ext": 1.0,
+     "act": 0.0
+    },
+    "l2": {
+     "art": 0.0,
+     "jerk": 0.0,
+     "ext": 0.5,
+     "act": 0.0
+    },
+    "pass": true
+   }
+  },
+  {
+   "test": "U10 frozen target + thresholds",
+   "pass": true,
+   "seconds": 0.0,
+   "detail": {
+    "tau": 0.4514,
+    "s3": -1.4514,
+    "frozen_sha256": "26f28f9a68bc4d538cda942d4578e4e05c6bfd32e87a2422bef5566968f2e383",
+    "pass": true
+   }
+  },
+  {
+   "test": "U11 sampler + seeds",
+   "pass": true,
+   "seconds": 0.02,
+   "detail": {
+    "first_clips": [
+     19665,
+     27993,
+     2196,
+     12043,
+     18164
+    ],
+    "seed_ranges": {
+     "train": [
+      50000000,
+      50124003
+     ],
+     "eval": [
+      40000001,
+      40255004
+     ],
+     "e2e": [
+      10000000,
+      20031032
+     ]
+    },
+    "pass": true
+   }
+  },
+  {
+   "test": "U12 arm feature",
+   "pass": true,
+   "seconds": 0.0,
+   "detail": {
+    "mean": 1.9868215961338365e-09,
+    "std": 1.0,
+    "static_valid": false,
+    "nan_valid": false,
+    "pass": true
+   }
+  },
+  {
+   "test": "U13 config guard (500 = 125 x 4)",
+   "pass": true,
+   "seconds": 0.0,
+   "detail": {
+    "main_config_ok": true,
+    "non_500_rejected": true,
+    "pass": true
+   }
+  },
+  {
+   "test": "U14 split guard (no test)",
+   "pass": true,
+   "seconds": 0.0,
+   "detail": {
+    "error_message": "split 'test' is not allowed in Stage 5 (train/dev only)",
+    "opened": [],
+    "pass": true
+   }
+  }
+ ],
+ "passed": 15,
+ "total": 15
+}

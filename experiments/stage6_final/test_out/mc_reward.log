@@ -1,0 +1,37 @@
+[PASS] targets read from FROZEN_TARGETS_R0.json R_space  ({'tau_ah_L': 0.6103, 'tau_ah_R': 0.4514, 'tau_lr': 0.3225, 't_dom': -0.3924})
+[PASS] frozen target file hash recorded and unchanged
+[PASS] record matches R v1.1 r_stats  (coord_ah_R 1.000, coord_ah_L -0.051, dom -0.219)
+[PASS] r_ah_R = -|-0.2| at tau + -0.2
+[PASS] r_ah_R = -|+0.0| at tau + +0.0
+[PASS] r_ah_R = -|+0.3| at tau + +0.3
+[PASS] r_coord components exact
+[PASS] r_dom = -|dom - t*|  (-0.1729)
+[PASS] r_dom = 0 at t*
+[PASS] x == x0 -> every constraint = -tolerance  ({'art_L': -0.1, 'art_R': -0.1, 'jerk_L': -0.1, 'jerk_R': -0.1, 'ext_L': -0.02, 'lr_floor': -0.03, 'calib_L': -0.2231})
+[PASS] dom mode: R = r_dom when lambda = 0, no KL
+[PASS] coord mode constraints = art, jerk (both hands)
+[PASS] dom mode adds c_left (calib_L, ext_L, lr_floor)
+[PASS] combined refused without allow_combined
+[PASS] combined: r_task = r_coord + r_dom (no z-norm)
+[PASS] suppressed left: calib_L violated (> 0)  (0.047)
+[PASS] jittery left: jerk_L violated (> 0)  (2.981)
+[PASS] constraints clipped to [-1, 1]
+[PASS] R = r_task - sum lambda c
+[PASS] dual ascent: violated -> lambda up, satisfied -> stays 0  ({'art_L': 0.017, 'art_R': 0.0, 'jerk_L': 1.0, 'jerk_R': 0.0, 'ext_L': 0.0, 'lr_floor': 0.0, 'calib_L': 0.047})
+[PASS] static left: S-3 worst case on r_ah_L and r_lr, r_ah_R defined
+[PASS] undefined r_dom without a configured value raises
+[PASS] undefined r_dom -> configured value, flagged
+[PASS] left constraints undefined -> A3 +1, flagged; calib_L with no defined pair -> +1
+[PASS] coord mode ignores undefined r_dom (no config needed)
+[PASS] non-finite input: all coordination at worst case, episode kept, R finite
+[PASS] z-normalised r_coord
+[PASS] unresolved() lists missing z-norm and unregistered values
+[PASS] KL terms = noise_transform.kl_per_frame x L (exact)  (230.146, 180.453)
+[PASS] separate KL weights applied
+[PASS] identity transform: KL = 0
+[PASS] RLOO advantages sum to 0, baseline excludes self
+[PASS] paired delta = controlled - base per component
+
+all passed
+
+--- stderr ---

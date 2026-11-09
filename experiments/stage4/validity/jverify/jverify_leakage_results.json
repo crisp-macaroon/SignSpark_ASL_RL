@@ -1,0 +1,131 @@
+{
+ "task1_J_v1.1_verification": {
+  "clips": 29630,
+  "order_matches_R0": true,
+  "fk_nonfinite_clips": 0,
+  "invalid_streams_by_signal": {
+   "arm_L": 0,
+   "arm_R": 0,
+   "hand_L": 0,
+   "hand_R": 0
+  },
+  "invalid_streams_total": 0,
+  "definedness_changes_v1_to_v1.1": {
+   "coord_ah_J_L": 0,
+   "coord_ah_J_R": 0,
+   "coord_lr_J": 0,
+   "dom_J": 0
+  },
+  "max_abs_diff_where_defined": {
+   "coord_ah_J_L": 0.0,
+   "coord_ah_J_R": 0.0,
+   "coord_lr_J": 0.0,
+   "dom_J": 0.0
+  },
+  "v1.1_means_vs_frozen_J_targets": {
+   "coord_ah_J_L": {
+    "v1.1_mean": 0.422004108966902,
+    "v1_mean": 0.422004108966902
+   },
+   "coord_ah_J_R": {
+    "v1.1_mean": 0.24902149842319268,
+    "v1_mean": 0.24902149842319268
+   },
+   "coord_lr_J": {
+    "v1.1_mean": 0.3196211313449238,
+    "v1_mean": 0.3196211313449238
+   },
+   "dom_J": {
+    "v1.1_mean": -0.4148973111261466,
+    "v1_mean": -0.4148973111261466
+   }
+  },
+  "conclusion": "No invalid J streams; v1.1 equals v1 on all clips: frozen J targets remain valid under J v1.1 unchanged."
+ },
+ "task2_skinning_leakage": {
+  "subset": "every 10th train clip (i % 10 == 0)",
+  "n_clips": 2963,
+  "real_data": {
+   "L": {
+    "leakage_m_per_frame": {
+     "median": 3.693150716754702e-05,
+     "mean": 3.6946033218371184e-05,
+     "p95": 5.4888685781929996e-05
+    },
+    "actual_hand_signal_m_per_frame": {
+     "median": 0.001976626733936232
+    },
+    "leakage_ratio_vs_actual": {
+     "median": 0.01867799628398392,
+     "p95": 0.03443694320136378,
+     "mean": 0.020730505088313814
+    },
+    "coord_actual_mean": 0.42043295100900924,
+    "coord_noleak_mean": 0.4195753549007745,
+    "coord_leakonly_mean": 0.30204867279770237,
+    "paired_diff_actual_minus_noleak": {
+     "mean": 0.0008575961082346669,
+     "ci95": [
+      0.0005719455703606966,
+      0.0012595645937483373
+     ],
+     "n": 2963
+    },
+    "spearman_actual_vs_noleak": 0.9994943269599387,
+    "material_by_prestated_criterion": false
+   },
+   "R": {
+    "leakage_m_per_frame": {
+     "median": 2.9508361820530615e-05,
+     "mean": 2.9641260653770394e-05,
+     "p95": 4.3569551246960685e-05
+    },
+    "actual_hand_signal_m_per_frame": {
+     "median": 0.002920860504347972
+    },
+    "leakage_ratio_vs_actual": {
+     "median": 0.010237341470018708,
+     "p95": 0.016066114435298692,
+     "mean": 0.010753413748346643
+    },
+    "coord_actual_mean": 0.24917398504920277,
+    "coord_noleak_mean": 0.24790703055874133,
+    "coord_leakonly_mean": 0.4038293595440084,
+    "paired_diff_actual_minus_noleak": {
+     "mean": 0.001266954490461459,
+     "ci95": [
+      0.0011667885153593901,
+      0.0013617786855702155
+     ],
+     "n": 2963
+    },
+    "spearman_actual_vs_noleak": 0.9999047035513301,
+    "material_by_prestated_criterion": false
+   },
+   "LR": {
+    "lr_actual_mean": 0.31975205163817383,
+    "lr_noleak_mean": 0.31943680098832067,
+    "paired_diff": {
+     "mean": 0.0003152506498531703,
+     "ci95": [
+      -6.785741917394292e-05,
+      0.0006063478118744445
+     ],
+     "n": 2963
+    }
+   }
+  },
+  "material_overall": false,
+  "synthetic": {
+   "n": 50,
+   "label": "SYNTHETIC random-walk poses (0.05 rad/frame steps), not real data",
+   "leak_mean_m_per_frame": 4.8942342209208494e-05,
+   "arm_speed_m_per_frame": 0.05053431598115568,
+   "leak_per_unit_wrist_speed": 0.0009712498600828327,
+   "hand_signal_mean_armstatic": 0.0027000429291532146,
+   "leak_ratio_vs_moving_hand": 0.01812650520507011,
+   "coord_leakonly_mean": 0.18251366572043348
+  }
+ },
+ "minutes": 68.9
+}

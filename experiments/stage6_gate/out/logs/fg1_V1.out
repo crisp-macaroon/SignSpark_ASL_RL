@@ -1,0 +1,55 @@
+Logging to C:\Users\balaji\AppData\Local\Temp\openai-2026-11-07-17-43-09-341293
+### Creating model and flow...
+Using UNET with: Input Dim 60 | Latent Dim: 512 | Mults: (2, 2, 2, 2) | Added channels: 120
+AdaGN: True | Zero: True | Attention: False
+[TemporalUnetLarge] channel dims : [60, 512, 1024, 2048, 2048]
+[TemporalUnetLarge] bottleneck   : 1024
+[TemporalUnetLarge] attn at depth: (2, 3)
+[TemporalUnetLarge] Total parameters: 0.832B
+Text Conditioning Enabled. Loading CLIP M-CLIP/XLM-Roberta-Large-Vit-B-16Plus...
+### RFlow with lbd_flow 1.0, lbd_recon 1.0, lbd_velocity 1.0
+### The parameter count is 1395037372
+### Creating model and flow...
+Using UNET with: Input Dim 90 | Latent Dim: 512 | Mults: (2, 2, 2, 2) | Added channels: 180
+AdaGN: True | Zero: True | Attention: False
+[TemporalUnetLarge] channel dims : [90, 512, 1024, 2048, 2048]
+[TemporalUnetLarge] bottleneck   : 1024
+[TemporalUnetLarge] attn at depth: (2, 3)
+[TemporalUnetLarge] Total parameters: 0.832B
+Text Conditioning Enabled. Loading CLIP M-CLIP/XLM-Roberta-Large-Vit-B-16Plus...
+### RFlow with lbd_flow 1.0, lbd_recon 1.0, lbd_velocity 1.0
+### The parameter count is 1395329242
+### flip_left_hand=True: converting left hand from SMPLX-left to right-hand convention
+############### 
+Loading [Dataset: full @ 29630 items | Seq_Len: 304] from C:\Users\balaji\Downloads\rlproj\rlproj\data\raw\SignSparK_data\train\How2Sign_reopt_train.lmdb
+[   136s] V1 iter 0 surrogate 0.0547 geo_R 0.0547 geo_L 0.0376 geo_LR 0.0541 KL_R 0.302 peak 10.52 GiB
+[   240s] V1 iter 1 surrogate 0.0975 geo_R 0.0974 geo_L 0.0376 geo_LR 0.0591 KL_R 0.312 peak 10.52 GiB
+[   344s] V1 iter 2 surrogate 0.1310 geo_R 0.1309 geo_L 0.0376 geo_LR 0.0570 KL_R 0.326 peak 10.52 GiB
+[   448s] V1 iter 3 surrogate 0.1554 geo_R 0.1553 geo_L 0.0376 geo_LR 0.0542 KL_R 0.344 peak 10.52 GiB
+[   553s] V1 iter 4 surrogate 0.1756 geo_R 0.1755 geo_L 0.0376 geo_LR 0.0525 KL_R 0.365 peak 10.52 GiB
+[   657s] V1 iter 5 surrogate 0.1941 geo_R 0.1940 geo_L 0.0376 geo_LR 0.0520 KL_R 0.391 peak 10.52 GiB
+[   761s] V1 iter 6 surrogate 0.2110 geo_R 0.2109 geo_L 0.0376 geo_LR 0.0519 KL_R 0.420 peak 10.52 GiB
+[   865s] V1 iter 7 surrogate 0.2266 geo_R 0.2265 geo_L 0.0376 geo_LR 0.0514 KL_R 0.454 peak 10.52 GiB
+[   970s] V1 iter 8 surrogate 0.2419 geo_R 0.2418 geo_L 0.0376 geo_LR 0.0508 KL_R 0.491 peak 10.52 GiB
+[  1077s] V1 iter 9 surrogate 0.2562 geo_R 0.2561 geo_L 0.0376 geo_LR 0.0514 KL_R 0.532 peak 10.52 GiB
+[  1182s] V1 iter 10 surrogate 0.2698 geo_R 0.2697 geo_L 0.0376 geo_LR 0.0510 KL_R 0.578 peak 10.52 GiB
+[  1287s] V1 iter 11 surrogate 0.2843 geo_R 0.2842 geo_L 0.0376 geo_LR 0.0515 KL_R 0.628 peak 10.52 GiB
+[  1392s] V1 iter 12 surrogate 0.2987 geo_R 0.2986 geo_L 0.0376 geo_LR 0.0519 KL_R 0.683 peak 10.52 GiB
+[  1497s] V1 iter 13 surrogate 0.3131 geo_R 0.3130 geo_L 0.0376 geo_LR 0.0525 KL_R 0.742 peak 10.52 GiB
+[  1602s] V1 iter 14 surrogate 0.3271 geo_R 0.3269 geo_L 0.0376 geo_LR 0.0521 KL_R 0.808 peak 10.52 GiB
+[  1707s] V1 iter 15 surrogate 0.3412 geo_R 0.3411 geo_L 0.0376 geo_LR 0.0520 KL_R 0.880 peak 10.52 GiB
+[  1811s] V1 iter 16 surrogate 0.3560 geo_R 0.3559 geo_L 0.0376 geo_LR 0.0530 KL_R 0.958 peak 10.52 GiB
+[  1916s] V1 iter 17 surrogate 0.3698 geo_R 0.3697 geo_L 0.0376 geo_LR 0.0529 KL_R 1.043 peak 10.52 GiB
+[  2021s] V1 iter 18 surrogate 0.3845 geo_R 0.3843 geo_L 0.0376 geo_LR 0.0537 KL_R 1.136 peak 10.52 GiB
+[  2125s] V1 iter 19 surrogate 0.3990 geo_R 0.3989 geo_L 0.0376 geo_LR 0.0538 KL_R 1.237 peak 10.52 GiB
+[  2230s] V1 iter 20 surrogate 0.4135 geo_R 0.4134 geo_L 0.0376 geo_LR 0.0523 KL_R 1.346 peak 10.52 GiB
+[  2334s] V1 iter 21 surrogate 0.4283 geo_R 0.4281 geo_L 0.0376 geo_LR 0.0538 KL_R 1.464 peak 10.52 GiB
+[  2438s] V1 iter 22 surrogate 0.4435 geo_R 0.4434 geo_L 0.0376 geo_LR 0.0547 KL_R 1.590 peak 10.52 GiB
+[  2543s] V1 iter 23 surrogate 0.4588 geo_R 0.4587 geo_L 0.0376 geo_LR 0.0541 KL_R 1.726 peak 10.52 GiB
+[  2648s] V1 iter 24 surrogate 0.4729 geo_R 0.4727 geo_L 0.0376 geo_LR 0.0541 KL_R 1.873 peak 10.52 GiB
+[  2752s] V1 iter 25 surrogate 0.4885 geo_R 0.4883 geo_L 0.0376 geo_LR 0.0541 KL_R 2.029 peak 10.52 GiB
+[  2857s] V1 iter 26 surrogate 0.5039 geo_R 0.5037 geo_L 0.0376 geo_LR 0.0558 KL_R 2.196 peak 10.52 GiB
+[  2961s] V1 iter 27 surrogate 0.5197 geo_R 0.5195 geo_L 0.0376 geo_LR 0.0572 KL_R 2.374 peak 10.52 GiB
+[  3066s] V1 iter 28 surrogate 0.5341 geo_R 0.5339 geo_L 0.0376 geo_LR 0.0584 KL_R 2.565 peak 10.52 GiB
+[  3170s] V1 iter 29 surrogate 0.5478 geo_R 0.5476 geo_L 0.0376 geo_LR 0.0579 KL_R 2.766 peak 10.52 GiB
+completed 3197.5 s

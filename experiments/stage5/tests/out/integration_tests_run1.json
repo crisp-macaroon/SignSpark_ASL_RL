@@ -1,0 +1,132 @@
+{
+ "tests": [
+  {
+   "test": "I1 loader equivalence vs load_first_batch",
+   "pass": true,
+   "seconds": 17.71,
+   "detail": {
+    "body": {
+     "embed_equal": true,
+     "mask_equal": true,
+     "lengths_equal": true,
+     "text_equal": true,
+     "keyframes_equal": true,
+     "names_equal": true
+    },
+    "hand": {
+     "embed_equal": true,
+     "mask_equal": true,
+     "lengths_equal": true,
+     "text_equal": true,
+     "keyframes_equal": true,
+     "names_equal": true
+    },
+    "pass": true
+   }
+  },
+  {
+   "test": "I2 reproduces E2e A0 k=1 dumps",
+   "pass": false,
+   "seconds": 7.86,
+   "detail": {
+    "same_noise_formula": true,
+    "body_max_abs": 0.0,
+    "hand_max_abs": 0.002380847930908203,
+    "tolerance": 0.0001,
+    "bitwise_body": true,
+    "bitwise_hand": false,
+    "pass": false
+   }
+  },
+  {
+   "test": "I3 beta=0 -> controlled = uncoupled bitwise",
+   "pass": true,
+   "seconds": 1.45,
+   "detail": {
+    "mu_zero": true,
+    "controlled_equals_uncoupled_bitwise": true,
+    "pass": true
+   }
+  },
+  {
+   "test": "I3b dev only opened, weights frozen",
+   "pass": true,
+   "seconds": 0.01,
+   "detail": {
+    "opened": [
+     "dev"
+    ],
+    "trainable": 0,
+    "pass": true
+   }
+  },
+  {
+   "test": "I4 mini training x2 (logging, determinism, frozen weights, splits)",
+   "pass": true,
+   "seconds": 103.6,
+   "detail": {
+    "return_codes": [
+     0,
+     0
+    ],
+    "status": "completed",
+    "episodes": 8,
+    "keys_ok": true,
+    "finite": true,
+    "weights_unchanged": true,
+    "trainable": 0,
+    "opened_splits": [
+     "train"
+    ],
+    "checkpoints": [
+     "update_000.pt",
+     "update_001.pt",
+     "update_002.pt"
+    ],
+    "determinism_max_abs_diff_episodes": 0,
+    "determinism_max_abs_diff_groups": 0,
+    "seconds_per_group": 2.1178005933761597,
+    "projected_500ep_minutes": 5.10482454975446,
+    "gpu_peak_alloc_GiB": 10.414,
+    "gpu_peak_reserved_GiB": 10.471,
+    "run_seconds": 45.8,
+    "S3_count": 0,
+    "A3_count": 0,
+    "pass": true
+   }
+  },
+  {
+   "test": "I5 mini evaluation (3 conditions, R + J)",
+   "pass": true,
+   "seconds": 48.23,
+   "detail": {
+    "rc": 0,
+    "records": 6,
+    "verdict_field": "negative",
+    "left_identical": true,
+    "uncoupled_vs_initial_differ": true,
+    "opened_splits": [
+     "dev"
+    ],
+    "kl": {
+     "uncoupled": {
+      "mean": 0.0,
+      "max": 0.0
+     },
+     "initial": {
+      "mean": 0.001081278285710141,
+      "max": 0.0012069864897057414
+     },
+     "trained": {
+      "mean": 0.0011439609224908054,
+      "max": 0.0012496933341026306
+     }
+    },
+    "eval_seconds": 39.5,
+    "pass": true
+   }
+  }
+ ],
+ "passed": 5,
+ "total": 6
+}

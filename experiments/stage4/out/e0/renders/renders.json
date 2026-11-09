@@ -1,0 +1,29 @@
+[
+ {
+  "clip": 0,
+  "name": "-d5dN54tH2E_0-1-rgb_front",
+  "frames": 157,
+  "text": "<American> We're going to work on a arm drill that will help you have graceful hand movements in front of you.",
+  "file": "e0_review_clip0_-d5dN54tH2E_0-1-rgb_front.mp4",
+  "render_seconds": 8.9,
+  "kf2p_keyframe_frames": 27
+ },
+ {
+  "clip": 1,
+  "name": "-d5dN54tH2E_10-1-rgb_front",
+  "frames": 56,
+  "text": "<American> So we're going to go up and down; let's switch hands, down and up; down and up.",
+  "file": "e0_review_clip1_-d5dN54tH2E_10-1-rgb_front.mp4",
+  "render_seconds": 3.2,
+  "kf2p_keyframe_frames": 6
+ },
+ {
+  "clip": 2,
+  "name": "-d5dN54tH2E_11-1-rgb_front",
+  "frames": 139,
+  "text": "<American> And just let those fingers relax.",
+  "file": "e0_review_clip2_-d5dN54tH2E_11-1-rgb_front.mp4",
+  "render_seconds": 7.9,
+  "kf2p_keyframe_frames": 23
+ }
+]

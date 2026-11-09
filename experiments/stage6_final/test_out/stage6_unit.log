@@ -1,0 +1,24 @@
+PASS tint mean/sd
+PASS tint half-width uses t(0.975, 3)
+PASS heterogeneity identical -> Q = 0, I2 = 0
+PASS heterogeneity spread -> p < 0.05
+PASS category reproducible positive
+PASS category negative
+PASS category inconclusive (validity) first
+PASS category seed-sensitive (opposite-sign individual CIs)
+PASS category inconclusive (precision)
+PASS FG-1 positive needs CI > 0 and point >= 0.05
+PASS FG-1 positive blocked by preservation
+PASS FG-1 negative when CI upper < 0.05
+PASS FG-1 inconclusive when CI straddles 0.05
+PASS FG-1 point < 0.05 with CI > 0 and upper >= 0.05 is inconclusive
+PASS preflight config s7001 differs only in allowed fields
+PASS preflight config s7002 differs only in allowed fields
+PASS preflight config s7003 differs only in allowed fields
+PASS preflight config s7004 differs only in allowed fields
+PASS preflight noise ranges pairwise disjoint
+PASS left arm feature valid, z-scored over L
+PASS left arm feature non-finite -> zeros + invalid
+21/21 passed
+
+--- stderr ---

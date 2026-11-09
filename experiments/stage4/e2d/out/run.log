@@ -1,0 +1,129 @@
+﻿body {'n_tensors': 393, 'n_params': 560546432, 'sha256': 'e39c134904fee1775d6393ce3ba38f0aa28d82cc80e417ad0255cbae5e123e30'}
+hand {'n_tensors': 393, 'n_params': 560546432, 'sha256': 'e39c134904fee1775d6393ce3ba38f0aa28d82cc80e417ad0255cbae5e123e30'}
+face {'n_tensors': 393, 'n_params': 560546432, 'sha256': 'e39c134904fee1775d6393ce3ba38f0aa28d82cc80e417ad0255cbae5e123e30'}
+.\.venv-infer\Scripts\python.exe : 
+C:\Users\balaji\Downloads\rlproj\rlproj\.venv-infer\Lib\site-packages\pydantic\_internal\_generate_schema.py:2350: 
+UnsupportedFieldAttributeWarning: The 'repr' attribute with value False was provided to the `Field()` function, which 
+has no effect in the context it was used. 'repr' is field-specific metadata, and can only be attached to a model field 
+using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` 
+statement was used, or if the `Field()` function was attached to a single member of a union type.
+At line:1 char:524
++ ... t=Get-Date; .\.venv-infer\Scripts\python.exe -E -s experiments\stage4 ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (C:\Users\balaji...f a union type.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  warnings.warn(
+C:\Users\balaji\Downloads\rlproj\rlproj\.venv-infer\Lib\site-packages\pydantic\_internal\_generate_schema.py:2350: 
+UnsupportedFieldAttributeWarning: The 'frozen' attribute with value True was provided to the `Field()` function, which 
+has no effect in the context it was used. 'frozen' is field-specific metadata, and can only be attached to a model 
+field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the 
+`type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+  warnings.warn(
+Logging to C:\Users\balaji\AppData\Local\Temp\openai-2026-11-03-18-10-41-344241
+### Creating model and flow...
+Using UNET with: Input Dim 60 | Latent Dim: 512 | Mults: (2, 2, 2, 2) | Added channels: 120
+AdaGN: True | Zero: True | Attention: False
+[TemporalUnetLarge] channel dims : [60, 512, 1024, 2048, 2048]
+[TemporalUnetLarge] bottleneck   : 1024
+[TemporalUnetLarge] attn at depth: (2, 3)
+[TemporalUnetLarge] Total parameters: 0.832B
+Text Conditioning Enabled. Loading CLIP M-CLIP/XLM-Roberta-Large-Vit-B-16Plus...
+### RFlow with lbd_flow 1.0, lbd_recon 1.0, lbd_velocity 1.0
+### The parameter count is 1395037372
+Single LMDB path found for split 'dev': C:\Users\balaji\Downloads\rlproj\rlproj\data\raw\SignSparK_data\dev\How2Sign_reopt_dev.lmdb
+### flip_left_hand=True: converting left hand from SMPLX-left to right-hand convention
+############### 
+Loading [Dataset: body @ 1650 items | Seq_Len: 304] from C:\Users\balaji\Downloads\rlproj\rlproj\data\raw\SignSparK_data\dev\How2Sign_reopt_dev.lmdb
+dataloader length 52
+
+sampling torchdiffeq: 0it [00:00, ?it/s]
+sampling torchdiffeq: 0it [00:00, ?it/s]
+sampling torchdiffeq: 100it [00:01, 230.13it/s]
+sampling torchdiffeq: 300it [00:01, 370.28it/s]
+sampling torchdiffeq: 600it [00:02, 520.64it/s]
+sampling torchdiffeq: 1000it [00:02, 672.94it/s]
+sampling torchdiffeq: 1500it [00:02, 835.68it/s]
+sampling torchdiffeq: 2100it [00:03, 1007.16it/s]
+sampling torchdiffeq: 2800it [00:03, 1189.59it/s]
+sampling torchdiffeq: 3600it [00:04, 1392.28it/s]
+sampling torchdiffeq: 4500it [00:04, 1611.14it/s]
+sampling torchdiffeq: 4500it [00:04, 959.45it/s] 
+body {'batch_shape': [32, 60, 304], 'noise_seed': 20261103, 'lengths': [157, 56, 139, 171, 189, 99, 116, 263, 212, 67, 248, 84, 71, 177, 83, 85, 102, 47, 219, 120, 220, 71, 159, 125, 304, 174, 132, 28, 304, 252, 78, 146], 'upstream_s': 4.72, 'upstream_nfe': 10, 'training_flags_upstream': [False], 'text_emb_shape': [32, 640], 'harness_s': 2.66, 'T0a_max_abs_all': 0.0, 'T0a_max_abs_active': 0.0, 'T0a_pass': True, 'T0b_max_abs': 0.0, 'T0b_pass': True, 'T0c_max_abs_out': 0.0, 'T0c_pass': True, 'T0c_grad_noCk_vs_Ck': [-0.06064353138208389, -0.06064322218298912], 'training_flags_harness': [False], 'F_pass': True}
+### Creating model and flow...
+Using UNET with: Input Dim 90 | Latent Dim: 512 | Mults: (2, 2, 2, 2) | Added channels: 180
+AdaGN: True | Zero: True | Attention: False
+[TemporalUnetLarge] channel dims : [90, 512, 1024, 2048, 2048]
+[TemporalUnetLarge] bottleneck   : 1024
+[TemporalUnetLarge] attn at depth: (2, 3)
+[TemporalUnetLarge] Total parameters: 0.832B
+Text Conditioning Enabled. Loading CLIP M-CLIP/XLM-Roberta-Large-Vit-B-16Plus...
+### RFlow with lbd_flow 1.0, lbd_recon 1.0, lbd_velocity 1.0
+### The parameter count is 1395329242
+Single LMDB path found for split 'dev': C:\Users\balaji\Downloads\rlproj\rlproj\data\raw\SignSparK_data\dev\How2Sign_reopt_dev.lmdb
+### flip_left_hand=True: converting left hand from SMPLX-left to right-hand convention
+############### 
+Loading [Dataset: hand @ 1650 items | Seq_Len: 304] from C:\Users\balaji\Downloads\rlproj\rlproj\data\raw\SignSparK_data\dev\How2Sign_reopt_dev.lmdb
+dataloader length 52
+
+sampling torchdiffeq: 0it [00:00, ?it/s]
+sampling torchdiffeq: 0it [00:00, ?it/s]
+sampling torchdiffeq: 100it [00:01, 118.59it/s]
+sampling torchdiffeq: 300it [00:02, 187.61it/s]
+sampling torchdiffeq: 600it [00:03, 259.21it/s]
+sampling torchdiffeq: 1000it [00:04, 338.33it/s]
+sampling torchdiffeq: 1500it [00:05, 432.40it/s]
+sampling torchdiffeq: 2100it [00:06, 519.45it/s]
+sampling torchdiffeq: 2800it [00:06, 611.92it/s]
+sampling torchdiffeq: 3600it [00:07, 716.57it/s]
+sampling torchdiffeq: 4500it [00:08, 821.26it/s]
+sampling torchdiffeq: 4500it [00:08, 522.33it/s]
+hand {'batch_shape': [64, 90, 304], 'noise_seed': 20261104, 'lengths': [157, 157, 56, 56, 139, 139, 171, 171, 189, 189, 99, 99, 116, 116, 263, 263, 212, 212, 67, 67, 248, 248, 84, 84, 71, 71, 177, 177, 83, 83, 85, 85, 102, 102, 47, 47, 219, 219, 120, 120, 220, 220, 71, 71, 159, 159, 125, 125, 304, 304, 174, 174, 132, 132, 28, 28, 304, 304, 252, 252, 78, 78, 146, 146], 'upstream_s': 8.62, 'upstream_nfe': 10, 'training_flags_upstream': [False], 'text_emb_shape': [64, 640], 'harness_s': 5.08, 'T0a_max_abs_all': 0.0, 'T0a_max_abs_active': 0.0, 'T0a_pass': True, 'T0b_max_abs': 0.0, 'T0b_pass': True, 'T0c_max_abs_out': 0.0, 'T0c_pass': True, 'T0c_grad_noCk_vs_Ck': [-0.030744507908821106, -0.030744411051273346], 'training_flags_harness': [False], 'F_pass': True}
+### Creating model and flow...
+Using UNET with: Input Dim 60 | Latent Dim: 512 | Mults: (2, 2, 2, 2) | Added channels: 120
+AdaGN: True | Zero: True | Attention: False
+[TemporalUnetLarge] channel dims : [60, 512, 1024, 2048, 2048]
+[TemporalUnetLarge] bottleneck   : 1024
+[TemporalUnetLarge] attn at depth: (2, 3)
+[TemporalUnetLarge] Total parameters: 0.832B
+Text Conditioning Enabled. Loading CLIP M-CLIP/XLM-Roberta-Large-Vit-B-16Plus...
+### RFlow with lbd_flow 1.0, lbd_recon 1.0, lbd_velocity 1.0
+### The parameter count is 1395037372
+Single LMDB path found for split 'dev': C:\Users\balaji\Downloads\rlproj\rlproj\data\raw\SignSparK_data\dev\How2Sign_reopt_dev.lmdb
+### flip_left_hand=True: converting left hand from SMPLX-left to right-hand convention
+############### 
+Loading [Dataset: body @ 1650 items | Seq_Len: 304] from C:\Users\balaji\Downloads\rlproj\rlproj\data\raw\SignSparK_data\dev\How2Sign_reopt_dev.lmdb
+dataloader length 52
+### Creating model and flow...
+Using UNET with: Input Dim 90 | Latent Dim: 512 | Mults: (2, 2, 2, 2) | Added channels: 180
+AdaGN: True | Zero: True | Attention: False
+[TemporalUnetLarge] channel dims : [90, 512, 1024, 2048, 2048]
+[TemporalUnetLarge] bottleneck   : 1024
+[TemporalUnetLarge] attn at depth: (2, 3)
+[TemporalUnetLarge] Total parameters: 0.832B
+Text Conditioning Enabled. Loading CLIP M-CLIP/XLM-Roberta-Large-Vit-B-16Plus...
+### RFlow with lbd_flow 1.0, lbd_recon 1.0, lbd_velocity 1.0
+### The parameter count is 1395329242
+Single LMDB path found for split 'dev': C:\Users\balaji\Downloads\rlproj\rlproj\data\raw\SignSparK_data\dev\How2Sign_reopt_dev.lmdb
+### flip_left_hand=True: converting left hand from SMPLX-left to right-hand convention
+############### 
+Loading [Dataset: hand @ 1650 items | Seq_Len: 304] from C:\Users\balaji\Downloads\rlproj\rlproj\data\raw\SignSparK_data\dev\How2Sign_reopt_dev.lmdb
+dataloader length 52
+C:\Users\balaji\Downloads\rlproj\rlproj\experiments\stage4\e2d\e2d_run.py:224: UserWarning: Converting a tensor with 
+requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at 
+C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:837.)
+  "statistic": float(r), "grad_sigma": [float(v) for v in sig.grad],
+{"B": 1, "variant": "design", "checkpoint": true, "step_s": 3.371, "peak_reserved_GiB": 7.412, "peak_alloc_GiB": 6.622, "statistic": 0.45180004835128784, "grad_sigma": [-0.23127946257591248, 0.5362933874130249], "grad_finite": true, "rep": 1}
+{"B": 1, "variant": "design", "checkpoint": true, "step_s": 2.991, "peak_reserved_GiB": 7.41, "peak_alloc_GiB": 6.622, "statistic": 0.45180004835128784, "grad_sigma": [-0.23126959800720215, 0.5363008975982666], "grad_finite": true, "rep": 2}
+{"B": 2, "variant": "design", "checkpoint": true, "step_s": 3.03, "peak_reserved_GiB": 7.391, "peak_alloc_GiB": 6.865, "statistic": 0.06914263963699341, "grad_sigma": [0.23396065831184387, 0.27765125036239624], "grad_finite": true, "rep": 1}
+{"B": 2, "variant": "design", "checkpoint": true, "step_s": 3.048, "peak_reserved_GiB": 7.391, "peak_alloc_GiB": 6.865, "statistic": 0.06914263963699341, "grad_sigma": [0.2339601218700409, 0.27766329050064087], "grad_finite": true, "rep": 2}
+{"B": 4, "variant": "design", "checkpoint": true, "step_s": 3.695, "peak_reserved_GiB": 7.506, "peak_alloc_GiB": 7.44, "statistic": 0.1602885127067566, "grad_sigma": [-0.41922497749328613, 0.05099930614233017], "grad_finite": true, "rep": 1}
+{"B": 4, "variant": "design", "checkpoint": true, "step_s": 3.768, "peak_reserved_GiB": 7.457, "peak_alloc_GiB": 7.439, "statistic": 0.1602885127067566, "grad_sigma": [-0.41922497749328613, 0.05099930614233017], "grad_finite": true, "rep": 2}
+{"B": 8, "variant": "design", "checkpoint": true, "step_s": 5.853, "peak_reserved_GiB": 8.809, "peak_alloc_GiB": 8.604, "statistic": 0.03817685320973396, "grad_sigma": [-1.0239794254302979, 1.880587100982666], "grad_finite": true, "rep": 1}
+{"B": 8, "variant": "design", "checkpoint": true, "step_s": 5.929, "peak_reserved_GiB": 8.799, "peak_alloc_GiB": 8.605, "statistic": 0.03817685320973396, "grad_sigma": [-1.0239794254302979, 1.880587100982666], "grad_finite": true, "rep": 2}
+{"B": 1, "variant": "design", "checkpoint": false, "step_s": 1.992, "peak_reserved_GiB": 9.182, "peak_alloc_GiB": 8.56, "statistic": 0.45180004835128784, "grad_sigma": [-0.23121164739131927, 0.5362958908081055], "grad_finite": true, "rep": 1}
+{"B": 1, "variant": "design", "checkpoint": false, "step_s": 1.948, "peak_reserved_GiB": 8.725, "peak_alloc_GiB": 8.552, "statistic": 0.45180004835128784, "grad_sigma": [-0.23127838969230652, 0.536277711391449], "grad_finite": true, "rep": 2}
+{"B": 4, "variant": "conservative", "checkpoint": true, "step_s": 5.567, "peak_reserved_GiB": 7.695, "peak_alloc_GiB": 7.443, "statistic": 0.1602885127067566, "grad_sigma": [-0.41922497749328613, 0.05099930614233017], "grad_finite": true, "rep": 1}
+{"B": 4, "variant": "conservative", "checkpoint": true, "step_s": 5.513, "peak_reserved_GiB": 7.695, "peak_alloc_GiB": 7.443, "statistic": 0.1602885127067566, "grad_sigma": [-0.41922497749328613, 0.05099930614233017], "grad_finite": true, "rep": 2}
+total_s 172

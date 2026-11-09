@@ -1,0 +1,82 @@
+[
+ {
+  "suite": "stage5_unit",
+  "exit": 0,
+  "seconds": 8.2,
+  "tail": [
+   "PASS  U13 config guard (500 = 125 x 4)  {\"main_config_ok\": true, \"non_500_rejected\": true, \"pass\": true}",
+   "PASS  U14 split guard (no test)  {\"error_message\": \"split 'test' is not allowed in Stage 5 (train/dev only)\", \"opened\": [], \"pass\": true}",
+   "unit: 15/15"
+  ]
+ },
+ {
+  "suite": "stage6_unit",
+  "exit": 0,
+  "seconds": 7.0,
+  "tail": [
+   "PASS left arm feature valid, z-scored over L",
+   "PASS left arm feature non-finite -> zeros + invalid",
+   "21/21 passed"
+  ]
+ },
+ {
+  "suite": "mc_reward",
+  "exit": 0,
+  "seconds": 0.3,
+  "tail": [
+   "[PASS] paired delta = controlled - base per component",
+   "",
+   "all passed"
+  ]
+ },
+ {
+  "suite": "validity",
+  "exit": 0,
+  "seconds": 4.0,
+  "tail": [
+   "PASS v1 unchanged: experiments/stage4/jspace.py",
+   "",
+   "21/21 tests passed"
+  ]
+ },
+ {
+  "suite": "c_c3_fixes",
+  "exit": 0,
+  "seconds": 79.2,
+  "tail": [
+   "B {\"cases\": 10000, \"success\": 10000, \"failed\": 0, \"postcast_violations_among_success\": 0, \"nonfinite_among_success\": 0, \"max_norm_rel_err\": 7.0673650926293975e-09, \"max_M_dev\": -9.96727558177268e-06, \"max_V_dev\": -9.946912834025512e-06, \"reprojections_used\": 0, \"AP_not_satisfied_among_success\": 150, \"pass\": true}",
+   "C pass True ok_with_violation 0",
+   "ALL PASS (78 s)"
+  ]
+ },
+ {
+  "suite": "phase0_selftest",
+  "exit": 0,
+  "seconds": 7.2,
+  "tail": [
+   "PASS R0 uses train references only",
+   "",
+   "19/19 checks passed"
+  ]
+ },
+ {
+  "suite": "e2e_selftest",
+  "exit": 0,
+  "seconds": 11.2,
+  "tail": [
+   "PASS plan states registered vs new T1 items",
+   "",
+   "42/42 checks passed"
+  ]
+ },
+ {
+  "suite": "stage5_integration",
+  "exit": 0,
+  "seconds": 212.8,
+  "tail": [
+   "PASS  I4 mini training x2 (logging, determinism, frozen weights, splits)  {\"return_codes\": [0, 0], \"status\": \"completed\", \"episodes\": 8, \"keys_ok\": true, \"finite\": true, \"weights_unchanged\": true, \"trainable\": 0, \"opened_splits\": [\"train\"], \"checkpoints\": [\"update_000.pt\", \"update_001.pt\", \"update_002.pt\"], \"determinism_max_abs_diff_episodes\": 0, \"determinism_max_abs_diff",
+   "PASS  I5 mini evaluation (3 conditions, R + J)  {\"rc\": 0, \"records\": 6, \"verdict_field\": \"negative\", \"left_identical\": true, \"uncoupled_vs_initial_differ\": true, \"opened_splits\": [\"dev\"], \"kl\": {\"uncoupled\": {\"mean\": 0.0, \"max\": 0.0}, \"initial\": {\"mean\": 0.001081278285710141, \"max\": 0.0012069864897057414}, \"trained\": {\"mean\": 0.001143895962741226",
+   "integration: 6/6"
+  ]
+ }
+]

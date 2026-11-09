@@ -1,0 +1,18 @@
+{
+ "body": {
+  "n_tensors": 393,
+  "n_params": 560546432,
+  "sha256": "e39c134904fee1775d6393ce3ba38f0aa28d82cc80e417ad0255cbae5e123e30"
+ },
+ "hand": {
+  "n_tensors": 393,
+  "n_params": 560546432,
+  "sha256": "e39c134904fee1775d6393ce3ba38f0aa28d82cc80e417ad0255cbae5e123e30"
+ },
+ "face": {
+  "n_tensors": 393,
+  "n_params": 560546432,
+  "sha256": "e39c134904fee1775d6393ce3ba38f0aa28d82cc80e417ad0255cbae5e123e30"
+ },
+ "identical_all_three": true
+}

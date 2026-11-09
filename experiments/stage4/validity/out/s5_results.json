@@ -1,0 +1,55 @@
+{
+ "label": "S-5: R0 space-R targets under R v1.1; train references only; read-only",
+ "clips": 29630,
+ "name_order_mismatches_vs_R0": 0,
+ "nonfinite_input_clips": [],
+ "invalid_streams_total": 0,
+ "invalid_streams_by_signal": {
+  "arm_R": 0,
+  "arm_L": 0,
+  "hand_L": 0,
+  "hand_R": 0
+ },
+ "invalid_clip_names": {
+  "arm_R": [],
+  "arm_L": [],
+  "hand_L": [],
+  "hand_R": []
+ },
+ "min_signal_mean_std_rad_per_frame": {
+  "arm_R": [
+   0.001240893921135921,
+   0.0004743787554655469
+  ],
+  "arm_L": [
+   0.0007439597188301154,
+   0.0002199203323569042
+  ],
+  "hand_L": [
+   0.00010130880634069506,
+   2.2215912558287416e-05
+  ],
+  "hand_R": [
+   0.0011429152993591843,
+   4.5820514584190836e-05
+  ]
+ },
+ "floors": {
+  "mean": 1e-05,
+  "std": 1e-06
+ },
+ "v1_to_v1.1_definedness_changes": {
+  "coord_arm_lhand": 0,
+  "coord_arm_rhand": 0,
+  "coord_lr": 0,
+  "X": 0
+ },
+ "max_abs_diff_where_defined": {
+  "coord_arm_lhand": 0.0,
+  "coord_arm_rhand": 0.0,
+  "coord_lr": 0.0,
+  "X": 0.0
+ },
+ "seconds": 159,
+ "conclusion": "No invalid streams: the frozen space-R R0 targets remain valid under R v1.1 unchanged."
+}

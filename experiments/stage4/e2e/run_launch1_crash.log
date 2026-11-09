@@ -1,0 +1,16 @@
+﻿.\.venv-infer\Scripts\python.exe : Traceback (most recent call last):
+At line:1 char:520
++ ... t=Get-Date; .\.venv-infer\Scripts\python.exe -E -s experiments\stage4 ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "C:\Users\balaji\Downloads\rlproj\rlproj\experiments\stage4\e2e\e2e_run.py", line 482, in <module>
+    main()
+  File "C:\Users\balaji\Downloads\rlproj\rlproj\experiments\stage4\e2e\e2e_run.py", line 464, in main
+    free = shutil.disk_usage(dumps.anchor).free / 2**30
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\balaji\AppData\Local\Python\pythoncore-3.12-64\Lib\shutil.py", line 1385, in disk_usage
+    total, free = nt._getdiskusage(path)
+                  ^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] The system cannot find the path specified

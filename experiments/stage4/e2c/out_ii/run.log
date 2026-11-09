@@ -1,0 +1,42 @@
+hashed inputs 29s
+Logging to C:\Users\balaji\AppData\Local\Temp\openai-2026-11-04-06-32-23-669212
+### Creating model and flow...
+Using UNET with: Input Dim 60 | Latent Dim: 512 | Mults: (2, 2, 2, 2) | Added channels: 120
+AdaGN: True | Zero: True | Attention: False
+[TemporalUnetLarge] channel dims : [60, 512, 1024, 2048, 2048]
+[TemporalUnetLarge] bottleneck   : 1024
+[TemporalUnetLarge] attn at depth: (2, 3)
+[TemporalUnetLarge] Total parameters: 0.832B
+Text Conditioning Enabled. Loading CLIP M-CLIP/XLM-Roberta-Large-Vit-B-16Plus...
+### RFlow with lbd_flow 1.0, lbd_recon 1.0, lbd_velocity 1.0
+### The parameter count is 1395037372
+Single LMDB path found for split 'dev': C:\Users\balaji\Downloads\rlproj\rlproj\data\raw\SignSparK_data\dev\How2Sign_reopt_dev.lmdb
+### flip_left_hand=True: converting left hand from SMPLX-left to right-hand convention
+############### 
+Loading [Dataset: body @ 1650 items | Seq_Len: 304] from C:\Users\balaji\Downloads\rlproj\rlproj\data\raw\SignSparK_data\dev\How2Sign_reopt_dev.lmdb
+dataloader length 52
+### Creating model and flow...
+Using UNET with: Input Dim 90 | Latent Dim: 512 | Mults: (2, 2, 2, 2) | Added channels: 180
+AdaGN: True | Zero: True | Attention: False
+[TemporalUnetLarge] channel dims : [90, 512, 1024, 2048, 2048]
+[TemporalUnetLarge] bottleneck   : 1024
+[TemporalUnetLarge] attn at depth: (2, 3)
+[TemporalUnetLarge] Total parameters: 0.832B
+Text Conditioning Enabled. Loading CLIP M-CLIP/XLM-Roberta-Large-Vit-B-16Plus...
+### RFlow with lbd_flow 1.0, lbd_recon 1.0, lbd_velocity 1.0
+### The parameter count is 1395329242
+Single LMDB path found for split 'dev': C:\Users\balaji\Downloads\rlproj\rlproj\data\raw\SignSparK_data\dev\How2Sign_reopt_dev.lmdb
+### flip_left_hand=True: converting left hand from SMPLX-left to right-hand convention
+############### 
+Loading [Dataset: hand @ 1650 items | Seq_Len: 304] from C:\Users\balaji\Downloads\rlproj\rlproj\data\raw\SignSparK_data\dev\How2Sign_reopt_dev.lmdb
+dataloader length 52
+comparators {'primary_typical_only': 0.4457464840171402, 'secondary_all_candidate_E2e': 0.4457464840171402, 'secondary_dev256_dumps': 0.45536431379490633, 'A3_256_registered': 0.408, 'typical_candidates_per_clip_mean': 7.78125, 'clips_without_typical_candidate': 0} 86s
+[   137s] (ii) iter 0 train surrogate 0.0520 train geodesic 0.0521 peak 8.53 GiB
+[   395s] (ii) iter 5 train surrogate 0.2841 train geodesic 0.2840 peak 8.53 GiB
+[   655s] (ii) iter 10 train surrogate 0.3940 train geodesic 0.3938 peak 8.53 GiB
+[   903s] (ii) iter 15 train surrogate 0.4979 train geodesic 0.4976 peak 8.53 GiB
+[  1151s] (ii) iter 20 train surrogate 0.5915 train geodesic 0.5911 peak 8.53 GiB
+[  1401s] (ii) iter 25 train surrogate 0.6780 train geodesic 0.6776 peak 8.53 GiB
+[  1598s] (ii) iter 29 train surrogate 0.7372 train geodesic 0.7367 peak 8.53 GiB
+[  1613s] held-out mean 0.0337
+(ii) does not reach the primary best-of-8x8 level within the KL bound: registered negative outcome for (ii) (FM4; (i) not run by user decision) 1614 s

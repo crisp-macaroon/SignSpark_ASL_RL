@@ -1,0 +1,43 @@
+clips with body(kept) max angular speed > 30 deg/frame: {'dev': 792, 'test': 1022, 'train': 11959}
+clips with body(kept) max angular speed > 45 deg/frame: {'dev': 283, 'test': 380, 'train': 4016}
+clips with body(kept) max angular speed > 60 deg/frame: {'dev': 122, 'test': 170, 'train': 2103}
+clips with body(kept) max angular speed > 90 deg/frame: {'dev': 42, 'test': 77, 'train': 1079}
+clips with body(kept) max angular speed > 120 deg/frame: {'dev': 23, 'test': 46, 'train': 660}
+clips with right-hand max speed > 30: {'dev': 3, 'test': 2, 'train': 24}
+clips with right-hand max speed > 45: {}
+Neck        median    6.5  train-frame p99.9   23.0  clips exceeding: {'dev': 13, 'test': 15, 'train': 538}  max 39.9
+L_Collar    median   18.5  train-frame p99.9   46.0  clips exceeding: {'dev': 10, 'test': 14, 'train': 277}  max 64.3
+R_Collar    median   17.5  train-frame p99.9   39.0  clips exceeding: {'dev': 9, 'test': 19, 'train': 255}  max 60.6
+Head        median    9.5  train-frame p99.9   30.0  clips exceeding: {'dev': 30, 'test': 6, 'train': 355}  max 78.0
+L_Shoulder  median   61.5  train-frame p99.9   84.0  clips exceeding: {'dev': 16, 'test': 4, 'train': 345}  max 97.7
+R_Shoulder  median   59.5  train-frame p99.9   80.0  clips exceeding: {'dev': 29, 'test': 128, 'train': 404}  max 92.3
+L_Elbow     median  107.5  train-frame p99.9  137.0  clips exceeding: {'dev': 52, 'test': 35, 'train': 350}  max 173.3
+R_Elbow     median  127.5  train-frame p99.9  150.0  clips exceeding: {'dev': 57, 'test': 41, 'train': 625}  max 177.6
+L_Wrist     median   46.5  train-frame p99.9  148.0  clips exceeding: {'dev': 33, 'test': 35, 'train': 713}  max 180.0
+R_Wrist     median   45.5  train-frame p99.9  140.0  clips exceeding: {'dev': 47, 'test': 73, 'train': 894}  max 180.0
+joint responsible for max spike in top-20 train clips: {'R_Wrist': 12, 'L_Wrist': 8}; frames>45deg in those clips: [2, 4, 2, 2, 3, 9, 4, 10, 2, 1, 4, 2, 7, 4, 2, 4, 4, 2, 3, 2]
+train body joint-frames with speed > 45 deg/frame: 6093 of 53136550 (1.15e-04)
+test body joint-frames with speed > 45 deg/frame: 594 of 3956301 (1.50e-04)
+train duplicate-feature clips:
+                   clip_id                             feature_sha1   T
+077rQK39ycg_27-5-rgb_front 14ee0fd5b968ab55e93672a5cf12b28ecbd302e6 116
+077rQK39ycg_29-5-rgb_front 14ee0fd5b968ab55e93672a5cf12b28ecbd302e6 116
+EMi4hyW42Fs_13-5-rgb_front 715b138641e71478609f9dda4250eeeed345eeb0 358
+ EMi4hyW42Fs_7-5-rgb_front 715b138641e71478609f9dda4250eeeed345eeb0 358
+ 0rXxoOBskMk_4-5-rgb_front b2f48574e8be4d065a944415aad3a0099cc9cfee  45
+ 0rXxoOBskMk_7-5-rgb_front b2f48574e8be4d065a944415aad3a0099cc9cfee  45
+ -23PZTqtDBw_2-5-rgb_front d455a961b1e2bf7215f258a99c60f32a108d5c60  92
+ -23PZTqtDBw_5-5-rgb_front d455a961b1e2bf7215f258a99c60f32a108d5c60  92
+dev duplicate-feature clips:
+                  clip_id                             feature_sha1  T
+-f1_kdl050s_7-1-rgb_front 4b988c0bcff75f598d82e7dfa906f933abbbca48 42
+-f1_kdl050s_8-1-rgb_front 4b988c0bcff75f598d82e7dfa906f933abbbca48 42
+T<=16 clips: {}  min T {'dev': 25, 'test': 25, 'train': 25}
+max T clip: split                           train
+clip_id    1IHiA_6XXrI_12-5-rgb_front
+T                                7357
+n_words                            11
+corr(T,n_words) train 0.663; frames per word median 8.80
+dev keyframe density (n_keyframes/T): median 0.172, mean 0.170
+test keyframe density (n_keyframes/T): median 0.170, mean 0.169
+train keyframe density (n_keyframes/T): median 0.169, mean 0.167

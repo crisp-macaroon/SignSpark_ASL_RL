@@ -1,0 +1,25 @@
+PASS R ordinary motion: v1.1 equals v1 exactly (4 statistics)  {'coord_arm_rhand': 0.1255, 'coord_arm_lhand': 0.0863, 'coord_lr': 0.0772, 'X': 0.0104}
+PASS R static identity: v1 raises ZeroDivisionError (documented); v1.1 returns all NaN
+PASS R static non-identity: v1.1 all NaN (v1 gave finite spurious values or raised)  v1 finite spurious: ['coord_lr', 'X']; v1.1 signal stats (6.783432885752313e-09, 2.481541837659083e-24)
+PASS R frozen left hand: left-hand statistics and dom NaN; right arm-hand defined and = v1
+PASS R near-static hand (steps 1e-7 rad): invalid (mean speed < 1e-5)  mean, std = (1.5997711922809037e-07, 1.8415781594831e-08)
+PASS R slow but real hand (steps 1e-3 rad): valid, all statistics defined  mean, std = (0.0015762813779715175, 0.00021200094551331573)
+PASS R non-finite input: no exception, all NaN, input_finite False
+PASS R +inf input: all NaN
+PASS R floor constants as specified
+PASS J ordinary signals: all statistics defined
+PASS J hand signal std < 1e-7 m/frame: invalid; dependent statistics NaN
+PASS J zero-activity hand: dom NaN, no exception
+PASS J non-finite signal: invalid, NaN
+PASS J FK failure (None): all NaN
+PASS J (FK) ordinary motion: v1.1 equals jspace v1 exactly
+PASS J (FK) static identity: all NaN
+PASS J (FK) static left-hand pose, moving arm: defined (skinning leakage, documented); right arm-hand = v1  leakage signal hand_L valid=True
+PASS J (FK) frozen left hand with static body: left statistics, L-R and dom NaN; right hand defined
+PASS J (FK) non-finite input: all NaN without FK
+PASS v1 unchanged: experiments/stage4/e2e/metrics.py
+PASS v1 unchanged: experiments/stage4/jspace.py
+
+21/21 tests passed
+
+--- stderr ---
